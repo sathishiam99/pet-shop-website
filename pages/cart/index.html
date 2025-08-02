@@ -1,0 +1,774 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart - Pawfect World</title>
+    <meta name="description" content="Review and manage your shopping cart at Pawfect World. Easily update quantities, apply coupons, and proceed to checkout.">
+    <meta name="keywords" content="pet supplies cart, dog food, cat toys, pet accessories, shopping cart, checkout">
+    <meta name="author" content="Pawfect World">
+    
+    <!-- Open Graph / Social Media Meta Tags -->
+    <meta property="og:title" content="Your Shopping Cart - Pawfect World">
+    <meta property="og:description" content="Review and manage your shopping cart at Pawfect World. Easily update quantities, apply coupons, and proceed to checkout.">
+    <meta property="og:image" content="https://pawfectworld.com/images/og-image.jpg">
+    <meta property="og:url" content="https://pawfectworld.com/cart">
+    <meta property="og:type" content="website">
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Your Shopping Cart - Pawfect World">
+    <meta name="twitter:description" content="Review and manage your shopping cart at Pawfect World. Easily update quantities, apply coupons, and proceed to checkout.">
+    <meta name="twitter:image" content="https://pawfectworld.com/images/twitter-card.jpg">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://pawfectworld.com/cart">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="../../images/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="../../images/apple-touch-icon.png">
+    
+    <!-- Preload Critical Resources -->
+    <link rel="preload" href="../../css/style.css" as="style">
+    <link rel="preload" href="../../css/responsive.css" as="style">
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" as="style">
+    
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="../../css/responsive.css">
+    <link rel="stylesheet" href="../../css/checkout.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="header">
+        <div class="header-top">
+            <div class="container">
+                <div class="header-top-content">
+                    <div class="header-top-left">
+                        <p><i class="fas fa-truck"></i> Free shipping on orders over $50</p>
+                    </div>
+                    <div class="header-top-right">
+                        <ul>
+                            <li><a href="../contact/index.html"><i class="fas fa-phone"></i> Contact</a></li>
+                            <li><a href="../account/index.html"><i class="fas fa-user"></i> My Account</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header-main">
+            <div class="container">
+                <div class="header-main-content">
+                    <div class="logo">
+                        <a href="../../index.html">
+                            <h1>Pawfect World</h1>
+                        </a>
+                    </div>
+                    <div class="search-bar">
+                        <form action="#" method="get">
+                            <input type="text" placeholder="Search for products..." name="search">
+                            <button type="submit"><i class="fas fa-search"></i></button>
+                        </form>
+                    </div>
+                    <div class="header-actions">
+                        <div class="wishlist">
+                            <a href="#"><i class="fas fa-heart"></i></a>
+                            <span class="count">0</span>
+                        </div>
+                        <div class="cart">
+                            <a href="../cart/index.html"><i class="fas fa-shopping-cart"></i></a>
+                            <span class="count">2</span>
+                        </div>
+                        <div class="mobile-menu-toggle">
+                            <i class="fas fa-bars"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header-nav">
+            <div class="container">
+                <nav class="main-nav">
+                    <ul>
+                        <li><a href="../../index.html">Home</a></li>
+                        <li><a href="../about/index.html">About Us</a></li>
+                        <li class="has-dropdown">
+                            <a href="../shop/shop.html">Shop</a>
+                            <ul class="dropdown">
+                                <li><a href="../shop/dog-products/index.html">Dog Products</a></li>
+                                <li><a href="../shop/cat-products/index.html">Cat Products</a></li>
+                                <li><a href="../shop/food-treats/index.html">Food & Treats</a></li>
+                                <li><a href="../shop/toys/index.html">Toys</a></li>
+                                <li><a href="../shop/grooming-supplies/index.html">Grooming Supplies</a></li>
+                                <li><a href="../shop/health-wellness/index.html">Health & Wellness</a></li>
+                                <li><a href="../shop/accessories/index.html">Accessories</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="../blog/index.html">Blog</a></li>
+                        <li><a href="../events/index.html">Events & Adoption</a></li>
+                        <li><a href="../contact/index.html">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Breadcrumb -->
+    <div class="breadcrumb-wrapper">
+        <div class="container">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="../../index.html">Home</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Shopping Cart</li>
+                </ol>
+            </nav>
+        </div>
+    </div>
+
+    <!-- Cart Section -->
+    <section class="cart-section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Your Shopping Cart</h2>
+                <p>Review and update your items before checkout</p>
+            </div>
+
+            <div class="cart-container">
+                <div class="cart-items">
+                    <div class="cart-header">
+                        <div class="cart-header-item product-col">Product</div>
+                        <div class="cart-header-item price-col">Price</div>
+                        <div class="cart-header-item quantity-col">Quantity</div>
+                        <div class="cart-header-item subtotal-col">Subtotal</div>
+                        <div class="cart-header-item remove-col"></div>
+                    </div>
+
+                    <!-- Cart Item 1 -->
+                    <div class="cart-item">
+                        <div class="product-col">
+                            <div class="product-image">
+                                <img src="../../images/premium-dog-food.png" alt="Premium Grain-Free Dog Food">
+                            </div>
+                            <div class="product-details">
+                                <h3><a href="../product-detail/premium-dog-food.html">Premium Grain-Free Dog Food</a></h3>
+                                <p>Size: 5 lbs</p>
+                                <p class="product-sku">SKU: DF-5001</p>
+                            </div>
+                        </div>
+                        <div class="price-col">
+                            <span class="price">$39.99</span>
+                        </div>
+                        <div class="quantity-col">
+                            <div class="quantity-input">
+                                <button class="quantity-btn minus"><i class="fas fa-minus"></i></button>
+                                <input type="number" value="1" min="1" max="10">
+                                <button class="quantity-btn plus"><i class="fas fa-plus"></i></button>
+                            </div>
+                        </div>
+                        <div class="subtotal-col">
+                            <span class="subtotal">$39.99</span>
+                        </div>
+                        <div class="remove-col">
+                            <button class="remove-item"><i class="fas fa-trash-alt"></i></button>
+                        </div>
+                    </div>
+
+                    <!-- Cart Item 2 -->
+                    <div class="cart-item">
+                        <div class="product-col">
+                            <div class="product-image">
+                                <img src="../../images/dog-toy-1.png" alt="Interactive Dog Toy">
+                            </div>
+                            <div class="product-details">
+                                <h3><a href="../product-detail/interactive-dog-toy.html">Interactive Dog Toy</a></h3>
+                                <p>Color: Blue</p>
+                                <p class="product-sku">SKU: DT-3045</p>
+                            </div>
+                        </div>
+                        <div class="price-col">
+                            <span class="price">$14.99</span>
+                        </div>
+                        <div class="quantity-col">
+                            <div class="quantity-input">
+                                <button class="quantity-btn minus"><i class="fas fa-minus"></i></button>
+                                <input type="number" value="1" min="1" max="10">
+                                <button class="quantity-btn plus"><i class="fas fa-plus"></i></button>
+                            </div>
+                        </div>
+                        <div class="subtotal-col">
+                            <span class="subtotal">$14.99</span>
+                        </div>
+                        <div class="remove-col">
+                            <button class="remove-item"><i class="fas fa-trash-alt"></i></button>
+                        </div>
+                    </div>
+
+                    <!-- Cart Actions -->
+                    <div class="cart-actions">
+                        <div class="coupon">
+                            <input type="text" placeholder="Coupon code" id="cart-coupon-code">
+                            <button class="btn btn-secondary" id="cart-apply-coupon">Apply Coupon</button>
+                        </div>
+                        <div class="update-cart">
+                            <button class="btn btn-primary" id="update-cart-btn">Update Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cart-summary">
+                    <h3>Cart Summary</h3>
+                    <div class="summary-row">
+                        <span>Subtotal</span>
+                        <span>$54.98</span>
+                    </div>
+                    <div class="summary-row shipping">
+                        <span>Shipping</span>
+                        <div class="shipping-options">
+                            <div class="shipping-option">
+                                <input type="radio" id="standard-shipping" name="shipping" value="standard" checked>
+                                <label for="standard-shipping">Standard Shipping - $5.99</label>
+                            </div>
+                            <div class="shipping-option">
+                                <input type="radio" id="express-shipping" name="shipping" value="express">
+                                <label for="express-shipping">Express Shipping - $12.99</label>
+                            </div>
+                            <div class="shipping-option">
+                                <input type="radio" id="free-shipping" name="shipping" value="free" disabled>
+                                <label for="free-shipping">Free Shipping (Orders over $50)</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="summary-row">
+                        <span>Tax (Estimated)</span>
+                        <span>$4.95</span>
+                    </div>
+                    <div class="summary-row total">
+                        <span>Total</span>
+                        <span>$65.92</span>
+                    </div>
+                    <div class="checkout-button">
+                        <a href="../checkout/index.html" class="btn btn-primary btn-block">Proceed to Checkout</a>
+                    </div>
+                    <div class="continue-shopping">
+                        <a href="../shop/shop.html"><i class="fas fa-arrow-left"></i> Continue Shopping</a>
+                    </div>
+                    <div class="secure-checkout">
+                        <p><i class="fas fa-lock"></i> Secure Checkout</p>
+                    </div>
+                    <div class="payment-methods">
+                        <img src="../../images/payment-methods.png" alt="Payment Methods">
+                    </div>
+                </div>
+            </div>
+
+            <!-- You May Also Like -->
+            <div class="related-products">
+                <h3>You May Also Like</h3>
+                <div class="product-grid">
+                    <!-- Related Product 1 -->
+                    <div class="product-card">
+                        <div class="product-badge sale">Sale</div>
+                        <div class="product-image">
+                            <a href="../product-detail/cat-scratching-post.html">
+                                <img src="../../images/cat-scratching-post.png" alt="Cat Scratching Post">
+                            </a>
+                            <div class="product-actions">
+                                <a href="#" class="quick-view"><i class="fas fa-eye"></i></a>
+                                <a href="#" class="add-to-wishlist"><i class="far fa-heart"></i></a>
+                                <a href="#" class="add-to-cart"><i class="fas fa-shopping-cart"></i></a>
+                            </div>
+                        </div>
+                        <div class="product-content">
+                            <h4><a href="../product-detail/cat-scratching-post.html">Cat Scratching Post</a></h4>
+                            <div class="product-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <span>(24)</span>
+                            </div>
+                            <div class="product-price">
+                                <span class="old-price">$34.99</span>
+                                <span class="current-price">$29.99</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Related Product 2 -->
+                    <div class="product-card">
+                        <div class="product-badge new">New</div>
+                        <div class="product-image">
+                            <a href="../product-detail/dog-collar.html">
+                                <img src="../../images/dog-collar.png" alt="Adjustable Dog Collar">
+                            </a>
+                            <div class="product-actions">
+                                <a href="#" class="quick-view"><i class="fas fa-eye"></i></a>
+                                <a href="#" class="add-to-wishlist"><i class="far fa-heart"></i></a>
+                                <a href="#" class="add-to-cart"><i class="fas fa-shopping-cart"></i></a>
+                            </div>
+                        </div>
+                        <div class="product-content">
+                            <h4><a href="../product-detail/dog-collar.html">Adjustable Dog Collar</a></h4>
+                            <div class="product-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                                <span>(18)</span>
+                            </div>
+                            <div class="product-price">
+                                <span class="current-price">$19.99</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Related Product 3 -->
+                    <div class="product-card">
+                        <div class="product-image">
+                            <a href="../product-detail/cat-food.html">
+                                <img src="../../images/cat-food.png" alt="Premium Cat Food">
+                            </a>
+                            <div class="product-actions">
+                                <a href="#" class="quick-view"><i class="fas fa-eye"></i></a>
+                                <a href="#" class="add-to-wishlist"><i class="far fa-heart"></i></a>
+                                <a href="#" class="add-to-cart"><i class="fas fa-shopping-cart"></i></a>
+                            </div>
+                        </div>
+                        <div class="product-content">
+                            <h4><a href="../product-detail/cat-food.html">Premium Cat Food</a></h4>
+                            <div class="product-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <span>(32)</span>
+                            </div>
+                            <div class="product-price">
+                                <span class="current-price">$24.99</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Related Product 4 -->
+                    <div class="product-card">
+                        <div class="product-badge bestseller">Bestseller</div>
+                        <div class="product-image">
+                            <a href="../product-detail/pet-bed.html">
+                                <img src="../../images/pet-bed.png" alt="Cozy Pet Bed">
+                            </a>
+                            <div class="product-actions">
+                                <a href="#" class="quick-view"><i class="fas fa-eye"></i></a>
+                                <a href="#" class="add-to-wishlist"><i class="far fa-heart"></i></a>
+                                <a href="#" class="add-to-cart"><i class="fas fa-shopping-cart"></i></a>
+                            </div>
+                        </div>
+                        <div class="product-content">
+                            <h4><a href="../product-detail/pet-bed.html">Cozy Pet Bed</a></h4>
+                            <div class="product-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                                <span>(45)</span>
+                            </div>
+                            <div class="product-price">
+                                <span class="current-price">$49.99</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Recently Viewed -->
+    <section class="recently-viewed">
+        <div class="container">
+            <h3>Recently Viewed</h3>
+            <div class="product-grid">
+                <!-- Recently Viewed Product 1 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <a href="../product-detail/dog-leash.html">
+                            <img src="../../images/dog-leash.png" alt="Durable Dog Leash">
+                        </a>
+                        <div class="product-actions">
+                            <a href="#" class="quick-view"><i class="fas fa-eye"></i></a>
+                            <a href="#" class="add-to-wishlist"><i class="far fa-heart"></i></a>
+                            <a href="#" class="add-to-cart"><i class="fas fa-shopping-cart"></i></a>
+                        </div>
+                    </div>
+                    <div class="product-content">
+                        <h4><a href="../product-detail/dog-leash.html">Durable Dog Leash</a></h4>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <span>(16)</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="current-price">$22.99</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Recently Viewed Product 2 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <a href="../product-detail/cat-toy.html">
+                            <img src="../../images/cat-toy.png" alt="Interactive Cat Toy">
+                        </a>
+                        <div class="product-actions">
+                            <a href="#" class="quick-view"><i class="fas fa-eye"></i></a>
+                            <a href="#" class="add-to-wishlist"><i class="far fa-heart"></i></a>
+                            <a href="#" class="add-to-cart"><i class="fas fa-shopping-cart"></i></a>
+                        </div>
+                    </div>
+                    <div class="product-content">
+                        <h4><a href="../product-detail/cat-toy.html">Interactive Cat Toy</a></h4>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                            <i class="far fa-star"></i>
+                            <span>(12)</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="current-price">$12.99</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Recently Viewed Product 3 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <a href="../product-detail/pet-shampoo.html">
+                            <img src="../../images/pet-shampoo.png" alt="Organic Pet Shampoo">
+                        </a>
+                        <div class="product-actions">
+                            <a href="#" class="quick-view"><i class="fas fa-eye"></i></a>
+                            <a href="#" class="add-to-wishlist"><i class="far fa-heart"></i></a>
+                            <a href="#" class="add-to-cart"><i class="fas fa-shopping-cart"></i></a>
+                        </div>
+                    </div>
+                    <div class="product-content">
+                        <h4><a href="../product-detail/pet-shampoo.html">Organic Pet Shampoo</a></h4>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <span>(21)</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="current-price">$18.99</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-top">
+            <div class="container">
+                <div class="footer-widgets">
+                    <div class="footer-widget">
+                        <h3>About Pawfect World</h3>
+                        <p>We're dedicated to providing the highest quality products for your beloved pets. Our mission is to make pet care easy, enjoyable, and affordable.</p>
+                        <div class="social-icons">
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-pinterest"></i></a>
+                        </div>
+                    </div>
+                    <div class="footer-widget">
+                        <h3>Quick Links</h3>
+                        <ul class="footer-links">
+                            <li><a href="../../index.html">Home</a></li>
+                            <li><a href="../about/index.html">About Us</a></li>
+                            <li><a href="../shop/shop.html">Shop</a></li>
+                            <li><a href="../blog/index.html">Blog</a></li>
+                            <li><a href="../contact/index.html">Contact</a></li>
+                            <li><a href="../faq/index.html">FAQs</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-widget">
+                        <h3>Customer Service</h3>
+                        <ul class="footer-links">
+                            <li><a href="../account/index.html">My Account</a></li>
+                            <li><a href="#">Track Order</a></li>
+                            <li><a href="#">Shipping Policy</a></li>
+                            <li><a href="#">Returns & Exchanges</a></li>
+                            <li><a href="../privacy-policy/index.html">Privacy Policy</a></li>
+                            <li><a href="../terms-conditions/index.html">Terms & Conditions</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-widget">
+                        <h3>Newsletter</h3>
+                        <p>Subscribe to our newsletter for updates on new products, promotions, and pet care tips.</p>
+                        <form class="newsletter-form">
+                            <input type="email" placeholder="Your email address" required>
+                            <button type="submit"><i class="fas fa-paper-plane"></i></button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="footer-bottom-content">
+                    <div class="copyright">
+                        <p>&copy; 2023 Pawfect World. All Rights Reserved.</p>
+                    </div>
+                    <div class="payment-methods">
+                        <img src="../../images/payment-methods.png" alt="Payment Methods">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="../../js/jquery.min.js"></script>
+    <script src="../../js/main.js"></script>
+    <script>
+        // Cart Page JavaScript
+        document.addEventListener('DOMContentLoaded', function() {
+            // Quantity Buttons
+            const minusButtons = document.querySelectorAll('.quantity-btn.minus');
+            const plusButtons = document.querySelectorAll('.quantity-btn.plus');
+            
+            minusButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    const input = this.nextElementSibling;
+                    let value = parseInt(input.value);
+                    if (value > 1) {
+                        value--;
+                        input.value = value;
+                        updateSubtotal(this);
+                    }
+                });
+            });
+            
+            plusButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    const input = this.previousElementSibling;
+                    let value = parseInt(input.value);
+                    const max = parseInt(input.getAttribute('max'));
+                    if (value < max) {
+                        value++;
+                        input.value = value;
+                        updateSubtotal(this);
+                    }
+                });
+            });
+            
+            // Update subtotal when quantity changes
+            function updateSubtotal(button) {
+                const cartItem = button.closest('.cart-item');
+                const price = parseFloat(cartItem.querySelector('.price').textContent.replace('$', ''));
+                const quantity = parseInt(cartItem.querySelector('input[type="number"]').value);
+                const subtotal = price * quantity;
+                cartItem.querySelector('.subtotal').textContent = '$' + subtotal.toFixed(2);
+                
+                updateCartTotals();
+            }
+            
+            // Update cart totals
+            function updateCartTotals() {
+                let subtotal = 0;
+                const subtotals = document.querySelectorAll('.subtotal');
+                
+                subtotals.forEach(item => {
+                    subtotal += parseFloat(item.textContent.replace('$', ''));
+                });
+                
+                // Update subtotal in summary
+                document.querySelector('.summary-row:first-child span:last-child').textContent = '$' + subtotal.toFixed(2);
+                
+                // Check if free shipping is available
+                const freeShippingOption = document.getElementById('free-shipping');
+                if (subtotal >= 50) {
+                    freeShippingOption.disabled = false;
+                    freeShippingOption.checked = true;
+                } else {
+                    freeShippingOption.disabled = true;
+                    if (freeShippingOption.checked) {
+                        document.getElementById('standard-shipping').checked = true;
+                    }
+                }
+                
+                // Calculate shipping cost
+                let shippingCost = 0;
+                const selectedShipping = document.querySelector('input[name="shipping"]:checked').value;
+                
+                if (selectedShipping === 'standard') {
+                    shippingCost = 5.99;
+                } else if (selectedShipping === 'express') {
+                    shippingCost = 12.99;
+                }
+                
+                // Calculate tax (9% for example)
+                const tax = subtotal * 0.09;
+                document.querySelector('.summary-row:nth-child(3) span:last-child').textContent = '$' + tax.toFixed(2);
+                
+                // Calculate total
+                const total = subtotal + shippingCost + tax;
+                document.querySelector('.summary-row.total span:last-child').textContent = '$' + total.toFixed(2);
+            }
+            
+            // Remove item
+            const removeButtons = document.querySelectorAll('.remove-item');
+            removeButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    const cartItem = this.closest('.cart-item');
+                    
+                    // Add fade-out animation
+                    cartItem.style.opacity = '0';
+                    cartItem.style.height = cartItem.offsetHeight + 'px';
+                    
+                    setTimeout(() => {
+                        cartItem.style.height = '0';
+                        cartItem.style.padding = '0';
+                        cartItem.style.margin = '0';
+                        cartItem.style.border = 'none';
+                        
+                        setTimeout(() => {
+                            cartItem.remove();
+                            updateCartTotals();
+                            
+                            // If no items left, show empty cart message
+                            if (document.querySelectorAll('.cart-item').length === 0) {
+                                const emptyCartMessage = document.createElement('div');
+                                emptyCartMessage.className = 'empty-cart';
+                                emptyCartMessage.innerHTML = `
+                                    <div class="empty-cart-icon">
+                                        <i class="fas fa-shopping-cart"></i>
+                                    </div>
+                                    <h3>Your cart is empty</h3>
+                                    <p>Looks like you haven't added any items to your cart yet.</p>
+                                    <a href="../shop/shop.html" class="btn btn-primary">Start Shopping</a>
+                                `;
+                                
+                                document.querySelector('.cart-items').innerHTML = '';
+                                document.querySelector('.cart-items').appendChild(emptyCartMessage);
+                                document.querySelector('.cart-summary').style.display = 'none';
+                            }
+                        }, 300);
+                    }, 300);
+                });
+            });
+            
+            // Update cart button
+            const updateCartBtn = document.getElementById('update-cart-btn');
+            updateCartBtn.addEventListener('click', function() {
+                // Show loading state
+                this.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Updating...';
+                this.disabled = true;
+                
+                // Simulate update
+                setTimeout(() => {
+                    updateCartTotals();
+                    
+                    // Reset button
+                    this.innerHTML = 'Update Cart';
+                    this.disabled = false;
+                    
+                    // Show success message
+                    const successMessage = document.createElement('div');
+                    successMessage.className = 'cart-message success';
+                    successMessage.innerHTML = '<i class="fas fa-check-circle"></i> Cart updated successfully';
+                    
+                    document.querySelector('.cart-actions').appendChild(successMessage);
+                    
+                    // Remove message after 3 seconds
+                    setTimeout(() => {
+                        successMessage.style.opacity = '0';
+                        setTimeout(() => {
+                            successMessage.remove();
+                        }, 300);
+                    }, 3000);
+                }, 1000);
+            });
+            
+            // Apply coupon
+            const applyCouponBtn = document.getElementById('cart-apply-coupon');
+            applyCouponBtn.addEventListener('click', function() {
+                const couponCode = document.getElementById('cart-coupon-code').value.trim();
+                
+                if (!couponCode) {
+                    alert('Please enter a coupon code.');
+                    return;
+                }
+                
+                // Show loading state
+                this.innerHTML = '<i class="fas fa-spinner fa-spin"></i>';
+                this.disabled = true;
+                
+                // Simulate coupon application
+                setTimeout(() => {
+                    if (couponCode.toUpperCase() === 'PAWFECT10') {
+                        // Success message
+                        const successMessage = document.createElement('div');
+                        successMessage.className = 'cart-message success';
+                        successMessage.innerHTML = '<i class="fas fa-check-circle"></i> Coupon applied successfully! 10% discount will be applied at checkout.';
+                        
+                        document.querySelector('.cart-actions').appendChild(successMessage);
+                        
+                        // Remove message after 5 seconds
+                        setTimeout(() => {
+                            successMessage.style.opacity = '0';
+                            setTimeout(() => {
+                                successMessage.remove();
+                            }, 300);
+                        }, 5000);
+                    } else {
+                        // Error message
+                        const errorMessage = document.createElement('div');
+                        errorMessage.className = 'cart-message error';
+                        errorMessage.innerHTML = '<i class="fas fa-times-circle"></i> Invalid coupon code. Please try again.';
+                        
+                        document.querySelector('.cart-actions').appendChild(errorMessage);
+                        
+                        // Remove message after 5 seconds
+                        setTimeout(() => {
+                            errorMessage.style.opacity = '0';
+                            setTimeout(() => {
+                                errorMessage.remove();
+                            }, 300);
+                        }, 5000);
+                    }
+                    
+                    // Reset button
+                    this.innerHTML = 'Apply Coupon';
+                    this.disabled = false;
+                }, 1000);
+            });
+            
+            // Shipping option change
+            const shippingOptions = document.querySelectorAll('input[name="shipping"]');
+            shippingOptions.forEach(option => {
+                option.addEventListener('change', function() {
+                    updateCartTotals();
+                });
+            });
+            
+            // Initialize totals
+            updateCartTotals();
+        });
+    </script>
+</body>
+</html>

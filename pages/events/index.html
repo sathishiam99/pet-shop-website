@@ -1,0 +1,950 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Join Pawfect World's pet adoption events and community activities. Find your new best friend and connect with other pet lovers.">
+    <meta name="keywords" content="pet adoption, pet events, animal shelter, dog adoption, cat adoption, pet community, pet workshops">
+    <title>Events & Adoption | Pawfect World - Premium Pet Supplies</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" href="../../images/favicon.png" type="image/png">
+    
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="../../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../css/all.min.css"> <!-- Font Awesome -->
+    <link rel="stylesheet" href="../../css/styles.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <!-- Top Bar -->
+        <div class="top-bar">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <ul class="top-contact">
+                            <li><i class="fas fa-phone-alt"></i> (123) 456-7890</li>
+                            <li><i class="fas fa-envelope"></i> support@pawfectworld.com</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6">
+                        <ul class="top-links">
+                            <li><a href="#"><i class="fas fa-calendar-check"></i> Book Appointment</a></li>
+                            <li><a href="../events/index.html" class="active"><i class="fas fa-paw"></i> Events & Adoption</a></li>
+                            <li><a href="#"><i class="fas fa-box"></i> Subscribe</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Main Header -->
+        <div class="main-header">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-3 col-md-4 col-sm-6">
+                        <div class="logo">
+                            <a href="../../index.html">
+                                <img src="../../images/logo.png" alt="Pawfect World Logo">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-5 col-md-4 d-none d-md-block">
+                        <div class="search-bar">
+                            <form action="#" method="get">
+                                <input type="text" placeholder="Search for products..." required>
+                                <button type="submit"><i class="fas fa-search"></i></button>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-6">
+                        <div class="header-actions">
+                            <div class="header-action dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                    <i class="fas fa-user"></i>
+                                    <span class="action-text">Account</span>
+                                </a>
+                                <div class="dropdown-menu">
+                                    <a class="dropdown-item" href="../account/index.html">My Account</a>
+                                    <a class="dropdown-item" href="../account/index.html#orders">My Orders</a>
+                                    <a class="dropdown-item" href="../account/index.html#wishlist">Wishlist</a>
+                                    <a class="dropdown-item" href="../account/index.html#pet-profiles">Pet Profiles</a>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item" href="#">Login</a>
+                                    <a class="dropdown-item" href="#">Register</a>
+                                </div>
+                            </div>
+                            <div class="header-action">
+                                <a href="#">
+                                    <i class="fas fa-shopping-cart"></i>
+                                    <span class="action-text">Cart</span>
+                                    <span class="count">3</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Main Navigation -->
+        <nav class="main-nav">
+            <div class="container">
+                <ul class="nav-list">
+                    <li><a href="../../index.html">Home</a></li>
+                    <li class="dropdown">
+                        <a href="../shop/shop.html" class="dropdown-toggle">Shop</a>
+                        <div class="dropdown-menu mega-menu">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <h4>Shop By Pet</h4>
+                                        <ul>
+                                            <li><a href="../shop/shop.html?pet=dog">Dogs</a></li>
+                                            <li><a href="../shop/shop.html?pet=cat">Cats</a></li>
+                                            <li><a href="../shop/shop.html?pet=bird">Birds</a></li>
+                                            <li><a href="../shop/shop.html?pet=fish">Fish</a></li>
+                                            <li><a href="../shop/shop.html?pet=small_pet">Small Pets</a></li>
+                                            <li><a href="../shop/shop.html?pet=reptile">Reptiles</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <h4>Categories</h4>
+                                        <ul>
+                                            <li><a href="../shop/shop.html?category=food">Food</a></li>
+                                            <li><a href="../shop/shop.html?category=treats">Treats</a></li>
+                                            <li><a href="../shop/shop.html?category=toys">Toys</a></li>
+                                            <li><a href="../shop/shop.html?category=accessories">Accessories</a></li>
+                                            <li><a href="../shop/shop.html?category=health">Health & Wellness</a></li>
+                                            <li><a href="../shop/shop.html?category=grooming">Grooming</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <h4>Featured</h4>
+                                        <ul>
+                                            <li><a href="../shop/shop.html?featured=new">New Arrivals</a></li>
+                                            <li><a href="../shop/shop.html?featured=bestseller">Bestsellers</a></li>
+                                            <li><a href="../shop/shop.html?featured=sale">Sale Items</a></li>
+                                            <li><a href="../shop/shop.html?featured=bundle">Bundles & Kits</a></li>
+                                            <li><a href="../shop/shop.html?featured=subscription">Subscription Boxes</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="promo-box">
+                                            <img src="../../images/mega-menu-promo.png" alt="Special Offer">
+                                            <div class="promo-content">
+                                                <h4>Summer Sale!</h4>
+                                                <p>Up to 50% off select items</p>
+                                                <a href="../shop/shop.html?featured=sale" class="btn btn-sm btn-primary">Shop Now</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li><a href="../blog/index.html">Blog</a></li>
+                    <li class="active"><a href="../events/index.html">Events & Adoption</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Breadcrumb -->
+    <div class="breadcrumb-wrapper">
+        <div class="container">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="../../index.html">Home</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Events & Adoption</li>
+                </ol>
+            </nav>
+        </div>
+    </div>
+
+    <!-- Page Banner -->
+    <section class="page-banner">
+        <div class="container">
+            <div class="banner-content text-center">
+                <h1>Events & Adoption</h1>
+                <p>Join our community events and find your perfect pet companion</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Adoption Program Section -->
+    <section class="adoption-program-section section-padding">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our Adoption Program</h2>
+                <p>Helping pets find their forever homes</p>
+            </div>
+            
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="adoption-content">
+                        <h3>How Our Adoption Program Works</h3>
+                        <p>At Pawfect World, we believe every pet deserves a loving home. We've partnered with local shelters and rescue organizations to help connect adoptable pets with caring families.</p>
+                        
+                        <div class="adoption-steps">
+                            <div class="step">
+                                <div class="step-number">1</div>
+                                <div class="step-content">
+                                    <h4>Browse Available Pets</h4>
+                                    <p>View profiles of pets currently available for adoption from our partner shelters.</p>
+                                </div>
+                            </div>
+                            <div class="step">
+                                <div class="step-number">2</div>
+                                <div class="step-content">
+                                    <h4>Meet & Greet</h4>
+                                    <p>Schedule a meeting with the pet you're interested in at one of our adoption events or partner locations.</p>
+                                </div>
+                            </div>
+                            <div class="step">
+                                <div class="step-number">3</div>
+                                <div class="step-content">
+                                    <h4>Application Process</h4>
+                                    <p>Complete the adoption application and home check process with the shelter or rescue group.</p>
+                                </div>
+                            </div>
+                            <div class="step">
+                                <div class="step-number">4</div>
+                                <div class="step-content">
+                                    <h4>Welcome Home Kit</h4>
+                                    <p>Receive a special Pawfect World welcome kit with essentials for your new pet at a discounted price.</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="adoption-cta mt-4">
+                            <a href="#available-pets" class="btn btn-primary">View Available Pets</a>
+                            <a href="#adoption-events" class="btn btn-outline-primary ml-3">Upcoming Adoption Events</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="adoption-image">
+                        <img src="../../images/adoption-program.png" alt="Pet Adoption Program">
+                        <div class="adoption-stats">
+                            <div class="stat-item">
+                                <h3>500+</h3>
+                                <p>Pets Adopted</p>
+                            </div>
+                            <div class="stat-item">
+                                <h3>15</h3>
+                                <p>Partner Shelters</p>
+                            </div>
+                            <div class="stat-item">
+                                <h3>24</h3>
+                                <p>Monthly Events</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Partner Shelters Section -->
+    <section class="partner-shelters-section section-padding bg-light">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our Shelter Partners</h2>
+                <p>Working together to find homes for pets in need</p>
+            </div>
+            
+            <div class="shelter-partners">
+                <div class="row">
+                    <div class="col-lg-4 col-md-6">
+                        <div class="shelter-card">
+                            <div class="shelter-logo">
+                                <img src="../../images/partner-1.png" alt="Happy Tails Rescue">
+                            </div>
+                            <div class="shelter-info">
+                                <h3>Happy Tails Rescue</h3>
+                                <p><i class="fas fa-map-marker-alt"></i> 123 Rescue Lane, Cityville</p>
+                                <p>Specializing in dog and puppy rescue and rehabilitation. Focus on family-friendly adoptions and special needs dogs.</p>
+                                <div class="shelter-stats">
+                                    <div class="stat"><span>45</span> Available Pets</div>
+                                    <div class="stat"><span>12</span> Years Active</div>
+                                </div>
+                                <a href="#" class="btn btn-outline-primary">View Available Pets</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="shelter-card">
+                            <div class="shelter-logo">
+                                <img src="../../images/partner-2.png" alt="Feline Friends Network">
+                            </div>
+                            <div class="shelter-info">
+                                <h3>Feline Friends Network</h3>
+                                <p><i class="fas fa-map-marker-alt"></i> 456 Cat Avenue, Townsville</p>
+                                <p>Dedicated to rescuing and rehoming cats and kittens. Experts in feral cat TNR programs and kitten socialization.</p>
+                                <div class="shelter-stats">
+                                    <div class="stat"><span>38</span> Available Pets</div>
+                                    <div class="stat"><span>8</span> Years Active</div>
+                                </div>
+                                <a href="#" class="btn btn-outline-primary">View Available Pets</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="shelter-card">
+                            <div class="shelter-logo">
+                                <img src="../../images/partner-3.png" alt="Small Paws Sanctuary">
+                            </div>
+                            <div class="shelter-info">
+                                <h3>Small Paws Sanctuary</h3>
+                                <p><i class="fas fa-map-marker-alt"></i> 789 Tiny Trail, Villageton</p>
+                                <p>Rescuing small animals including rabbits, guinea pigs, hamsters, and other small pets in need of loving homes.</p>
+                                <div class="shelter-stats">
+                                    <div class="stat"><span>25</span> Available Pets</div>
+                                    <div class="stat"><span>5</span> Years Active</div>
+                                </div>
+                                <a href="#" class="btn btn-outline-primary">View Available Pets</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="become-partner text-center mt-5">
+                <h3>Are You a Rescue or Shelter?</h3>
+                <p>Join our network of partner organizations and help more pets find their forever homes.</p>
+                <a href="#" class="btn btn-primary">Become a Partner</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Available Pets Section -->
+    <section id="available-pets" class="available-pets-section section-padding">
+        <div class="container">
+            <div class="section-header">
+                <h2>Pets Available for Adoption</h2>
+                <p>Find your perfect companion</p>
+            </div>
+            
+            <div class="pet-filter">
+                <form class="pet-filter-form">
+                    <div class="row">
+                        <div class="col-lg-3 col-md-6">
+                            <div class="form-group">
+                                <label for="petType">Pet Type</label>
+                                <select class="form-control" id="petType">
+                                    <option value="all">All Pets</option>
+                                    <option value="dog">Dogs</option>
+                                    <option value="cat">Cats</option>
+                                    <option value="small_animal">Small Animals</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6">
+                            <div class="form-group">
+                                <label for="petAge">Age</label>
+                                <select class="form-control" id="petAge">
+                                    <option value="all">All Ages</option>
+                                    <option value="baby">Baby</option>
+                                    <option value="young">Young</option>
+                                    <option value="adult">Adult</option>
+                                    <option value="senior">Senior</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6">
+                            <div class="form-group">
+                                <label for="petSize">Size</label>
+                                <select class="form-control" id="petSize">
+                                    <option value="all">All Sizes</option>
+                                    <option value="small">Small</option>
+                                    <option value="medium">Medium</option>
+                                    <option value="large">Large</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6">
+                            <div class="form-group">
+                                <label for="petGender">Gender</label>
+                                <select class="form-control" id="petGender">
+                                    <option value="all">All Genders</option>
+                                    <option value="male">Male</option>
+                                    <option value="female">Female</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="filter-buttons">
+                        <button type="submit" class="btn btn-primary">Apply Filters</button>
+                        <button type="reset" class="btn btn-outline-secondary">Reset</button>
+                    </div>
+                </form>
+            </div>
+            
+            <div class="pet-grid">
+                <div class="row">
+                    <!-- Pet Card 1 -->
+                    <div class="col-lg-4 col-md-6">
+                        <div class="pet-card">
+                            <div class="pet-image">
+                                <img src="../../images/pet-1.png" alt="Buddy - Golden Retriever">
+                                <div class="pet-badge">Dog</div>
+                            </div>
+                            <div class="pet-info">
+                                <h3>Buddy</h3>
+                                <div class="pet-meta">
+                                    <span><i class="fas fa-paw"></i> Golden Retriever</span>
+                                    <span><i class="fas fa-birthday-cake"></i> 2 years</span>
+                                    <span><i class="fas fa-ruler-vertical"></i> Medium</span>
+                                    <span><i class="fas fa-mars"></i> Male</span>
+                                </div>
+                                <p>Buddy is a friendly, energetic Golden Retriever who loves to play fetch and go for long walks. He's great with children and other dogs.</p>
+                                <div class="pet-shelter">
+                                    <img src="../../images/partner-1.png" alt="Happy Tails Rescue">
+                                    <span>Happy Tails Rescue</span>
+                                </div>
+                                <div class="pet-actions">
+                                    <a href="#" class="btn btn-primary">Meet Buddy</a>
+                                    <a href="#" class="btn btn-outline-primary"><i class="far fa-heart"></i></a>
+                                    <a href="#" class="btn btn-outline-primary"><i class="fas fa-share-alt"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Pet Card 2 -->
+                    <div class="col-lg-4 col-md-6">
+                        <div class="pet-card">
+                            <div class="pet-image">
+                                <img src="../../images/pet-2.png" alt="Luna - Siamese Cat">
+                                <div class="pet-badge">Cat</div>
+                            </div>
+                            <div class="pet-info">
+                                <h3>Luna</h3>
+                                <div class="pet-meta">
+                                    <span><i class="fas fa-paw"></i> Siamese</span>
+                                    <span><i class="fas fa-birthday-cake"></i> 1 year</span>
+                                    <span><i class="fas fa-ruler-vertical"></i> Small</span>
+                                    <span><i class="fas fa-venus"></i> Female</span>
+                                </div>
+                                <p>Luna is a sweet, playful Siamese cat who loves to cuddle and play with toys. She's litter trained and gets along well with other cats.</p>
+                                <div class="pet-shelter">
+                                    <img src="../../images/partner-2.png" alt="Feline Friends Network">
+                                    <span>Feline Friends Network</span>
+                                </div>
+                                <div class="pet-actions">
+                                    <a href="#" class="btn btn-primary">Meet Luna</a>
+                                    <a href="#" class="btn btn-outline-primary"><i class="far fa-heart"></i></a>
+                                    <a href="#" class="btn btn-outline-primary"><i class="fas fa-share-alt"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Pet Card 3 -->
+                    <div class="col-lg-4 col-md-6">
+                        <div class="pet-card">
+                            <div class="pet-image">
+                                <img src="../../images/pet-3.png" alt="Max - Beagle Mix">
+                                <div class="pet-badge">Dog</div>
+                            </div>
+                            <div class="pet-info">
+                                <h3>Max</h3>
+                                <div class="pet-meta">
+                                    <span><i class="fas fa-paw"></i> Beagle Mix</span>
+                                    <span><i class="fas fa-birthday-cake"></i> 3 years</span>
+                                    <span><i class="fas fa-ruler-vertical"></i> Medium</span>
+                                    <span><i class="fas fa-mars"></i> Male</span>
+                                </div>
+                                <p>Max is a friendly Beagle mix with a great nose for adventure. He's house-trained, knows basic commands, and loves car rides.</p>
+                                <div class="pet-shelter">
+                                    <img src="../../images/partner-1.png" alt="Happy Tails Rescue">
+                                    <span>Happy Tails Rescue</span>
+                                </div>
+                                <div class="pet-actions">
+                                    <a href="#" class="btn btn-primary">Meet Max</a>
+                                    <a href="#" class="btn btn-outline-primary"><i class="far fa-heart"></i></a>
+                                    <a href="#" class="btn btn-outline-primary"><i class="fas fa-share-alt"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Pet Card 4 -->
+                    <div class="col-lg-4 col-md-6">
+                        <div class="pet-card">
+                            <div class="pet-image">
+                                <img src="../../images/pet-4.png" alt="Oliver - Tabby Cat">
+                                <div class="pet-badge">Cat</div>
+                            </div>
+                            <div class="pet-info">
+                                <h3>Oliver</h3>
+                                <div class="pet-meta">
+                                    <span><i class="fas fa-paw"></i> Tabby</span>
+                                    <span><i class="fas fa-birthday-cake"></i> 4 years</span>
+                                    <span><i class="fas fa-ruler-vertical"></i> Medium</span>
+                                    <span><i class="fas fa-mars"></i> Male</span>
+                                </div>
+                                <p>Oliver is a laid-back tabby who enjoys lounging in sunny spots and gentle play. He's great for a quiet home and gets along with other cats.</p>
+                                <div class="pet-shelter">
+                                    <img src="../../images/partner-2.png" alt="Feline Friends Network">
+                                    <span>Feline Friends Network</span>
+                                </div>
+                                <div class="pet-actions">
+                                    <a href="#" class="btn btn-primary">Meet Oliver</a>
+                                    <a href="#" class="btn btn-outline-primary"><i class="far fa-heart"></i></a>
+                                    <a href="#" class="btn btn-outline-primary"><i class="fas fa-share-alt"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Pet Card 5 -->
+                    <div class="col-lg-4 col-md-6">
+                        <div class="pet-card">
+                            <div class="pet-image">
+                                <img src="../../images/pet-5.png" alt="Coco - Rabbit">
+                                <div class="pet-badge">Small Pet</div>
+                            </div>
+                            <div class="pet-info">
+                                <h3>Coco</h3>
+                                <div class="pet-meta">
+                                    <span><i class="fas fa-paw"></i> Lop Rabbit</span>
+                                    <span><i class="fas fa-birthday-cake"></i> 1 year</span>
+                                    <span><i class="fas fa-ruler-vertical"></i> Small</span>
+                                    <span><i class="fas fa-venus"></i> Female</span>
+                                </div>
+                                <p>Coco is a sweet lop-eared rabbit who enjoys fresh vegetables and gentle handling. She's litter trained and would make a wonderful indoor pet.</p>
+                                <div class="pet-shelter">
+                                    <img src="../../images/partner-3.png" alt="Small Paws Sanctuary">
+                                    <span>Small Paws Sanctuary</span>
+                                </div>
+                                <div class="pet-actions">
+                                    <a href="#" class="btn btn-primary">Meet Coco</a>
+                                    <a href="#" class="btn btn-outline-primary"><i class="far fa-heart"></i></a>
+                                    <a href="#" class="btn btn-outline-primary"><i class="fas fa-share-alt"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Pet Card 6 -->
+                    <div class="col-lg-4 col-md-6">
+                        <div class="pet-card">
+                            <div class="pet-image">
+                                <img src="../../images/pet-6.png" alt="Daisy - Labrador Mix">
+                                <div class="pet-badge">Dog</div>
+                            </div>
+                            <div class="pet-info">
+                                <h3>Daisy</h3>
+                                <div class="pet-meta">
+                                    <span><i class="fas fa-paw"></i> Labrador Mix</span>
+                                    <span><i class="fas fa-birthday-cake"></i> 5 years</span>
+                                    <span><i class="fas fa-ruler-vertical"></i> Large</span>
+                                    <span><i class="fas fa-venus"></i> Female</span>
+                                </div>
+                                <p>Daisy is a gentle, well-mannered Labrador mix who loves water and fetch. She's great with children and would thrive in an active family.</p>
+                                <div class="pet-shelter">
+                                    <img src="../../images/partner-1.png" alt="Happy Tails Rescue">
+                                    <span>Happy Tails Rescue</span>
+                                </div>
+                                <div class="pet-actions">
+                                    <a href="#" class="btn btn-primary">Meet Daisy</a>
+                                    <a href="#" class="btn btn-outline-primary"><i class="far fa-heart"></i></a>
+                                    <a href="#" class="btn btn-outline-primary"><i class="fas fa-share-alt"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="pagination-container text-center mt-5">
+                <nav aria-label="Page navigation">
+                    <ul class="pagination justify-content-center">
+                        <li class="page-item disabled">
+                            <a class="page-link" href="#" tabindex="-1" aria-disabled="true"><i class="fas fa-chevron-left"></i></a>
+                        </li>
+                        <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                        <li class="page-item">
+                            <a class="page-link" href="#"><i class="fas fa-chevron-right"></i></a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </section>
+
+    <!-- Upcoming Events Section -->
+    <section id="adoption-events" class="events-section section-padding bg-light">
+        <div class="container">
+            <div class="section-header">
+                <h2>Upcoming Events</h2>
+                <p>Join us for adoption days, workshops, and community gatherings</p>
+            </div>
+            
+            <div class="events-calendar">
+                <div class="calendar-nav">
+                    <h3>July 2023</h3>
+                    <div class="calendar-controls">
+                        <a href="#" class="btn btn-sm btn-outline-secondary"><i class="fas fa-chevron-left"></i></a>
+                        <a href="#" class="btn btn-sm btn-outline-secondary"><i class="fas fa-chevron-right"></i></a>
+                    </div>
+                </div>
+                
+                <div class="event-list">
+                    <!-- Event 1 -->
+                    <div class="event-item">
+                        <div class="event-date">
+                            <span class="day">15</span>
+                            <span class="month">July</span>
+                            <span class="time">10:00 AM - 4:00 PM</span>
+                        </div>
+                        <div class="event-details">
+                            <div class="event-type adoption">Adoption Event</div>
+                            <h4>Adoption Day: Find Your Perfect Match</h4>
+                            <p class="event-location"><i class="fas fa-map-marker-alt"></i> Pawfect World Main Store</p>
+                            <p>Meet adoptable pets from our partner shelters and find your new best friend. Our adoption counselors will be on hand to help match you with the perfect pet for your lifestyle.</p>
+                            <div class="event-meta">
+                                <span><i class="fas fa-users"></i> 45 Attending</span>
+                                <span><i class="fas fa-paw"></i> 20+ Pets Available</span>
+                            </div>
+                            <div class="event-actions">
+                                <a href="#" class="btn btn-primary">RSVP</a>
+                                <a href="#" class="btn btn-outline-primary">Add to Calendar</a>
+                                <a href="#" class="btn btn-outline-primary"><i class="fas fa-share-alt"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Event 2 -->
+                    <div class="event-item">
+                        <div class="event-date">
+                            <span class="day">22</span>
+                            <span class="month">July</span>
+                            <span class="time">1:00 PM - 3:00 PM</span>
+                        </div>
+                        <div class="event-details">
+                            <div class="event-type workshop">Workshop</div>
+                            <h4>Pet First Aid Workshop</h4>
+                            <p class="event-location"><i class="fas fa-map-marker-alt"></i> Pawfect World Training Room</p>
+                            <p>Learn essential first aid skills for pet emergencies from certified veterinarians. This hands-on workshop will cover wound care, CPR, choking, and when to seek emergency veterinary care.</p>
+                            <div class="event-meta">
+                                <span><i class="fas fa-users"></i> 28 Attending</span>
+                                <span><i class="fas fa-ticket-alt"></i> $15 per person</span>
+                            </div>
+                            <div class="event-actions">
+                                <a href="#" class="btn btn-primary">Register</a>
+                                <a href="#" class="btn btn-outline-primary">Add to Calendar</a>
+                                <a href="#" class="btn btn-outline-primary"><i class="fas fa-share-alt"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Event 3 -->
+                    <div class="event-item">
+                        <div class="event-date">
+                            <span class="day">29</span>
+                            <span class="month">July</span>
+                            <span class="time">11:00 AM - 1:00 PM</span>
+                        </div>
+                        <div class="event-details">
+                            <div class="event-type social">Social</div>
+                            <h4>Puppy Socialization Playdate</h4>
+                            <p class="event-location"><i class="fas fa-map-marker-alt"></i> Pawfect World Play Area</p>
+                            <p>Bring your puppy (under 1 year) to socialize with other puppies in a safe, supervised environment. Professional trainers will be present to offer guidance and answer questions.</p>
+                            <div class="event-meta">
+                                <span><i class="fas fa-users"></i> 32 Attending</span>
+                                <span><i class="fas fa-ticket-alt"></i> $5 per puppy</span>
+                            </div>
+                            <div class="event-actions">
+                                <a href="#" class="btn btn-primary">Register</a>
+                                <a href="#" class="btn btn-outline-primary">Add to Calendar</a>
+                                <a href="#" class="btn btn-outline-primary"><i class="fas fa-share-alt"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Event 4 -->
+                    <div class="event-item">
+                        <div class="event-date">
+                            <span class="day">5</span>
+                            <span class="month">Aug</span>
+                            <span class="time">2:00 PM - 4:00 PM</span>
+                        </div>
+                        <div class="event-details">
+                            <div class="event-type workshop">Workshop</div>
+                            <h4>DIY Pet Toys & Enrichment</h4>
+                            <p class="event-location"><i class="fas fa-map-marker-alt"></i> Pawfect World Community Room</p>
+                            <p>Learn how to create engaging, safe toys and enrichment activities for your pets using common household items. Great for dogs, cats, and small pets!</p>
+                            <div class="event-meta">
+                                <span><i class="fas fa-users"></i> 18 Attending</span>
+                                <span><i class="fas fa-ticket-alt"></i> $10 per person</span>
+                            </div>
+                            <div class="event-actions">
+                                <a href="#" class="btn btn-primary">Register</a>
+                                <a href="#" class="btn btn-outline-primary">Add to Calendar</a>
+                                <a href="#" class="btn btn-outline-primary"><i class="fas fa-share-alt"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Event 5 -->
+                    <div class="event-item">
+                        <div class="event-date">
+                            <span class="day">12</span>
+                            <span class="month">Aug</span>
+                            <span class="time">10:00 AM - 4:00 PM</span>
+                        </div>
+                        <div class="event-details">
+                            <div class="event-type adoption">Adoption Event</div>
+                            <h4>Senior Pet Adoption Day</h4>
+                            <p class="event-location"><i class="fas fa-map-marker-alt"></i> Pawfect World Main Store</p>
+                            <p>Help us find homes for senior pets! Adoption fees waived for pets 7+ years old. These loving companions deserve a comfortable retirement home.</p>
+                            <div class="event-meta">
+                                <span><i class="fas fa-users"></i> 30 Attending</span>
+                                <span><i class="fas fa-paw"></i> 15+ Senior Pets</span>
+                            </div>
+                            <div class="event-actions">
+                                <a href="#" class="btn btn-primary">RSVP</a>
+                                <a href="#" class="btn btn-outline-primary">Add to Calendar</a>
+                                <a href="#" class="btn btn-outline-primary"><i class="fas fa-share-alt"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="event-subscribe text-center mt-5">
+                <h3>Never Miss an Event</h3>
+                <p>Subscribe to our events newsletter to stay updated on all our adoption days and pet-friendly activities.</p>
+                <form class="event-subscribe-form">
+                    <div class="form-group">
+                        <input type="email" class="form-control" placeholder="Your Email Address" required>
+                        <button type="submit" class="btn btn-primary">Subscribe</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Volunteer Section -->
+    <section class="volunteer-section section-padding">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <div class="volunteer-content">
+                        <h2>Become a Volunteer</h2>
+                        <p>Help us make a difference in the lives of pets waiting for their forever homes. We have various volunteer opportunities available:</p>
+                        
+                        <ul class="volunteer-opportunities">
+                            <li><i class="fas fa-paw"></i> <strong>Event Support:</strong> Help at adoption events and fundraisers</li>
+                            <li><i class="fas fa-camera"></i> <strong>Pet Photography:</strong> Take photos of adoptable pets for their profiles</li>
+                            <li><i class="fas fa-car"></i> <strong>Transport:</strong> Help transport pets to/from events and vet appointments</li>
+                            <li><i class="fas fa-home"></i> <strong>Foster Care:</strong> Provide temporary homes for pets awaiting adoption</li>
+                            <li><i class="fas fa-heart"></i> <strong>Socialization:</strong> Spend time with shelter pets to improve their social skills</li>
+                        </ul>
+                        
+                        <a href="#" class="btn btn-primary mt-4">Apply to Volunteer</a>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="volunteer-image">
+                        <img src="../../images/volunteer.png" alt="Volunteer with pets">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Success Stories Section -->
+    <section class="success-stories-section section-padding bg-light">
+        <div class="container">
+            <div class="section-header">
+                <h2>Success Stories</h2>
+                <p>Happy tails from our adopted pets and their families</p>
+            </div>
+            
+            <div class="success-stories-slider">
+                <div class="row">
+                    <div class="col-lg-4 col-md-6">
+                        <div class="success-story-card">
+                            <div class="before-after">
+                                <div class="before">
+                                    <span>Before</span>
+                                    <img src="../../images/success-before-1.png" alt="Before adoption">
+                                </div>
+                                <div class="after">
+                                    <span>After</span>
+                                    <img src="../../images/success-after-1.png" alt="After adoption">
+                                </div>
+                            </div>
+                            <div class="story-content">
+                                <h3>Charlie's Journey</h3>
+                                <p>Charlie was found as a stray, underweight and scared. After being rescued by Happy Tails, he found his forever home with the Johnson family. Now he's a happy, healthy boy who loves beach days and cuddles!</p>
+                                <div class="story-meta">
+                                    <span><i class="fas fa-calendar-alt"></i> Adopted: March 2023</span>
+                                    <span><i class="fas fa-user"></i> The Johnson Family</span>
+                                </div>
+                                <a href="#" class="read-more">Read Full Story <i class="fas fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-4 col-md-6">
+                        <div class="success-story-card">
+                            <div class="before-after">
+                                <div class="before">
+                                    <span>Before</span>
+                                    <img src="../../images/success-before-2.png" alt="Before adoption">
+                                </div>
+                                <div class="after">
+                                    <span>After</span>
+                                    <img src="../../images/success-after-2.png" alt="After adoption">
+                                </div>
+                            </div>
+                            <div class="story-content">
+                                <h3>Bella's New Beginning</h3>
+                                <p>Bella was surrendered to Feline Friends when her elderly owner could no longer care for her. Shy at first, she blossomed in her new home with Sarah, who works from home and can give her lots of attention.</p>
+                                <div class="story-meta">
+                                    <span><i class="fas fa-calendar-alt"></i> Adopted: January 2023</span>
+                                    <span><i class="fas fa-user"></i> Sarah M.</span>
+                                </div>
+                                <a href="#" class="read-more">Read Full Story <i class="fas fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-4 col-md-6">
+                        <div class="success-story-card">
+                            <div class="before-after">
+                                <div class="before">
+                                    <span>Before</span>
+                                    <img src="../../images/success-before-3.png" alt="Before adoption">
+                                </div>
+                                <div class="after">
+                                    <span>After</span>
+                                    <img src="../../images/success-after-3.png" alt="After adoption">
+                                </div>
+                            </div>
+                            <div class="story-content">
+                                <h3>Max & Ruby: Bonded Pair</h3>
+                                <p>These bonded rabbits were looking for a home that would take them both. After 3 months at Small Paws Sanctuary, they found the perfect family who built them a custom indoor habitat!</p>
+                                <div class="story-meta">
+                                    <span><i class="fas fa-calendar-alt"></i> Adopted: April 2023</span>
+                                    <span><i class="fas fa-user"></i> The Wilson Family</span>
+                                </div>
+                                <a href="#" class="read-more">Read Full Story <i class="fas fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="share-your-story text-center mt-5">
+                <h3>Share Your Adoption Story</h3>
+                <p>Did you adopt a pet through our program? We'd love to hear how they're doing in their forever home!</p>
+                <a href="#" class="btn btn-primary">Share Your Story</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 col-md-6">
+                        <div class="footer-widget">
+                            <h4>Shop</h4>
+                            <ul class="footer-links">
+                                <li><a href="../shop/shop.html?pet=dog">Dog Supplies</a></li>
+                                <li><a href="../shop/shop.html?pet=cat">Cat Supplies</a></li>
+                                <li><a href="../shop/shop.html?pet=bird">Bird Supplies</a></li>
+                                <li><a href="../shop/shop.html?pet=small_pet">Small Pet Supplies</a></li>
+                                <li><a href="../shop/shop.html?pet=fish">Fish Supplies</a></li>
+                                <li><a href="../shop/shop.html?pet=reptile">Reptile Supplies</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="footer-widget">
+                            <h4>Customer Service</h4>
+                            <ul class="footer-links">
+                                <li><a href="#">Contact Us</a></li>
+                                <li><a href="#">FAQs</a></li>
+                                <li><a href="#">Shipping & Returns</a></li>
+                                <li><a href="#">Track Order</a></li>
+                                <li><a href="#">Privacy Policy</a></li>
+                                <li><a href="#">Terms & Conditions</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="footer-widget">
+                            <h4>About Us</h4>
+                            <ul class="footer-links">
+                                <li><a href="#">Our Story</a></li>
+                                <li><a href="../blog/index.html">Blog</a></li>
+                                <li><a href="../events/index.html">Events & Adoption</a></li>
+                                <li><a href="#">Careers</a></li>
+                                <li><a href="#">Store Locations</a></li>
+                                <li><a href="#">Affiliate Program</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="footer-widget">
+                            <h4>Contact Us</h4>
+                            <div class="contact-info">
+                                <p><i class="fas fa-map-marker-alt"></i> 123 Pet Street, Cityville, State 12345</p>
+                                <p><i class="fas fa-phone-alt"></i> (123) 456-7890</p>
+                                <p><i class="fas fa-envelope"></i> support@pawfectworld.com</p>
+                                <p><i class="fas fa-clock"></i> Mon-Sat: 9AM-9PM, Sun: 10AM-6PM</p>
+                            </div>
+                            <div class="social-links">
+                                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                <a href="#"><i class="fab fa-instagram"></i></a>
+                                <a href="#"><i class="fab fa-pinterest-p"></i></a>
+                                <a href="#"><i class="fab fa-youtube"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-md-6">
+                        <p class="copyright">© 2023 Pawfect World. All Rights Reserved.</p>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="payment-methods">
+                            <span>We Accept:</span>
+                            <img src="../../images/payment-methods.png" alt="Payment Methods">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top -->
+    <a href="#" class="back-to-top"><i class="fas fa-arrow-up"></i></a>
+
+    <!-- JavaScript Files -->
+    <script src="../../js/jquery.min.js"></script>
+    <script src="../../js/bootstrap.bundle.min.js"></script>
+    <script src="../../js/main.js"></script>
+</body>
+</html>

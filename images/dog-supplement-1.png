@@ -1,0 +1,87 @@
+<svg width="300" height="300" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="300" height="300" fill="#f8f9fa" rx="10" ry="10"/>
+  
+  <!-- Supplement Bottle -->
+  <g transform="translate(150, 140)">
+    <!-- Bottle Body -->
+    <path d="M-40,80 L-40,-20 C-40,-40 40,-40 40,-20 L40,80 Z" fill="#ffffff" stroke="#1d3557" stroke-width="2"/>
+    
+    <!-- Bottle Neck -->
+    <path d="M-20,-20 L-20,-40 C-20,-50 20,-50 20,-40 L20,-20" fill="#ffffff" stroke="#1d3557" stroke-width="2"/>
+    
+    <!-- Bottle Cap -->
+    <path d="M-20,-40 L-20,-60 C-20,-70 20,-70 20,-60 L20,-40" fill="#3a86ff" stroke="#1d3557" stroke-width="2"/>
+    
+    <!-- Label -->
+    <rect x="-35" y="-10" width="70" height="80" rx="5" ry="5" fill="#06d6a0" stroke="#1d3557" stroke-width="1"/>
+    
+    <!-- Brand Logo -->
+    <rect x="-25" y="0" width="50" height="15" rx="2" ry="2" fill="#ffffff"/>
+    <text x="0" y="12" font-family="Arial" font-size="10" text-anchor="middle" fill="#1d3557" font-weight="bold">PAWFECT</text>
+    
+    <!-- Product Name -->
+    <text x="0" y="30" font-family="Arial" font-size="8" text-anchor="middle" fill="#ffffff" font-weight="bold">HIP & JOINT</text>
+    <text x="0" y="40" font-family="Arial" font-size="8" text-anchor="middle" fill="#ffffff" font-weight="bold">FORMULA</text>
+    
+    <!-- Supplement Count -->
+    <text x="0" y="55" font-family="Arial" font-size="10" text-anchor="middle" fill="#ffffff" font-weight="bold">120 CHEWS</text>
+  </g>
+  
+  <!-- Supplement Chews Illustration -->
+  <g transform="translate(220, 100)">
+    <circle cx="0" cy="0" r="20" fill="#ffd166" stroke="#1d3557" stroke-width="1"/>
+    <path d="M-10,-5 L10,-5 M-10,5 L10,5" stroke="#1d3557" stroke-width="1"/>
+    <text x="0" y="3" font-family="Arial" font-size="10" text-anchor="middle" fill="#1d3557">CHEW</text>
+  </g>
+  
+  <!-- Dog Silhouette -->
+  <g transform="translate(70, 100)">
+    <!-- Body -->
+    <ellipse cx="0" cy="10" rx="30" ry="20" fill="#1d3557" opacity="0.2"/>
+    
+    <!-- Head -->
+    <circle cx="-25" cy="0" r="15" fill="#1d3557" opacity="0.2"/>
+    
+    <!-- Ears -->
+    <ellipse cx="-35" cy="-10" rx="8" ry="12" transform="rotate(-30, -35, -10)" fill="#1d3557" opacity="0.2"/>
+    
+    <!-- Tail -->
+    <path d="M30,0 C40,-10 45,0 50,-10" stroke="#1d3557" stroke-width="5" stroke-linecap="round" opacity="0.2"/>
+    
+    <!-- Legs -->
+    <rect x="-15" y="30" width="5" height="20" fill="#1d3557" opacity="0.2"/>
+    <rect x="10" y="30" width="5" height="20" fill="#1d3557" opacity="0.2"/>
+  </g>
+  
+  <!-- Product Details -->
+  <g transform="translate(20, 260)">
+    <text x="0" y="0" font-family="Arial" font-size="14" fill="#1d3557" font-weight="bold">Hip & Joint Supplement</text>
+    <text x="0" y="20" font-family="Arial" font-size="12" fill="#1d3557">For Adult & Senior Dogs</text>
+  </g>
+  
+  <!-- Price Tag -->
+  <g transform="translate(220, 270)">
+    <rect x="0" y="0" width="60" height="25" rx="12.5" ry="12.5" fill="#ef476f"/>
+    <text x="30" y="17" font-family="Arial" font-size="14" text-anchor="middle" fill="#ffffff" font-weight="bold">$32.99</text>
+  </g>
+  
+  <!-- Product Highlights -->
+  <g transform="translate(20, 230)">
+    <circle cx="10" cy="0" r="8" fill="#06d6a0"/>
+    <text x="25" y="4" font-family="Arial" font-size="10" fill="#1d3557">Glucosamine</text>
+    
+    <circle cx="100" cy="0" r="8" fill="#06d6a0"/>
+    <text x="115" y="4" font-family="Arial" font-size="10" fill="#1d3557">Chondroitin</text>
+    
+    <circle cx="180" cy="0" r="8" fill="#06d6a0"/>
+    <text x="195" y="4" font-family="Arial" font-size="10" fill="#1d3557">MSM</text>
+  </g>
+  
+  <!-- Vet Approved Seal -->
+  <g transform="translate(40, 40)">
+    <circle cx="0" cy="0" r="20" fill="#ef476f" stroke="#1d3557" stroke-width="1"/>
+    <text x="0" y="-5" font-family="Arial" font-size="6" text-anchor="middle" fill="#ffffff" font-weight="bold">VET</text>
+    <text x="0" y="5" font-family="Arial" font-size="6" text-anchor="middle" fill="#ffffff" font-weight="bold">APPROVED</text>
+  </g>
+</svg>

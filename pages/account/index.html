@@ -1,0 +1,718 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Account - Pawfect World</title>
+    <meta name="description" content="Manage your account, orders, pet profiles, and subscriptions at Pawfect World.">
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="../../css/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="header">
+        <div class="header-top">
+            <div class="container">
+                <div class="header-top-content">
+                    <div class="header-top-left">
+                        <p><i class="fas fa-truck"></i> Free shipping on orders over $50</p>
+                    </div>
+                    <div class="header-top-right">
+                        <ul>
+                            <li><a href="../contact/index.html"><i class="fas fa-phone"></i> Contact</a></li>
+                            <li><a href="../account/index.html"><i class="fas fa-user"></i> My Account</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header-main">
+            <div class="container">
+                <div class="header-main-content">
+                    <div class="logo">
+                        <a href="../../index.html">
+                            <h1>Pawfect World</h1>
+                        </a>
+                    </div>
+                    <div class="search-bar">
+                        <form action="#" method="get">
+                            <input type="text" placeholder="Search for products..." name="search">
+                            <button type="submit"><i class="fas fa-search"></i></button>
+                        </form>
+                    </div>
+                    <div class="header-actions">
+                        <div class="wishlist">
+                            <a href="#"><i class="fas fa-heart"></i></a>
+                            <span class="count">0</span>
+                        </div>
+                        <div class="cart">
+                            <a href="../cart/index.html"><i class="fas fa-shopping-cart"></i></a>
+                            <span class="count">0</span>
+                        </div>
+                        <div class="mobile-menu-toggle">
+                            <i class="fas fa-bars"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header-nav">
+            <div class="container">
+                <nav class="main-nav">
+                    <ul>
+                        <li><a href="../../index.html">Home</a></li>
+                        <li><a href="../about/index.html">About Us</a></li>
+                        <li class="has-dropdown">
+                            <a href="../shop/shop.html">Shop</a>
+                            <ul class="dropdown">
+                                <li><a href="../shop/dog-products/index.html">Dog Products</a></li>
+                                <li><a href="../shop/cat-products/index.html">Cat Products</a></li>
+                                <li><a href="../shop/food-treats/index.html">Food & Treats</a></li>
+                                <li><a href="../shop/toys/index.html">Toys</a></li>
+                                <li><a href="../shop/grooming-supplies/index.html">Grooming Supplies</a></li>
+                                <li><a href="../shop/health-wellness/index.html">Health & Wellness</a></li>
+                                <li><a href="../shop/accessories/index.html">Accessories</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="../blog/index.html">Blog</a></li>
+                        <li><a href="../events/index.html">Events & Adoption</a></li>
+                        <li><a href="../contact/index.html">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Breadcrumb -->
+    <div class="breadcrumb-wrapper">
+        <div class="container">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="../../index.html">Home</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">My Account</li>
+                </ol>
+            </nav>
+        </div>
+    </div>
+
+    <!-- Account Section -->
+    <section class="account-section">
+        <div class="container">
+            <div class="account-wrapper">
+                <div class="account-sidebar">
+                    <div class="user-info">
+                        <div class="user-avatar">
+                            <i class="fas fa-user-circle"></i>
+                        </div>
+                        <h3 class="user-name">Welcome, <span id="user-display-name">User</span></h3>
+                    </div>
+                    <ul class="account-menu">
+                        <li class="active"><a href="#dashboard" data-tab="dashboard"><i class="fas fa-tachometer-alt"></i> Dashboard</a></li>
+                        <li><a href="#orders" data-tab="orders"><i class="fas fa-shopping-bag"></i> Orders</a></li>
+                        <li><a href="#addresses" data-tab="addresses"><i class="fas fa-map-marker-alt"></i> Addresses</a></li>
+                        <li><a href="#pet-profiles" data-tab="pet-profiles"><i class="fas fa-paw"></i> Pet Profiles</a></li>
+                        <li><a href="#subscriptions" data-tab="subscriptions"><i class="fas fa-sync-alt"></i> Subscriptions</a></li>
+                        <li><a href="#account-details" data-tab="account-details"><i class="fas fa-user-edit"></i> Account Details</a></li>
+                        <li><a href="#logout"><i class="fas fa-sign-out-alt"></i> Logout</a></li>
+                    </ul>
+                </div>
+                
+                <div class="account-content">
+                    <!-- Dashboard Tab -->
+                    <div class="account-tab active" id="dashboard">
+                        <h2>Dashboard</h2>
+                        <p>Hello <span class="user-name">User</span> (not <span class="user-name">User</span>? <a href="#logout">Log out</a>)</p>
+                        <p>From your account dashboard you can view your recent orders, manage your shipping and billing addresses, edit your password and account details, manage your pet profiles, and handle your subscriptions.</p>
+                        
+                        <div class="dashboard-cards">
+                            <div class="dashboard-card">
+                                <i class="fas fa-shopping-bag"></i>
+                                <h3>Orders</h3>
+                                <p>View and track your orders</p>
+                                <a href="#orders" class="btn-view" data-tab-trigger="orders">View Orders</a>
+                            </div>
+                            
+                            <div class="dashboard-card">
+                                <i class="fas fa-paw"></i>
+                                <h3>Pet Profiles</h3>
+                                <p>Manage your pet profiles</p>
+                                <a href="#pet-profiles" class="btn-view" data-tab-trigger="pet-profiles">View Profiles</a>
+                            </div>
+                            
+                            <div class="dashboard-card">
+                                <i class="fas fa-sync-alt"></i>
+                                <h3>Subscriptions</h3>
+                                <p>Manage your subscriptions</p>
+                                <a href="#subscriptions" class="btn-view" data-tab-trigger="subscriptions">View Subscriptions</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Orders Tab -->
+                    <div class="account-tab" id="orders">
+                        <h2>Orders</h2>
+                        <div class="orders-wrapper">
+                            <div class="no-orders-message">
+                                <p>No order has been made yet.</p>
+                                <a href="../shop/shop.html" class="btn-shop">Browse Products</a>
+                            </div>
+                            
+                            <!-- Orders will be displayed here when available -->
+                            <div class="orders-list" style="display: none;">
+                                <table class="orders-table">
+                                    <thead>
+                                        <tr>
+                                            <th>Order</th>
+                                            <th>Date</th>
+                                            <th>Status</th>
+                                            <th>Total</th>
+                                            <th>Actions</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <!-- Sample order row -->
+                                        <tr>
+                                            <td>#1001</td>
+                                            <td>June 15, 2023</td>
+                                            <td>Completed</td>
+                                            <td>$75.99</td>
+                                            <td><a href="#" class="btn-view-order">View</a></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Addresses Tab -->
+                    <div class="account-tab" id="addresses">
+                        <h2>Addresses</h2>
+                        <p>The following addresses will be used on the checkout page by default.</p>
+                        
+                        <div class="addresses-wrapper">
+                            <div class="address-column">
+                                <h3>Billing Address</h3>
+                                <div class="address-card">
+                                    <div class="no-address-message">
+                                        <p>You haven't set up a billing address yet.</p>
+                                        <a href="#" class="btn-add-address">Add Address</a>
+                                    </div>
+                                    
+                                    <!-- Billing address will be displayed here when available -->
+                                    <div class="address-details" style="display: none;">
+                                        <p>John Doe<br>
+                                        123 Main St<br>
+                                        Apt 4B<br>
+                                        New York, NY 10001<br>
+                                        United States<br>
+                                        (123) 456-7890</p>
+                                        <div class="address-actions">
+                                            <a href="#" class="btn-edit">Edit</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="address-column">
+                                <h3>Shipping Address</h3>
+                                <div class="address-card">
+                                    <div class="no-address-message">
+                                        <p>You haven't set up a shipping address yet.</p>
+                                        <a href="#" class="btn-add-address">Add Address</a>
+                                    </div>
+                                    
+                                    <!-- Shipping address will be displayed here when available -->
+                                    <div class="address-details" style="display: none;">
+                                        <p>John Doe<br>
+                                        123 Main St<br>
+                                        Apt 4B<br>
+                                        New York, NY 10001<br>
+                                        United States<br>
+                                        (123) 456-7890</p>
+                                        <div class="address-actions">
+                                            <a href="#" class="btn-edit">Edit</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Pet Profiles Tab -->
+                    <div class="account-tab" id="pet-profiles">
+                        <h2>Pet Profiles</h2>
+                        <p>Manage your pet profiles to get personalized product recommendations and tailored shopping experience.</p>
+                        
+                        <div class="pet-profiles-wrapper">
+                            <div class="pet-profiles-list">
+                                <!-- Empty state message -->
+                                <div class="no-pets-message">
+                                    <p>You haven't added any pets yet.</p>
+                                    <a href="#" class="btn-add-pet" id="add-pet-btn">Add a Pet</a>
+                                </div>
+                                
+                                <!-- Pet profiles will be displayed here when available -->
+                                <div class="pet-cards" style="display: none;">
+                                    <!-- Sample pet card -->
+                                    <div class="pet-card">
+                                        <div class="pet-avatar">
+                                            <img src="../../images/dog-icon.svg" alt="Dog">
+                                        </div>
+                                        <div class="pet-info">
+                                            <h3>Buddy</h3>
+                                            <p><strong>Type:</strong> Dog</p>
+                                            <p><strong>Breed:</strong> Golden Retriever</p>
+                                            <p><strong>Age:</strong> 3 years</p>
+                                        </div>
+                                        <div class="pet-actions">
+                                            <a href="#" class="btn-edit-pet">Edit</a>
+                                            <a href="#" class="btn-delete-pet">Delete</a>
+                                            <a href="../shop/shop.html?pet=buddy" class="btn-shop-for-pet">Shop for Buddy</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Add/Edit Pet Form -->
+                            <div class="pet-form-container" style="display: none;">
+                                <h3 id="pet-form-title">Add a New Pet</h3>
+                                <form id="pet-profile-form" class="pet-profile-form">
+                                    <div class="form-row">
+                                        <div class="form-group">
+                                            <label for="pet-name">Pet Name*</label>
+                                            <input type="text" id="pet-name" name="pet-name" required>
+                                        </div>
+                                        
+                                        <div class="form-group">
+                                            <label for="pet-type">Pet Type*</label>
+                                            <select id="pet-type" name="pet-type" required>
+                                                <option value="">Select Pet Type</option>
+                                                <option value="dog">Dog</option>
+                                                <option value="cat">Cat</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="form-row">
+                                        <div class="form-group">
+                                            <label for="pet-breed">Breed</label>
+                                            <input type="text" id="pet-breed" name="pet-breed">
+                                        </div>
+                                        
+                                        <div class="form-group">
+                                            <label for="pet-age">Age</label>
+                                            <input type="text" id="pet-age" name="pet-age" placeholder="e.g., 2 years">
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="form-row">
+                                        <div class="form-group">
+                                            <label for="pet-weight">Weight</label>
+                                            <input type="text" id="pet-weight" name="pet-weight" placeholder="e.g., 25 lbs">
+                                        </div>
+                                        
+                                        <div class="form-group">
+                                            <label for="pet-gender">Gender</label>
+                                            <select id="pet-gender" name="pet-gender">
+                                                <option value="">Select Gender</option>
+                                                <option value="male">Male</option>
+                                                <option value="female">Female</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="form-group">
+                                        <label>Dietary Preferences</label>
+                                        <div class="checkbox-group">
+                                            <label class="checkbox-label">
+                                                <input type="checkbox" name="dietary-grain-free" value="1"> Grain-Free
+                                            </label>
+                                            <label class="checkbox-label">
+                                                <input type="checkbox" name="dietary-limited-ingredient" value="1"> Limited Ingredient
+                                            </label>
+                                            <label class="checkbox-label">
+                                                <input type="checkbox" name="dietary-weight-management" value="1"> Weight Management
+                                            </label>
+                                            <label class="checkbox-label">
+                                                <input type="checkbox" name="dietary-sensitive-digestion" value="1"> Sensitive Digestion
+                                            </label>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="form-group">
+                                        <label for="pet-allergies">Allergies</label>
+                                        <textarea id="pet-allergies" name="pet-allergies" placeholder="List any allergies your pet has"></textarea>
+                                    </div>
+                                    
+                                    <div class="form-group">
+                                        <label>Product Preferences</label>
+                                        <div class="checkbox-group">
+                                            <label class="checkbox-label">
+                                                <input type="checkbox" name="pref-toys" value="1"> Toys
+                                            </label>
+                                            <label class="checkbox-label">
+                                                <input type="checkbox" name="pref-treats" value="1"> Treats
+                                            </label>
+                                            <label class="checkbox-label">
+                                                <input type="checkbox" name="pref-grooming" value="1"> Grooming Products
+                                            </label>
+                                            <label class="checkbox-label">
+                                                <input type="checkbox" name="pref-accessories" value="1"> Accessories
+                                            </label>
+                                            <label class="checkbox-label">
+                                                <input type="checkbox" name="pref-health" value="1"> Health & Wellness
+                                            </label>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="form-group">
+                                        <label for="pet-notes">Additional Notes</label>
+                                        <textarea id="pet-notes" name="pet-notes" placeholder="Any other information about your pet"></textarea>
+                                    </div>
+                                    
+                                    <div class="form-actions">
+                                        <button type="button" class="btn-cancel" id="cancel-pet-form">Cancel</button>
+                                        <button type="submit" class="btn-save">Save Pet Profile</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Subscriptions Tab -->
+                    <div class="account-tab" id="subscriptions">
+                        <h2>Subscriptions</h2>
+                        <p>Manage your recurring deliveries and save up to 15% on auto-ship orders.</p>
+                        
+                        <div class="subscriptions-wrapper">
+                            <div class="no-subscriptions-message">
+                                <p>You don't have any active subscriptions.</p>
+                                <a href="../shop/food-treats/index.html" class="btn-shop">Shop for Subscription Products</a>
+                            </div>
+                            
+                            <!-- Subscriptions will be displayed here when available -->
+                            <div class="subscriptions-list" style="display: none;">
+                                <!-- Sample subscription -->
+                                <div class="subscription-card">
+                                    <div class="subscription-image">
+                                        <img src="../../images/dog-food-1.png" alt="Premium Dog Food">
+                                    </div>
+                                    <div class="subscription-details">
+                                        <h3>Premium Grain-Free Dog Food</h3>
+                                        <p><strong>Frequency:</strong> Monthly</p>
+                                        <p><strong>Next Delivery:</strong> July 15, 2023</p>
+                                        <p><strong>Price:</strong> $49.99 <span class="subscription-discount">Save 10%</span></p>
+                                    </div>
+                                    <div class="subscription-actions">
+                                        <a href="#" class="btn-edit-subscription">Edit</a>
+                                        <a href="#" class="btn-skip-delivery">Skip Next Delivery</a>
+                                        <a href="#" class="btn-cancel-subscription">Cancel</a>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Subscription Management Form -->
+                            <div class="subscription-form-container" style="display: none;">
+                                <h3>Edit Subscription</h3>
+                                <form id="subscription-form" class="subscription-form">
+                                    <div class="form-group">
+                                        <label for="subscription-frequency">Delivery Frequency</label>
+                                        <select id="subscription-frequency" name="subscription-frequency">
+                                            <option value="weekly">Weekly</option>
+                                            <option value="biweekly">Every 2 Weeks</option>
+                                            <option value="monthly" selected>Monthly</option>
+                                        </select>
+                                    </div>
+                                    
+                                    <div class="form-group">
+                                        <label for="subscription-quantity">Quantity</label>
+                                        <input type="number" id="subscription-quantity" name="subscription-quantity" value="1" min="1">
+                                    </div>
+                                    
+                                    <div class="form-actions">
+                                        <button type="button" class="btn-cancel" id="cancel-subscription-form">Cancel</button>
+                                        <button type="submit" class="btn-save">Update Subscription</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Account Details Tab -->
+                    <div class="account-tab" id="account-details">
+                        <h2>Account Details</h2>
+                        
+                        <form class="account-details-form">
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="first-name">First Name*</label>
+                                    <input type="text" id="first-name" name="first-name" required>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="last-name">Last Name*</label>
+                                    <input type="text" id="last-name" name="last-name" required>
+                                </div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="display-name">Display Name*</label>
+                                <input type="text" id="display-name" name="display-name" required>
+                                <span class="form-hint">This will be how your name will be displayed in the account section and in reviews</span>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="email">Email Address*</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            
+                            <h3>Password Change</h3>
+                            
+                            <div class="form-group">
+                                <label for="current-password">Current Password (leave blank to leave unchanged)</label>
+                                <input type="password" id="current-password" name="current-password">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="new-password">New Password (leave blank to leave unchanged)</label>
+                                <input type="password" id="new-password" name="new-password">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="confirm-password">Confirm New Password</label>
+                                <input type="password" id="confirm-password" name="confirm-password">
+                            </div>
+                            
+                            <div class="form-actions">
+                                <button type="submit" class="btn-save">Save Changes</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter-section">
+        <div class="container">
+            <div class="newsletter-content">
+                <div class="newsletter-text">
+                    <h2>Subscribe to Our Newsletter</h2>
+                    <p>Get the latest updates, deals, and pet care tips delivered to your inbox.</p>
+                </div>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Your email address" required>
+                    <button type="submit" class="btn-subscribe">Subscribe</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <div class="footer-logo">
+                        <h2>Pawfect World</h2>
+                    </div>
+                    <p>Your one-stop shop for all pet needs. Quality products for your furry, feathery, and scaly friends.</p>
+                    <div class="footer-contact">
+                        <p><i class="fas fa-map-marker-alt"></i> 123 Pet Street, Animalia, PA 12345</p>
+                        <p><i class="fas fa-phone"></i> (123) 456-7890</p>
+                        <p><i class="fas fa-envelope"></i> info@pawfectworld.com</p>
+                    </div>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="../../index.html">Home</a></li>
+                        <li><a href="../about/index.html">About Us</a></li>
+                        <li><a href="../shop/shop.html">Shop</a></li>
+                        <li><a href="../blog/index.html">Blog</a></li>
+                        <li><a href="../contact/index.html">Contact</a></li>
+                        <li><a href="../faq/index.html">FAQ</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Categories</h3>
+                    <ul class="footer-links">
+                        <li><a href="../shop/dog-products/index.html">Dog Products</a></li>
+                        <li><a href="../shop/cat-products/index.html">Cat Products</a></li>
+                        <li><a href="../shop/food-treats/index.html">Food & Treats</a></li>
+                        <li><a href="../shop/toys/index.html">Toys</a></li>
+                        <li><a href="../shop/grooming-supplies/index.html">Grooming Supplies</a></li>
+                        <li><a href="../shop/health-wellness/index.html">Health & Wellness</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Customer Service</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">My Account</a></li>
+                        <li><a href="#">Track Order</a></li>
+                        <li><a href="#">Shipping Policy</a></li>
+                        <li><a href="#">Returns & Refunds</a></li>
+                        <li><a href="../privacy-policy/index.html">Privacy Policy</a></li>
+                        <li><a href="../terms-conditions/index.html">Terms & Conditions</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="copyright">
+                    <p>&copy; 2023 Pawfect World. All Rights Reserved.</p>
+                </div>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-pinterest"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+                <div class="payment-methods">
+                    <i class="fab fa-cc-visa"></i>
+                    <i class="fab fa-cc-mastercard"></i>
+                    <i class="fab fa-cc-amex"></i>
+                    <i class="fab fa-cc-paypal"></i>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <a href="#" class="back-to-top"><i class="fas fa-arrow-up"></i></a>
+
+    <!-- JavaScript -->
+    <script src="../../js/jquery.min.js"></script>
+    <script src="../../js/main.js"></script>
+    <script>
+        // Account Tab Navigation
+        document.addEventListener('DOMContentLoaded', function() {
+            // Tab navigation
+            const tabLinks = document.querySelectorAll('.account-menu a[data-tab]');
+            const tabContents = document.querySelectorAll('.account-tab');
+            
+            tabLinks.forEach(link => {
+                link.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    
+                    const tabId = this.getAttribute('data-tab');
+                    
+                    // Update active tab link
+                    document.querySelector('.account-menu li.active').classList.remove('active');
+                    this.parentElement.classList.add('active');
+                    
+                    // Update active tab content
+                    document.querySelector('.account-tab.active').classList.remove('active');
+                    document.getElementById(tabId).classList.add('active');
+                    
+                    // Update URL hash
+                    window.location.hash = tabId;
+                });
+            });
+            
+            // Handle hash change
+            function handleHashChange() {
+                const hash = window.location.hash.substring(1);
+                if (hash && document.getElementById(hash)) {
+                    // Update active tab link
+                    document.querySelector('.account-menu li.active')?.classList.remove('active');
+                    document.querySelector(`.account-menu a[data-tab="${hash}"]`)?.parentElement.classList.add('active');
+                    
+                    // Update active tab content
+                    document.querySelector('.account-tab.active')?.classList.remove('active');
+                    document.getElementById(hash).classList.add('active');
+                }
+            }
+            
+            window.addEventListener('hashchange', handleHashChange);
+            handleHashChange(); // Handle hash on page load
+            
+            // Dashboard tab triggers
+            const tabTriggers = document.querySelectorAll('[data-tab-trigger]');
+            tabTriggers.forEach(trigger => {
+                trigger.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    const tabId = this.getAttribute('data-tab-trigger');
+                    document.querySelector(`.account-menu a[data-tab="${tabId}"]`).click();
+                });
+            });
+            
+            // Pet Profile Form
+            const addPetBtn = document.getElementById('add-pet-btn');
+            const petFormContainer = document.querySelector('.pet-form-container');
+            const cancelPetFormBtn = document.getElementById('cancel-pet-form');
+            const petProfileForm = document.getElementById('pet-profile-form');
+            
+            if (addPetBtn) {
+                addPetBtn.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    petFormContainer.style.display = 'block';
+                    document.querySelector('.pet-profiles-list').style.display = 'none';
+                });
+            }
+            
+            if (cancelPetFormBtn) {
+                cancelPetFormBtn.addEventListener('click', function() {
+                    petFormContainer.style.display = 'none';
+                    document.querySelector('.pet-profiles-list').style.display = 'block';
+                });
+            }
+            
+            if (petProfileForm) {
+                petProfileForm.addEventListener('submit', function(e) {
+                    e.preventDefault();
+                    // Here you would normally save the pet profile data
+                    // For demo purposes, we'll just show a success message and return to the list
+                    alert('Pet profile saved successfully!');
+                    petFormContainer.style.display = 'none';
+                    
+                    // Show the pet cards and hide the no pets message
+                    document.querySelector('.no-pets-message').style.display = 'none';
+                    document.querySelector('.pet-cards').style.display = 'block';
+                    document.querySelector('.pet-profiles-list').style.display = 'block';
+                });
+            }
+            
+            // Subscription Form
+            const editSubscriptionBtns = document.querySelectorAll('.btn-edit-subscription');
+            const subscriptionFormContainer = document.querySelector('.subscription-form-container');
+            const cancelSubscriptionFormBtn = document.getElementById('cancel-subscription-form');
+            const subscriptionForm = document.getElementById('subscription-form');
+            
+            if (editSubscriptionBtns.length > 0) {
+                editSubscriptionBtns.forEach(btn => {
+                    btn.addEventListener('click', function(e) {
+                        e.preventDefault();
+                        subscriptionFormContainer.style.display = 'block';
+                        document.querySelector('.subscriptions-list').style.display = 'none';
+                    });
+                });
+            }
+            
+            if (cancelSubscriptionFormBtn) {
+                cancelSubscriptionFormBtn.addEventListener('click', function() {
+                    subscriptionFormContainer.style.display = 'none';
+                    document.querySelector('.subscriptions-list').style.display = 'block';
+                });
+            }
+            
+            if (subscriptionForm) {
+                subscriptionForm.addEventListener('submit', function(e) {
+                    e.preventDefault();
+                    // Here you would normally save the subscription data
+                    // For demo purposes, we'll just show a success message and return to the list
+                    alert('Subscription updated successfully!');
+                    subscriptionFormContainer.style.display = 'none';
+                    document.querySelector('.subscriptions-list').style.display = 'block';
+                });
+            }
+        });
+    </script>
+</body>
+</html>

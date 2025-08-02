@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="300" height="300" viewBox="0 0 300 300">
+  <!-- Background -->
+  <rect width="300" height="300" rx="20" ry="20" fill="#F8F9FA" />
+  
+  <!-- Bundle Circle -->
+  <circle cx="150" cy="150" r="120" fill="#FFD166" opacity="0.2" />
+  
+  <!-- Dog Food Bag -->
+  <g transform="translate(100, 120)">
+    <!-- Bag -->
+    <path d="M-40,60 L-40,-20 C-40,-40 -20,-50 0,-50 C20,-50 40,-40 40,-20 L40,60 Z" fill="#4ECDC4" />
+    <path d="M-40,60 L-40,40 C-40,20 -20,10 0,10 C20,10 40,20 40,40 L40,60 Z" fill="#2A363B" opacity="0.1" />
+    
+    <!-- Label -->
+    <rect x="-30" y="-30" width="60" height="40" rx="5" ry="5" fill="#FFFFFF" />
+    <text x="0" y="-10" font-family="Nunito, sans-serif" font-size="12" font-weight="800" fill="#2A363B" text-anchor="middle">PREMIUM</text>
+    <text x="0" y="5" font-family="Nunito, sans-serif" font-size="10" font-weight="600" fill="#2A363B" text-anchor="middle">DOG FOOD</text>
+  </g>
+  
+  <!-- Dog Toy -->
+  <g transform="translate(200, 180)">
+    <!-- Bone -->
+    <path d="M-30,-15 L-10,-15 L-10,-5 L-30,-5 C-35,-5 -40,-10 -40,-15 C-40,-20 -35,-25 -30,-25 L-10,-25 L-10,-15" fill="#FF6B6B" />
+    <path d="M30,-15 L10,-15 L10,-5 L30,-5 C35,-5 40,-10 40,-15 C40,-20 35,-25 30,-25 L10,-25 L10,-15" fill="#FF6B6B" />
+    <rect x="-10" y="-25" width="20" height="20" fill="#FF6B6B" />
+  </g>
+  
+  <!-- Dog Collar -->
+  <g transform="translate(170, 100)">
+    <!-- Collar -->
+    <path d="M-40,0 A40,15 0 0,1 40,0 A40,15 0 0,1 -40,0 Z" fill="#2A363B" />
+    <path d="M-35,0 A35,10 0 0,1 35,0 A35,10 0 0,1 -35,0 Z" fill="#FF6B6B" />
+    
+    <!-- Tag -->
+    <circle cx="0" cy="15" r="10" fill="#FFD166" />
+    <circle cx="0" cy="15" r="5" fill="#FFFFFF" />
+  </g>
+  
+  <!-- Dog Bowl -->
+  <g transform="translate(80, 200)">
+    <!-- Bowl -->
+    <ellipse cx="0" cy="0" rx="30" ry="10" fill="#2A363B" />
+    <path d="M-30,0 A30,10 0 0,1 30,0 L20,-15 A20,7 0 0,0 -20,-15 Z" fill="#FF6B6B" />
+    <ellipse cx="0" cy="-15" rx="20" ry="7" fill="#FFFFFF" />
+  </g>
+  
+  <!-- Paw Prints -->
+  <g transform="translate(50, 50) scale(0.5)">
+    <path fill="#2A363B" opacity="0.2" d="M64 192c27.6 0 50 22.4 50 50s-22.4 50-50 50-50-22.4-50-50 22.4-50 50-50zm160 0c27.6 0 50 22.4 50 50s-22.4 50-50 50-50-22.4-50-50 22.4-50 50-50zm-90 30c27.6 0 50 22.4 50 50s-22.4 50-50 50-50-22.4-50-50 22.4-50 50-50z"/>
+  </g>
+  
+  <g transform="translate(230, 60) scale(0.5)">
+    <path fill="#2A363B" opacity="0.2" d="M64 192c27.6 0 50 22.4 50 50s-22.4 50-50 50-50-22.4-50-50 22.4-50 50-50zm160 0c27.6 0 50 22.4 50 50s-22.4 50-50 50-50-22.4-50-50 22.4-50 50-50zm-90 30c27.6 0 50 22.4 50 50s-22.4 50-50 50-50-22.4-50-50 22.4-50 50-50z"/>
+  </g>
+  
+  <!-- Bundle Label -->
+  <g transform="translate(150, 40)">
+    <rect x="-80" y="-25" width="160" height="50" rx="25" ry="25" fill="#FF6B6B" />
+    <text x="0" y="5" font-family="Nunito, sans-serif" font-size="18" font-weight="800" fill="#FFFFFF" text-anchor="middle">DOG STARTER KIT</text>
+  </g>
+</svg>

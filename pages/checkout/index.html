@@ -1,0 +1,697 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout - Pawfect World</title>
+    <meta name="description" content="Complete your purchase securely at Pawfect World. Fast, secure checkout for all your pet supplies.">
+    <meta name="keywords" content="pet supplies checkout, secure payment, dog food, cat toys, pet accessories, order confirmation">
+    <meta name="author" content="Pawfect World">
+    
+    <!-- Open Graph / Social Media Meta Tags -->
+    <meta property="og:title" content="Secure Checkout - Pawfect World">
+    <meta property="og:description" content="Complete your purchase securely at Pawfect World. Fast, secure checkout for all your pet supplies.">
+    <meta property="og:image" content="https://pawfectworld.com/images/og-image.jpg">
+    <meta property="og:url" content="https://pawfectworld.com/checkout">
+    <meta property="og:type" content="website">
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Secure Checkout - Pawfect World">
+    <meta name="twitter:description" content="Complete your purchase securely at Pawfect World. Fast, secure checkout for all your pet supplies.">
+    <meta name="twitter:image" content="https://pawfectworld.com/images/twitter-card.jpg">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://pawfectworld.com/checkout">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="../../images/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="../../images/apple-touch-icon.png">
+    
+    <!-- Preload Critical Resources -->
+    <link rel="preload" href="../../css/style.css" as="style">
+    <link rel="preload" href="../../css/responsive.css" as="style">
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" as="style">
+    
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="../../css/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="header">
+        <div class="header-top">
+            <div class="container">
+                <div class="header-top-content">
+                    <div class="header-top-left">
+                        <p><i class="fas fa-truck"></i> Free shipping on orders over $50</p>
+                    </div>
+                    <div class="header-top-right">
+                        <ul>
+                            <li><a href="../contact/index.html"><i class="fas fa-phone"></i> Contact</a></li>
+                            <li><a href="../account/index.html"><i class="fas fa-user"></i> My Account</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header-main">
+            <div class="container">
+                <div class="header-main-content">
+                    <div class="logo">
+                        <a href="../../index.html">
+                            <h1>Pawfect World</h1>
+                        </a>
+                    </div>
+                    <div class="search-bar">
+                        <form action="#" method="get">
+                            <input type="text" placeholder="Search for products..." name="search">
+                            <button type="submit"><i class="fas fa-search"></i></button>
+                        </form>
+                    </div>
+                    <div class="header-actions">
+                        <div class="wishlist">
+                            <a href="#"><i class="fas fa-heart"></i></a>
+                            <span class="count">0</span>
+                        </div>
+                        <div class="cart">
+                            <a href="../cart/index.html"><i class="fas fa-shopping-cart"></i></a>
+                            <span class="count">2</span>
+                        </div>
+                        <div class="mobile-menu-toggle">
+                            <i class="fas fa-bars"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header-nav">
+            <div class="container">
+                <nav class="main-nav">
+                    <ul>
+                        <li><a href="../../index.html">Home</a></li>
+                        <li><a href="../about/index.html">About Us</a></li>
+                        <li class="has-dropdown">
+                            <a href="../shop/shop.html">Shop</a>
+                            <ul class="dropdown">
+                                <li><a href="../shop/dog-products/index.html">Dog Products</a></li>
+                                <li><a href="../shop/cat-products/index.html">Cat Products</a></li>
+                                <li><a href="../shop/food-treats/index.html">Food & Treats</a></li>
+                                <li><a href="../shop/toys/index.html">Toys</a></li>
+                                <li><a href="../shop/grooming-supplies/index.html">Grooming Supplies</a></li>
+                                <li><a href="../shop/health-wellness/index.html">Health & Wellness</a></li>
+                                <li><a href="../shop/accessories/index.html">Accessories</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="../blog/index.html">Blog</a></li>
+                        <li><a href="../events/index.html">Events & Adoption</a></li>
+                        <li><a href="../contact/index.html">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Breadcrumb -->
+    <div class="breadcrumb-wrapper">
+        <div class="container">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="../../index.html">Home</a></li>
+                    <li class="breadcrumb-item"><a href="../cart/index.html">Cart</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Checkout</li>
+                </ol>
+            </nav>
+        </div>
+    </div>
+
+    <!-- Checkout Section -->
+    <section class="checkout-section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Checkout</h2>
+                <p>Complete your order securely</p>
+            </div>
+
+            <div class="checkout-container">
+                <div class="checkout-main">
+                    <!-- Checkout Steps -->
+                    <div class="checkout-steps">
+                        <div class="step active">
+                            <span class="step-number">1</span>
+                            <span class="step-title">Shipping</span>
+                        </div>
+                        <div class="step">
+                            <span class="step-number">2</span>
+                            <span class="step-title">Payment</span>
+                        </div>
+                        <div class="step">
+                            <span class="step-number">3</span>
+                            <span class="step-title">Review</span>
+                        </div>
+                    </div>
+
+                    <!-- Checkout Form -->
+                    <div class="checkout-form-container">
+                        <!-- Step 1: Shipping Information -->
+                        <div class="checkout-form-step active" id="shipping-step">
+                            <h3>Shipping Information</h3>
+                            <form id="shipping-form" class="checkout-form">
+                                <div class="form-row">
+                                    <div class="form-group">
+                                        <label for="first-name">First Name*</label>
+                                        <input type="text" id="first-name" name="first-name" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="last-name">Last Name*</label>
+                                        <input type="text" id="last-name" name="last-name" required>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="email">Email Address*</label>
+                                    <input type="email" id="email" name="email" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="phone">Phone Number*</label>
+                                    <input type="tel" id="phone" name="phone" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="address">Street Address*</label>
+                                    <input type="text" id="address" name="address" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="address2">Apartment, suite, etc. (optional)</label>
+                                    <input type="text" id="address2" name="address2">
+                                </div>
+                                <div class="form-row">
+                                    <div class="form-group">
+                                        <label for="city">City*</label>
+                                        <input type="text" id="city" name="city" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="state">State/Province*</label>
+                                        <select id="state" name="state" required>
+                                            <option value="">Select State</option>
+                                            <option value="AL">Alabama</option>
+                                            <option value="AK">Alaska</option>
+                                            <option value="AZ">Arizona</option>
+                                            <!-- More states would be added here -->
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="form-row">
+                                    <div class="form-group">
+                                        <label for="zip">ZIP/Postal Code*</label>
+                                        <input type="text" id="zip" name="zip" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="country">Country*</label>
+                                        <select id="country" name="country" required>
+                                            <option value="US">United States</option>
+                                            <option value="CA">Canada</option>
+                                            <option value="UK">United Kingdom</option>
+                                            <!-- More countries would be added here -->
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="form-group checkbox-group">
+                                    <input type="checkbox" id="save-info" name="save-info">
+                                    <label for="save-info">Save this information for next time</label>
+                                </div>
+                                <div class="form-group checkbox-group">
+                                    <input type="checkbox" id="shipping-billing" name="shipping-billing" checked>
+                                    <label for="shipping-billing">Billing address same as shipping</label>
+                                </div>
+                                <div class="form-actions">
+                                    <button type="button" class="btn btn-primary next-step" data-step="payment-step">Continue to Payment</button>
+                                </div>
+                            </form>
+                        </div>
+
+                        <!-- Step 2: Payment Information -->
+                        <div class="checkout-form-step" id="payment-step">
+                            <h3>Payment Method</h3>
+                            <form id="payment-form" class="checkout-form">
+                                <div class="payment-options">
+                                    <div class="payment-option">
+                                        <input type="radio" id="credit-card" name="payment-method" value="credit-card" checked>
+                                        <label for="credit-card">
+                                            <span class="payment-icon"><i class="far fa-credit-card"></i></span>
+                                            <span class="payment-title">Credit/Debit Card</span>
+                                        </label>
+                                    </div>
+                                    <div class="payment-option">
+                                        <input type="radio" id="paypal" name="payment-method" value="paypal">
+                                        <label for="paypal">
+                                            <span class="payment-icon"><i class="fab fa-paypal"></i></span>
+                                            <span class="payment-title">PayPal</span>
+                                        </label>
+                                    </div>
+                                    <div class="payment-option">
+                                        <input type="radio" id="apple-pay" name="payment-method" value="apple-pay">
+                                        <label for="apple-pay">
+                                            <span class="payment-icon"><i class="fab fa-apple-pay"></i></span>
+                                            <span class="payment-title">Apple Pay</span>
+                                        </label>
+                                    </div>
+                                </div>
+
+                                <!-- Credit Card Form -->
+                                <div class="credit-card-form" id="credit-card-form">
+                                    <div class="form-group">
+                                        <label for="card-name">Name on Card*</label>
+                                        <input type="text" id="card-name" name="card-name" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="card-number">Card Number*</label>
+                                        <div class="card-input-wrapper">
+                                            <input type="text" id="card-number" name="card-number" placeholder="1234 5678 9012 3456" required>
+                                            <div class="card-icons">
+                                                <i class="fab fa-cc-visa"></i>
+                                                <i class="fab fa-cc-mastercard"></i>
+                                                <i class="fab fa-cc-amex"></i>
+                                                <i class="fab fa-cc-discover"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-row">
+                                        <div class="form-group">
+                                            <label for="expiry-date">Expiry Date*</label>
+                                            <input type="text" id="expiry-date" name="expiry-date" placeholder="MM/YY" required>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="cvv">CVV*</label>
+                                            <input type="text" id="cvv" name="cvv" placeholder="123" required>
+                                            <div class="cvv-info">
+                                                <i class="fas fa-question-circle"></i>
+                                                <span class="tooltip">3-digit security code on the back of your card</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="form-actions">
+                                    <button type="button" class="btn btn-secondary prev-step" data-step="shipping-step">Back to Shipping</button>
+                                    <button type="button" class="btn btn-primary next-step" data-step="review-step">Review Order</button>
+                                </div>
+                            </form>
+                        </div>
+
+                        <!-- Step 3: Review Order -->
+                        <div class="checkout-form-step" id="review-step">
+                            <h3>Review Your Order</h3>
+                            <div class="review-sections">
+                                <div class="review-section">
+                                    <h4>Shipping Information</h4>
+                                    <div class="review-info" id="review-shipping-info">
+                                        <p><strong>John Doe</strong></p>
+                                        <p>123 Main Street, Apt 4B</p>
+                                        <p>New York, NY 10001</p>
+                                        <p>United States</p>
+                                        <p>Email: john.doe@example.com</p>
+                                        <p>Phone: (123) 456-7890</p>
+                                    </div>
+                                    <button type="button" class="btn-edit" data-step="shipping-step">Edit</button>
+                                </div>
+                                <div class="review-section">
+                                    <h4>Payment Method</h4>
+                                    <div class="review-info" id="review-payment-info">
+                                        <p><i class="far fa-credit-card"></i> Credit Card ending in 3456</p>
+                                    </div>
+                                    <button type="button" class="btn-edit" data-step="payment-step">Edit</button>
+                                </div>
+                            </div>
+
+                            <div class="order-confirmation">
+                                <div class="form-group checkbox-group">
+                                    <input type="checkbox" id="terms" name="terms" required>
+                                    <label for="terms">I agree to the <a href="../terms-conditions/index.html" target="_blank">Terms and Conditions</a> and <a href="../privacy-policy/index.html" target="_blank">Privacy Policy</a></label>
+                                </div>
+                                <div class="form-actions">
+                                    <button type="button" class="btn btn-secondary prev-step" data-step="payment-step">Back to Payment</button>
+                                    <button type="button" class="btn btn-primary" id="place-order-btn">Place Order</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Order Confirmation -->
+                        <div class="checkout-form-step" id="confirmation-step">
+                            <div class="order-success">
+                                <div class="success-icon">
+                                    <i class="fas fa-check-circle"></i>
+                                </div>
+                                <h3>Thank You for Your Order!</h3>
+                                <p>Your order has been placed successfully.</p>
+                                <p>Order #: <strong>PW-12345</strong></p>
+                                <p>A confirmation email has been sent to <strong>john.doe@example.com</strong></p>
+                                <div class="confirmation-actions">
+                                    <a href="../account/index.html" class="btn btn-secondary">View Order in My Account</a>
+                                    <a href="../../index.html" class="btn btn-primary">Continue Shopping</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Order Summary -->
+                <div class="checkout-sidebar">
+                    <div class="order-summary">
+                        <h3>Order Summary</h3>
+                        <div class="order-items">
+                            <div class="order-item">
+                                <div class="item-image">
+                                    <img src="../../images/premium-dog-food.png" alt="Premium Grain-Free Dog Food">
+                                    <span class="item-quantity">1</span>
+                                </div>
+                                <div class="item-details">
+                                    <h4>Premium Grain-Free Dog Food</h4>
+                                    <p>Size: 5 lbs</p>
+                                    <p class="item-price">$39.99</p>
+                                </div>
+                            </div>
+                            <div class="order-item">
+                                <div class="item-image">
+                                    <img src="../../images/dog-toy-1.png" alt="Interactive Dog Toy">
+                                    <span class="item-quantity">1</span>
+                                </div>
+                                <div class="item-details">
+                                    <h4>Interactive Dog Toy</h4>
+                                    <p>Color: Blue</p>
+                                    <p class="item-price">$14.99</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="coupon-code">
+                            <input type="text" placeholder="Coupon code" id="coupon-code">
+                            <button type="button" class="btn btn-secondary" id="apply-coupon">Apply</button>
+                        </div>
+                        <div class="order-totals">
+                            <div class="total-row">
+                                <span>Subtotal</span>
+                                <span>$54.98</span>
+                            </div>
+                            <div class="total-row">
+                                <span>Shipping</span>
+                                <span>$5.99</span>
+                            </div>
+                            <div class="total-row">
+                                <span>Tax</span>
+                                <span>$4.95</span>
+                            </div>
+                            <div class="total-row grand-total">
+                                <span>Total</span>
+                                <span>$65.92</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="checkout-features">
+                        <div class="feature">
+                            <i class="fas fa-lock"></i>
+                            <span>Secure Checkout</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-truck"></i>
+                            <span>Free Shipping on Orders $50+</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-exchange-alt"></i>
+                            <span>30-Day Returns</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trust Badges -->
+    <section class="trust-badges">
+        <div class="container">
+            <div class="badges-container">
+                <div class="badge">
+                    <img src="../../images/secure-payment.svg" alt="Secure Payment">
+                    <span>Secure Payment</span>
+                </div>
+                <div class="badge">
+                    <img src="../../images/fast-shipping.svg" alt="Fast Shipping">
+                    <span>Fast Shipping</span>
+                </div>
+                <div class="badge">
+                    <img src="../../images/satisfaction-guarantee.svg" alt="Satisfaction Guarantee">
+                    <span>Satisfaction Guarantee</span>
+                </div>
+                <div class="badge">
+                    <img src="../../images/customer-support.svg" alt="24/7 Support">
+                    <span>24/7 Support</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-top">
+            <div class="container">
+                <div class="footer-widgets">
+                    <div class="footer-widget">
+                        <h3>About Pawfect World</h3>
+                        <p>We're dedicated to providing the highest quality products for your beloved pets. Our mission is to make pet care easy, enjoyable, and affordable.</p>
+                        <div class="social-icons">
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-pinterest"></i></a>
+                        </div>
+                    </div>
+                    <div class="footer-widget">
+                        <h3>Quick Links</h3>
+                        <ul class="footer-links">
+                            <li><a href="../../index.html">Home</a></li>
+                            <li><a href="../about/index.html">About Us</a></li>
+                            <li><a href="../shop/shop.html">Shop</a></li>
+                            <li><a href="../blog/index.html">Blog</a></li>
+                            <li><a href="../contact/index.html">Contact</a></li>
+                            <li><a href="../faq/index.html">FAQs</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-widget">
+                        <h3>Customer Service</h3>
+                        <ul class="footer-links">
+                            <li><a href="#">My Account</a></li>
+                            <li><a href="#">Track Order</a></li>
+                            <li><a href="#">Shipping Policy</a></li>
+                            <li><a href="#">Returns & Exchanges</a></li>
+                            <li><a href="../privacy-policy/index.html">Privacy Policy</a></li>
+                            <li><a href="../terms-conditions/index.html">Terms & Conditions</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-widget">
+                        <h3>Newsletter</h3>
+                        <p>Subscribe to our newsletter for updates on new products, promotions, and pet care tips.</p>
+                        <form class="newsletter-form">
+                            <input type="email" placeholder="Your email address" required>
+                            <button type="submit"><i class="fas fa-paper-plane"></i></button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="footer-bottom-content">
+                    <div class="copyright">
+                        <p>&copy; 2023 Pawfect World. All Rights Reserved.</p>
+                    </div>
+                    <div class="payment-methods">
+                        <img src="../../images/payment-methods.png" alt="Payment Methods">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="../../js/jquery.min.js"></script>
+    <script src="../../js/main.js"></script>
+    <script>
+        // Checkout Process JavaScript
+        document.addEventListener('DOMContentLoaded', function() {
+            // Step Navigation
+            const nextButtons = document.querySelectorAll('.next-step');
+            const prevButtons = document.querySelectorAll('.prev-step');
+            const editButtons = document.querySelectorAll('.btn-edit');
+            const steps = document.querySelectorAll('.checkout-steps .step');
+            const formSteps = document.querySelectorAll('.checkout-form-step');
+            
+            // Next Step
+            nextButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    const targetStep = this.getAttribute('data-step');
+                    const currentStep = document.querySelector('.checkout-form-step.active');
+                    const currentStepIndex = Array.from(formSteps).indexOf(currentStep);
+                    const targetStepIndex = Array.from(formSteps).findIndex(step => step.id === targetStep);
+                    
+                    // Update steps
+                    currentStep.classList.remove('active');
+                    document.getElementById(targetStep).classList.add('active');
+                    
+                    // Update step indicators
+                    steps[currentStepIndex].classList.remove('active');
+                    steps[targetStepIndex].classList.add('active');
+                    
+                    // Scroll to top of form
+                    window.scrollTo({
+                        top: document.querySelector('.checkout-section').offsetTop - 100,
+                        behavior: 'smooth'
+                    });
+                });
+            });
+            
+            // Previous Step
+            prevButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    const targetStep = this.getAttribute('data-step');
+                    const currentStep = document.querySelector('.checkout-form-step.active');
+                    const currentStepIndex = Array.from(formSteps).indexOf(currentStep);
+                    const targetStepIndex = Array.from(formSteps).findIndex(step => step.id === targetStep);
+                    
+                    // Update steps
+                    currentStep.classList.remove('active');
+                    document.getElementById(targetStep).classList.add('active');
+                    
+                    // Update step indicators
+                    steps[currentStepIndex].classList.remove('active');
+                    steps[targetStepIndex].classList.add('active');
+                    
+                    // Scroll to top of form
+                    window.scrollTo({
+                        top: document.querySelector('.checkout-section').offsetTop - 100,
+                        behavior: 'smooth'
+                    });
+                });
+            });
+            
+            // Edit Step
+            editButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    const targetStep = this.getAttribute('data-step');
+                    const currentStep = document.querySelector('.checkout-form-step.active');
+                    const currentStepIndex = Array.from(formSteps).indexOf(currentStep);
+                    const targetStepIndex = Array.from(formSteps).findIndex(step => step.id === targetStep);
+                    
+                    // Update steps
+                    currentStep.classList.remove('active');
+                    document.getElementById(targetStep).classList.add('active');
+                    
+                    // Update step indicators
+                    steps[currentStepIndex].classList.remove('active');
+                    steps[targetStepIndex].classList.add('active');
+                    
+                    // Scroll to top of form
+                    window.scrollTo({
+                        top: document.querySelector('.checkout-section').offsetTop - 100,
+                        behavior: 'smooth'
+                    });
+                });
+            });
+            
+            // Place Order Button
+            const placeOrderBtn = document.getElementById('place-order-btn');
+            placeOrderBtn.addEventListener('click', function() {
+                const termsCheckbox = document.getElementById('terms');
+                
+                if (!termsCheckbox.checked) {
+                    alert('Please agree to the Terms and Conditions to complete your order.');
+                    return;
+                }
+                
+                // Show loading state
+                this.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Processing...';
+                this.disabled = true;
+                
+                // Simulate order processing
+                setTimeout(() => {
+                    // Hide all steps and show confirmation
+                    document.querySelectorAll('.checkout-form-step').forEach(step => {
+                        step.classList.remove('active');
+                    });
+                    document.getElementById('confirmation-step').classList.add('active');
+                    
+                    // Hide step indicators
+                    document.querySelector('.checkout-steps').style.display = 'none';
+                    
+                    // Reset button
+                    this.innerHTML = 'Place Order';
+                    this.disabled = false;
+                    
+                    // Scroll to top of form
+                    window.scrollTo({
+                        top: document.querySelector('.checkout-section').offsetTop - 100,
+                        behavior: 'smooth'
+                    });
+                }, 2000);
+            });
+            
+            // Payment Method Toggle
+            const paymentMethods = document.querySelectorAll('input[name="payment-method"]');
+            const creditCardForm = document.getElementById('credit-card-form');
+            
+            paymentMethods.forEach(method => {
+                method.addEventListener('change', function() {
+                    if (this.value === 'credit-card') {
+                        creditCardForm.style.display = 'block';
+                    } else {
+                        creditCardForm.style.display = 'none';
+                    }
+                });
+            });
+            
+            // Apply Coupon
+            const applyCouponBtn = document.getElementById('apply-coupon');
+            applyCouponBtn.addEventListener('click', function() {
+                const couponCode = document.getElementById('coupon-code').value.trim();
+                
+                if (!couponCode) {
+                    alert('Please enter a coupon code.');
+                    return;
+                }
+                
+                // Simulate coupon application
+                this.innerHTML = '<i class="fas fa-spinner fa-spin"></i>';
+                this.disabled = true;
+                
+                setTimeout(() => {
+                    if (couponCode.toUpperCase() === 'PAWFECT10') {
+                        // Update totals
+                        const totals = document.querySelector('.order-totals');
+                        
+                        // Add discount row
+                        const discountRow = document.createElement('div');
+                        discountRow.className = 'total-row discount';
+                        discountRow.innerHTML = `
+                            <span>Discount (PAWFECT10)</span>
+                            <span>-$5.50</span>
+                        `;
+                        
+                        // Insert before grand total
+                        totals.insertBefore(discountRow, document.querySelector('.grand-total'));
+                        
+                        // Update grand total
+                        document.querySelector('.grand-total span:last-child').textContent = '$60.42';
+                        
+                        // Success message
+                        alert('Coupon applied successfully!');
+                    } else {
+                        alert('Invalid coupon code. Please try again.');
+                    }
+                    
+                    // Reset button
+                    this.innerHTML = 'Apply';
+                    this.disabled = false;
+                }, 1000);
+            });
+        });
+    </script>
+</body>
+</html>

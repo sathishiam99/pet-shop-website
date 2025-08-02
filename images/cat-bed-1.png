@@ -1,0 +1,78 @@
+<svg width="300" height="300" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="300" height="300" fill="#f8f9fa" rx="10" ry="10"/>
+  
+  <!-- Cat Bed -->
+  <g transform="translate(150, 150)">
+    <!-- Bed Base -->
+    <ellipse cx="0" cy="0" rx="100" ry="70" fill="#ffd166" stroke="#1d3557" stroke-width="2"/>
+    
+    <!-- Bed Inner -->
+    <ellipse cx="0" cy="0" rx="80" ry="50" fill="#ffffff" stroke="#1d3557" stroke-width="2"/>
+    
+    <!-- Bed Cushion -->
+    <ellipse cx="0" cy="0" rx="70" ry="40" fill="#ef476f" stroke="#1d3557" stroke-width="1"/>
+    
+    <!-- Cushion Pattern -->
+    <path d="M-60,-10 C-40,-30 40,-30 60,-10" stroke="#ffffff" stroke-width="2" fill="none" stroke-dasharray="5,5"/>
+    <path d="M-60,10 C-40,30 40,30 60,10" stroke="#ffffff" stroke-width="2" fill="none" stroke-dasharray="5,5"/>
+    
+    <!-- Cat Silhouette -->
+    <g transform="translate(0, -5) scale(0.7)">
+      <!-- Body -->
+      <ellipse cx="0" cy="10" rx="30" ry="20" fill="#1d3557" opacity="0.2"/>
+      
+      <!-- Head -->
+      <circle cx="-25" cy="0" r="15" fill="#1d3557" opacity="0.2"/>
+      
+      <!-- Ears -->
+      <path d="M-35,-10 L-40,-25 L-25,-15 Z" fill="#1d3557" opacity="0.2"/>
+      <path d="M-15,-10 L-10,-25 L-25,-15 Z" fill="#1d3557" opacity="0.2"/>
+      
+      <!-- Tail -->
+      <path d="M30,10 C40,0 45,20 50,10" stroke="#1d3557" stroke-width="5" stroke-linecap="round" opacity="0.2"/>
+    </g>
+  </g>
+  
+  <!-- Product Details -->
+  <g transform="translate(20, 260)">
+    <text x="0" y="0" font-family="Arial" font-size="14" fill="#1d3557" font-weight="bold">Cozy Plush Cat Bed</text>
+    <text x="0" y="20" font-family="Arial" font-size="12" fill="#1d3557">Machine Washable</text>
+  </g>
+  
+  <!-- Price Tag -->
+  <g transform="translate(220, 270)">
+    <rect x="0" y="0" width="60" height="25" rx="12.5" ry="12.5" fill="#ef476f"/>
+    <text x="30" y="17" font-family="Arial" font-size="14" text-anchor="middle" fill="#ffffff" font-weight="bold">$29.99</text>
+  </g>
+  
+  <!-- Product Highlights -->
+  <g transform="translate(20, 230)">
+    <circle cx="10" cy="0" r="8" fill="#06d6a0"/>
+    <text x="25" y="4" font-family="Arial" font-size="10" fill="#1d3557">Soft Plush</text>
+    
+    <circle cx="100" cy="0" r="8" fill="#06d6a0"/>
+    <text x="115" y="4" font-family="Arial" font-size="10" fill="#1d3557">Non-Slip Base</text>
+    
+    <circle cx="180" cy="0" r="8" fill="#06d6a0"/>
+    <text x="195" y="4" font-family="Arial" font-size="10" fill="#1d3557">Washable</text>
+  </g>
+  
+  <!-- Brand Tag -->
+  <g transform="translate(20, 30)">
+    <rect x="0" y="0" width="80" height="25" rx="5" ry="5" fill="#ffd166"/>
+    <text x="40" y="17" font-family="Arial" font-size="12" text-anchor="middle" fill="#1d3557" font-weight="bold">PAWFECT</text>
+  </g>
+  
+  <!-- Size Options -->
+  <g transform="translate(220, 30)">
+    <rect x="0" y="0" width="25" height="25" rx="5" ry="5" fill="#f8f9fa" stroke="#1d3557" stroke-width="1"/>
+    <text x="12.5" y="17" font-family="Arial" font-size="12" text-anchor="middle" fill="#1d3557">S</text>
+    
+    <rect x="30" y="0" width="25" height="25" rx="5" ry="5" fill="#ef476f" stroke="#1d3557" stroke-width="1"/>
+    <text x="42.5" y="17" font-family="Arial" font-size="12" text-anchor="middle" fill="#ffffff">M</text>
+    
+    <rect x="60" y="0" width="25" height="25" rx="5" ry="5" fill="#f8f9fa" stroke="#1d3557" stroke-width="1"/>
+    <text x="72.5" y="17" font-family="Arial" font-size="12" text-anchor="middle" fill="#1d3557">L</text>
+  </g>
+</svg>

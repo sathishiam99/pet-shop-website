@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 200 200">
+  <!-- Background -->
+  <rect width="200" height="200" fill="#f8f8f8" rx="10" ry="10"/>
+  
+  <!-- Pet Shampoo Bottle -->
+  <g transform="translate(100, 110)">
+    <!-- Bottle Shape -->
+    <path d="M-30,-70 L30,-70 L40,50 C40,60 30,70 0,70 C-30,70 -40,60 -40,50 Z" fill="#9370DB"/>
+    
+    <!-- Bottle Highlights -->
+    <path d="M-25,-65 L25,-65 L35,50 C35,58 25,65 0,65 C-25,65 -35,58 -35,50 Z" fill="#8A2BE2" opacity="0.7"/>
+    
+    <!-- Bottle Neck -->
+    <rect x="-15" y="-90" width="30" height="20" rx="5" ry="5" fill="#9370DB"/>
+    
+    <!-- Bottle Cap -->
+    <rect x="-12" y="-105" width="24" height="15" rx="3" ry="3" fill="#FFD700"/>
+    <rect x="-10" y="-103" width="20" height="11" rx="2" ry="2" fill="#FFDF00"/>
+    
+    <!-- Label -->
+    <rect x="-25" y="-40" width="50" height="70" rx="5" ry="5" fill="#F5F5DC"/>
+    
+    <!-- Label Content -->
+    <text x="0" y="-25" font-family="Arial" font-size="8" font-weight="bold" text-anchor="middle" fill="#8A2BE2">PREMIUM</text>
+    <text x="0" y="-15" font-family="Arial" font-size="10" font-weight="bold" text-anchor="middle" fill="#8A2BE2">PET</text>
+    <text x="0" y="-3" font-family="Arial" font-size="10" font-weight="bold" text-anchor="middle" fill="#8A2BE2">SHAMPOO</text>
+    
+    <!-- Paw Print on Label -->
+    <g transform="translate(0, 15) scale(0.7)" fill="#8A2BE2" opacity="0.7">
+      <ellipse cx="0" cy="-5" rx="5" ry="7"/>
+      <ellipse cx="-8" cy="-2" rx="4" ry="6"/>
+      <ellipse cx="8" cy="-2" rx="4" ry="6"/>
+      <ellipse cx="0" cy="8" rx="7" ry="8"/>
+    </g>
+    
+    <!-- Volume -->
+    <text x="0" y="40" font-family="Arial" font-size="7" font-weight="bold" text-anchor="middle" fill="#8A2BE2">16 FL OZ (473 ML)</text>
+  </g>
+  
+  <!-- Bubbles -->
+  <g fill="#FFFFFF" opacity="0.8">
+    <circle cx="50" cy="40" r="5"/>
+    <circle cx="60" cy="30" r="3"/>
+    <circle cx="45" cy="25" r="4"/>
+    <circle cx="140" cy="35" r="6"/>
+    <circle cx="150" cy="25" r="4"/>
+    <circle cx="155" cy="40" r="3"/>
+    <circle cx="70" cy="45" r="2"/>
+    <circle cx="130" cy="50" r="2"/>
+  </g>
+  
+  <!-- Water Droplets -->
+  <g fill="#87CEFA" opacity="0.6">
+    <path d="M40,60 C40,55 45,55 45,60 C45,65 40,65 40,60 Z"/>
+    <path d="M160,60 C160,55 165,55 165,60 C165,65 160,65 160,60 Z"/>
+    <path d="M50,70 C50,65 55,65 55,70 C55,75 50,75 50,70 Z"/>
+    <path d="M150,70 C150,65 155,65 155,70 C155,75 150,75 150,70 Z"/>
+  </g>
+  
+  <!-- "Gentle Formula" Label -->
+  <g transform="translate(100, 30)">
+    <rect x="-60" y="-15" width="120" height="30" rx="15" ry="15" fill="#4682B4"/>
+    <text x="0" y="5" font-family="Arial" font-size="12" font-weight="bold" text-anchor="middle" fill="white">GENTLE FORMULA</text>
+  </g>
+  
+  <!-- "Tearless" Banner -->
+  <g transform="translate(40, 50) rotate(-30)">
+    <rect x="-40" y="-10" width="80" height="20" fill="#32CD32"/>
+    <text x="0" y="5" font-family="Arial" font-size="12" font-weight="bold" text-anchor="middle" fill="white">TEARLESS</text>
+  </g>
+</svg>

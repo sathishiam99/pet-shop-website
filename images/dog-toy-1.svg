@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 200 200">
+  <!-- Background -->
+  <rect width="200" height="200" fill="#f8f8f8" rx="10" ry="10"/>
+  
+  <!-- Interactive Dog Toy - Ball with Rope -->
+  <g transform="translate(100, 100)">
+    <!-- Main Ball -->
+    <circle cx="0" cy="0" r="50" fill="#1E90FF"/>
+    
+    <!-- Ball Texture/Pattern -->
+    <circle cx="0" cy="0" r="45" fill="#4169E1" opacity="0.7"/>
+    <circle cx="0" cy="0" r="40" fill="#1E90FF" opacity="0.5"/>
+    
+    <!-- Ball Highlights -->
+    <ellipse cx="-15" cy="-15" rx="15" ry="10" fill="#87CEFA" opacity="0.6"/>
+    
+    <!-- Ball Ridges -->
+    <path d="M-40,0 A40,40 0 0,1 40,0" stroke="#0000CD" stroke-width="3" fill="none"/>
+    <path d="M0,-40 A40,40 0 0,1 0,40" stroke="#0000CD" stroke-width="3" fill="none"/>
+    
+    <!-- Rope Through Ball -->
+    <path d="M-60,-20 C-40,-30 -20,-50 0,-60 C20,-50 40,-30 60,-20" stroke="#FF6347" stroke-width="10" fill="none" stroke-linecap="round"/>
+    <path d="M-60,-20 C-40,-10 -20,10 0,20 C20,10 40,-10 60,-20" stroke="#FF6347" stroke-width="10" fill="none" opacity="0.7" stroke-linecap="round"/>
+    
+    <!-- Rope Ends -->
+    <circle cx="-60" cy="-20" r="8" fill="#FF6347"/>
+    <circle cx="60" cy="-20" r="8" fill="#FF6347"/>
+    
+    <!-- Rope Texture -->
+    <path d="M-50,-20 L-40,-25 L-30,-20 L-20,-25 L-10,-20 L0,-25 L10,-20 L20,-25 L30,-20 L40,-25 L50,-20" stroke="#CD5C5C" stroke-width="2" fill="none"/>
+  </g>
+  
+  <!-- "Interactive" Label -->
+  <g transform="translate(100, 30)">
+    <rect x="-60" y="-15" width="120" height="30" rx="15" ry="15" fill="#32CD32"/>
+    <text x="0" y="5" font-family="Arial" font-size="12" font-weight="bold" text-anchor="middle" fill="white">INTERACTIVE</text>
+  </g>
+  
+  <!-- Paw Prints -->
+  <g fill="#696969" opacity="0.3">
+    <!-- Paw 1 -->
+    <g transform="translate(40, 170) rotate(-30)">
+      <ellipse cx="0" cy="-5" rx="5" ry="7"/>
+      <ellipse cx="-8" cy="-2" rx="4" ry="6"/>
+      <ellipse cx="8" cy="-2" rx="4" ry="6"/>
+      <ellipse cx="0" cy="8" rx="7" ry="8"/>
+    </g>
+    
+    <!-- Paw 2 -->
+    <g transform="translate(160, 160) rotate(20)">
+      <ellipse cx="0" cy="-5" rx="5" ry="7"/>
+      <ellipse cx="-8" cy="-2" rx="4" ry="6"/>
+      <ellipse cx="8" cy="-2" rx="4" ry="6"/>
+      <ellipse cx="0" cy="8" rx="7" ry="8"/>
+    </g>
+  </g>
+</svg>

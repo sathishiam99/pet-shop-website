@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="600" viewBox="0 0 1200 600">
+  <!-- Background Gradient -->
+  <defs>
+    <linearGradient id="bg-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#FFD166;stop-opacity:0.8" />
+      <stop offset="100%" style="stop-color:#4ECDC4;stop-opacity:0.8" />
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="600" fill="url(#bg-gradient)" />
+  
+  <!-- Decorative Elements -->
+  <circle cx="150" cy="200" r="80" fill="#FF6B6B" opacity="0.6" />
+  <circle cx="950" cy="400" r="100" fill="#4ECDC4" opacity="0.4" />
+  <circle cx="850" cy="150" r="50" fill="#FFD166" opacity="0.5" />
+  
+  <!-- Food Bowl -->
+  <g transform="translate(300, 300)">
+    <ellipse cx="0" cy="0" rx="150" ry="50" fill="#FF6B6B" />
+    <ellipse cx="0" cy="-20" rx="130" ry="40" fill="#FFFFFF" />
+    <ellipse cx="0" cy="-20" rx="100" ry="30" fill="#FFD166" />
+  </g>
+  
+  <!-- Dog Bone -->
+  <g transform="translate(700, 350)">
+    <rect x="-100" y="-25" width="200" height="50" rx="25" ry="25" fill="#FFFFFF" />
+    <circle cx="-100" cy="-40" r="30" fill="#FFFFFF" />
+    <circle cx="-100" cy="40" r="30" fill="#FFFFFF" />
+    <circle cx="100" cy="-40" r="30" fill="#FFFFFF" />
+    <circle cx="100" cy="40" r="30" fill="#FFFFFF" />
+  </g>
+  
+  <!-- Treat Bag -->
+  <g transform="translate(900, 300)">
+    <path d="M-50,-80 L50,-80 L70,80 L-70,80 Z" fill="#4ECDC4" />
+    <rect x="-60" y="-110" width="120" height="30" rx="10" ry="10" fill="#4ECDC4" />
+    <text x="0" y="20" font-family="Nunito, sans-serif" font-size="24" font-weight="800" fill="#FFFFFF" text-anchor="middle">TREATS</text>
+  </g>
+  
+  <!-- Paw Prints -->
+  <g transform="translate(150, 450) scale(0.1)">
+    <path fill="#FFFFFF" opacity="0.7" d="M256 224c-79.5 0-144 64.5-144 144s64.5 144 144 144 144-64.5 144-144-64.5-144-144-144zm59.4 180.2c-5.5 12.2-15.6 22-28.1 27.3-12.5 5.3-26.3 5.3-38.8 0-12.5-5.3-22.6-15.1-28.1-27.3-1.2-2.7-.2-5.9 2.4-7.2 2.7-1.2 5.9-.2 7.2 2.4 4.4 9.7 12.4 17.5 22.5 21.8 9.8 4.2 21 4.2 30.8 0 10.1-4.3 18.1-12.1 22.5-21.8 1.2-2.7 4.4-3.7 7.2-2.4 2.7 1.3 3.6 4.5 2.4 7.2z"/>
+  </g>
+  
+  <g transform="translate(400, 500) scale(0.1)">
+    <path fill="#FFFFFF" opacity="0.7" d="M256 224c-79.5 0-144 64.5-144 144s64.5 144 144 144 144-64.5 144-144-64.5-144-144-144zm59.4 180.2c-5.5 12.2-15.6 22-28.1 27.3-12.5 5.3-26.3 5.3-38.8 0-12.5-5.3-22.6-15.1-28.1-27.3-1.2-2.7-.2-5.9 2.4-7.2 2.7-1.2 5.9-.2 7.2 2.4 4.4 9.7 12.4 17.5 22.5 21.8 9.8 4.2 21 4.2 30.8 0 10.1-4.3 18.1-12.1 22.5-21.8 1.2-2.7 4.4-3.7 7.2-2.4 2.7 1.3 3.6 4.5 2.4 7.2z"/>
+  </g>
+  
+  <g transform="translate(600, 450) scale(0.1)">
+    <path fill="#FFFFFF" opacity="0.7" d="M256 224c-79.5 0-144 64.5-144 144s64.5 144 144 144 144-64.5 144-144-64.5-144-144-144zm59.4 180.2c-5.5 12.2-15.6 22-28.1 27.3-12.5 5.3-26.3 5.3-38.8 0-12.5-5.3-22.6-15.1-28.1-27.3-1.2-2.7-.2-5.9 2.4-7.2 2.7-1.2 5.9-.2 7.2 2.4 4.4 9.7 12.4 17.5 22.5 21.8 9.8 4.2 21 4.2 30.8 0 10.1-4.3 18.1-12.1 22.5-21.8 1.2-2.7 4.4-3.7 7.2-2.4 2.7 1.3 3.6 4.5 2.4 7.2z"/>
+  </g>
+  
+  <!-- Text -->
+  <text x="600" y="150" font-family="Nunito, sans-serif" font-size="60" font-weight="800" fill="#FFFFFF" text-anchor="middle">Premium Pet Food & Treats</text>
+  <text x="600" y="220" font-family="Poppins, sans-serif" font-size="30" font-weight="400" fill="#FFFFFF" text-anchor="middle">Nutritious options for your furry friends</text>
+</svg>

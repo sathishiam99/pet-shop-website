@@ -1,0 +1,90 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 200 200">
+  <!-- Background -->
+  <rect width="200" height="200" fill="#f8f8f8" rx="10" ry="10"/>
+  
+  <!-- Pet Carrier -->
+  <g transform="translate(100, 110)">
+    <!-- Main Carrier Body -->
+    <path d="M-60,-40 L60,-40 L70,30 L-70,30 Z" fill="#FF6347"/>
+    <path d="M-55,-35 L55,-35 L65,25 L-65,25 Z" fill="#FF7F50" opacity="0.7"/>
+    
+    <!-- Carrier Top -->
+    <path d="M-60,-40 L60,-40 L60,-50 L-60,-50 Z" fill="#FF6347"/>
+    <ellipse cx="0" cy="-50" rx="60" ry="10" fill="#FF6347"/>
+    <ellipse cx="0" cy="-50" rx="55" ry="7" fill="#FF7F50" opacity="0.7"/>
+    
+    <!-- Carrier Door -->
+    <path d="M-40,-20 L-40,20 L-20,20 L-20,-20 Z" fill="#A9A9A9" opacity="0.5"/>
+    <rect x="-38" y="-18" width="16" height="36" rx="2" ry="2" fill="#C0C0C0" opacity="0.5"/>
+    
+    <!-- Door Bars -->
+    <g stroke="#696969" stroke-width="2">
+      <line x1="-35" y1="-18" x2="-35" y2="18"/>
+      <line x1="-30" y1="-18" x2="-30" y2="18"/>
+      <line x1="-25" y1="-18" x2="-25" y2="18"/>
+    </g>
+    
+    <!-- Door Latch -->
+    <rect x="-22" y="-5" width="4" height="10" rx="2" ry="2" fill="#C0C0C0"/>
+    
+    <!-- Ventilation Holes -->
+    <g fill="#696969" opacity="0.3">
+      <!-- Left Side -->
+      <circle cx="-50" cy="-25" r="3"/>
+      <circle cx="-50" cy="-15" r="3"/>
+      <circle cx="-50" cy="-5" r="3"/>
+      <circle cx="-50" cy="5" r="3"/>
+      <circle cx="-50" cy="15" r="3"/>
+      
+      <!-- Right Side -->
+      <circle cx="50" cy="-25" r="3"/>
+      <circle cx="50" cy="-15" r="3"/>
+      <circle cx="50" cy="-5" r="3"/>
+      <circle cx="50" cy="5" r="3"/>
+      <circle cx="50" cy="15" r="3"/>
+      
+      <!-- Top -->
+      <circle cx="-40" cy="-45" r="2"/>
+      <circle cx="-30" cy="-45" r="2"/>
+      <circle cx="-20" cy="-45" r="2"/>
+      <circle cx="-10" cy="-45" r="2"/>
+      <circle cx="0" cy="-45" r="2"/>
+      <circle cx="10" cy="-45" r="2"/>
+      <circle cx="20" cy="-45" r="2"/>
+      <circle cx="30" cy="-45" r="2"/>
+      <circle cx="40" cy="-45" r="2"/>
+    </g>
+    
+    <!-- Handle -->
+    <path d="M-30,-50 C-30,-70 30,-70 30,-50" stroke="#696969" stroke-width="5" fill="none"/>
+    <path d="M-25,-50 C-25,-65 25,-65 25,-50" stroke="#A9A9A9" stroke-width="3" fill="none"/>
+  </g>
+  
+  <!-- Pet Silhouette Inside -->
+  <g transform="translate(115, 110) scale(0.4)">
+    <!-- Body -->
+    <ellipse cx="0" cy="0" rx="30" ry="20" fill="#696969" opacity="0.4"/>
+    
+    <!-- Head -->
+    <circle cx="-25" cy="-5" r="15" fill="#696969" opacity="0.4"/>
+    
+    <!-- Ears -->
+    <polygon points="-35,-15 -40,-25 -30,-20" fill="#696969" opacity="0.4"/>
+    <polygon points="-15,-15 -10,-25 -20,-20" fill="#696969" opacity="0.4"/>
+    
+    <!-- Tail -->
+    <path d="M30,0 C40,10 50,0 55,-10" stroke="#696969" stroke-width="5" fill="none" stroke-linecap="round" opacity="0.4"/>
+  </g>
+  
+  <!-- "Airline Approved" Label -->
+  <g transform="translate(100, 30)">
+    <rect x="-70" y="-15" width="140" height="30" rx="15" ry="15" fill="#4682B4"/>
+    <text x="0" y="5" font-family="Arial" font-size="12" font-weight="bold" text-anchor="middle" fill="white">AIRLINE APPROVED</text>
+  </g>
+  
+  <!-- "Lightweight" Banner -->
+  <g transform="translate(40, 50) rotate(-30)">
+    <rect x="-50" y="-10" width="100" height="20" fill="#32CD32"/>
+    <text x="0" y="5" font-family="Arial" font-size="12" font-weight="bold" text-anchor="middle" fill="white">LIGHTWEIGHT</text>
+  </g>
+</svg>

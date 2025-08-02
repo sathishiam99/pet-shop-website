@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 200 200">
+  <!-- Background -->
+  <rect width="200" height="200" fill="#f8f8f8" rx="10" ry="10"/>
+  
+  <!-- Pet Collar -->
+  <g transform="translate(100, 100)">
+    <!-- Main Collar -->
+    <path d="M-70,0 A70,25 0 0,1 70,0 A70,25 0 0,1 -70,0 Z" fill="#FF6347" transform="rotate(0)"/>
+    <path d="M-65,0 A65,20 0 0,1 65,0 A65,20 0 0,1 -65,0 Z" fill="#FF4500" transform="rotate(0)"/>
+    
+    <!-- Collar Texture/Pattern -->
+    <g fill="#FFD700" opacity="0.7">
+      <circle cx="-50" cy="0" r="5"/>
+      <circle cx="-30" cy="0" r="5"/>
+      <circle cx="-10" cy="0" r="5"/>
+      <circle cx="10" cy="0" r="5"/>
+      <circle cx="30" cy="0" r="5"/>
+      <circle cx="50" cy="0" r="5"/>
+    </g>
+    
+    <!-- Collar Buckle -->
+    <g transform="translate(60, 0)">
+      <rect x="-10" y="-10" width="20" height="20" rx="2" ry="2" fill="#C0C0C0"/>
+      <rect x="-8" y="-8" width="16" height="16" rx="1" ry="1" fill="#D3D3D3"/>
+      <rect x="-5" y="-5" width="10" height="10" rx="1" ry="1" fill="#A9A9A9"/>
+      <circle cx="0" cy="0" r="3" fill="#C0C0C0"/>
+    </g>
+    
+    <!-- ID Tag -->
+    <g transform="translate(-40, 15)">
+      <circle cx="0" cy="0" r="12" fill="#FFD700"/>
+      <circle cx="0" cy="0" r="10" fill="#FFDF00"/>
+      <text x="0" y="4" font-family="Arial" font-size="10" font-weight="bold" text-anchor="middle" fill="#8B4513">ID</text>
+    </g>
+    
+    <!-- Collar Holes -->
+    <g fill="#8B4513" opacity="0.8">
+      <circle cx="40" cy="0" r="2"/>
+      <circle cx="30" cy="0" r="2"/>
+      <circle cx="20" cy="0" r="2"/>
+      <circle cx="10" cy="0" r="2"/>
+      <circle cx="0" cy="0" r="2"/>
+    </g>
+  </g>
+  
+  <!-- Paw Prints -->
+  <g fill="#696969" opacity="0.3">
+    <!-- Paw 1 -->
+    <g transform="translate(40, 170) rotate(-30)">
+      <ellipse cx="0" cy="-5" rx="5" ry="7"/>
+      <ellipse cx="-8" cy="-2" rx="4" ry="6"/>
+      <ellipse cx="8" cy="-2" rx="4" ry="6"/>
+      <ellipse cx="0" cy="8" rx="7" ry="8"/>
+    </g>
+    
+    <!-- Paw 2 -->
+    <g transform="translate(160, 160) rotate(20)">
+      <ellipse cx="0" cy="-5" rx="5" ry="7"/>
+      <ellipse cx="-8" cy="-2" rx="4" ry="6"/>
+      <ellipse cx="8" cy="-2" rx="4" ry="6"/>
+      <ellipse cx="0" cy="8" rx="7" ry="8"/>
+    </g>
+  </g>
+  
+  <!-- "Adjustable" Label -->
+  <g transform="translate(100, 30)">
+    <rect x="-50" y="-15" width="100" height="30" rx="15" ry="15" fill="#4682B4"/>
+    <text x="0" y="5" font-family="Arial" font-size="12" font-weight="bold" text-anchor="middle" fill="white">ADJUSTABLE</text>
+  </g>
+  
+  <!-- "Durable" Banner -->
+  <g transform="translate(40, 50) rotate(-30)">
+    <rect x="-40" y="-10" width="80" height="20" fill="#32CD32"/>
+    <text x="0" y="5" font-family="Arial" font-size="12" font-weight="bold" text-anchor="middle" fill="white">DURABLE</text>
+  </g>
+</svg>

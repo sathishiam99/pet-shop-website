@@ -1,0 +1,1248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pawfect World - Your One-Stop Pet Supply Store</title>
+    <meta name="description" content="Pawfect World offers premium pet supplies, food, toys, and accessories for all your furry friends. Shop our wide selection for dogs, cats, and more!">
+    <meta name="keywords" content="pet supplies, dog food, cat toys, pet accessories, pet health, pet store, premium pet products">
+    <meta name="author" content="Pawfect World">
+    
+    <!-- Open Graph / Social Media Meta Tags -->
+    <meta property="og:title" content="Pawfect World - Premium Pet Supplies">
+    <meta property="og:description" content="Find the perfect products for your furry, feathered, or scaly friends at Pawfect World.">
+    <meta property="og:image" content="https://pawfectworld.com/images/og-image.jpg">
+    <meta property="og:url" content="https://pawfectworld.com">
+    <meta property="og:type" content="website">
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Pawfect World - Premium Pet Supplies">
+    <meta name="twitter:description" content="Find the perfect products for your furry, feathered, or scaly friends at Pawfect World.">
+    <meta name="twitter:image" content="https://pawfectworld.com/images/twitter-card.jpg">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://pawfectworld.com">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+    
+    <!-- Preload Critical Resources -->
+    <link rel="preload" href="css/style.css" as="style">
+    <link rel="preload" href="css/responsive.css" as="style">
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" as="style">
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&family=Poppins:wght@400;500;600;700&display=swap" as="style">
+    <link rel="preload" href="js/main.js" as="script">
+    
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "PetStore",
+      "name": "Pawfect World",
+      "image": "https://pawfectworld.com/images/logo.svg",
+      "@id": "https://pawfectworld.com",
+      "url": "https://pawfectworld.com",
+      "telephone": "(123) 456-7890",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "123 Pet Street",
+        "addressLocality": "Cityville",
+        "addressRegion": "State",
+        "postalCode": "12345",
+        "addressCountry": "US"
+      },
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": [
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday",
+            "Saturday"
+          ],
+          "opens": "09:00",
+          "closes": "21:00"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "Sunday",
+          "opens": "10:00",
+          "closes": "18:00"
+        }
+      ],
+      "sameAs": [
+        "https://www.facebook.com/pawfectworld",
+        "https://www.twitter.com/pawfectworld",
+        "https://www.instagram.com/pawfectworld",
+        "https://www.pinterest.com/pawfectworld"
+      ]
+    }
+    </script>
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="header">
+        <div class="top-bar">
+            <div class="container">
+                <div class="top-bar-content">
+                    <div class="contact-info">
+                        <a href="tel:+1234567890"><i class="fas fa-phone"></i> (123) 456-7890</a>
+                        <a href="mailto:info@pawfectworld.com"><i class="fas fa-envelope"></i> info@pawfectworld.com</a>
+                    </div>
+                    <div class="top-bar-links">
+                        <a href="scheduler.html">Book Appointment</a>
+                        <a href="events.html">Events & Adoption</a>
+                        <a href="newsletter.html">Subscribe</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="main-header">
+            <div class="container">
+                <div class="header-content">
+                    <div class="logo">
+                        <a href="index.html">
+                            <img src="images/logo.svg" alt="Pawfect World Logo">
+                        </a>
+                    </div>
+                    
+                    <div class="search-bar">
+                        <form action="#" method="get">
+                            <input type="text" placeholder="Search for products..." name="search">
+                            <button type="submit"><i class="fas fa-search"></i></button>
+                        </form>
+                    </div>
+                    
+                    <div class="header-actions">
+                        <div class="account-dropdown">
+                            <a href="account.html" class="account-icon"><i class="fas fa-user"></i></a>
+                            <div class="dropdown-content">
+                                <a href="account.html">My Account</a>
+                                <a href="account.html#orders">My Orders</a>
+                                <a href="account.html#wishlist">Wishlist</a>
+                                <a href="account.html#pet-profiles">Pet Profiles</a>
+                                <a href="login.html">Login</a>
+                                <a href="register.html">Register</a>
+                            </div>
+                        </div>
+                        <a href="cart.html" class="cart-icon">
+                            <i class="fas fa-shopping-cart"></i>
+                            <span class="cart-count">0</span>
+                        </a>
+                    </div>
+                    
+                    <div class="mobile-menu-toggle">
+                        <i class="fas fa-bars"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <nav class="main-nav">
+            <div class="container">
+                <ul class="nav-menu">
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li class="has-dropdown">
+                        <a href="shop.html">Shop <i class="fas fa-chevron-down"></i></a>
+                        <div class="dropdown-menu mega-menu">
+                            <div class="mega-menu-content">
+                                <div class="menu-column">
+                                    <h3>Shop By Pet</h3>
+                                    <ul>
+                                        <li><a href="shop.html?category=dog">Dog Products</a></li>
+                                        <li><a href="shop.html?category=cat">Cat Products</a></li>
+                                        <li><a href="shop.html?category=small-pets">Small Pets</a></li>
+                                        <li><a href="shop.html?category=birds">Birds</a></li>
+                                        <li><a href="shop.html?category=fish">Fish & Aquatics</a></li>
+                                    </ul>
+                                </div>
+                                <div class="menu-column">
+                                    <h3>Categories</h3>
+                                    <ul>
+                                        <li><a href="shop.html?category=food">Food & Treats</a></li>
+                                        <li><a href="shop.html?category=toys">Toys</a></li>
+                                        <li><a href="shop.html?category=grooming">Grooming Supplies</a></li>
+                                        <li><a href="shop.html?category=health">Health & Wellness</a></li>
+                                        <li><a href="shop.html?category=accessories">Accessories</a></li>
+                                    </ul>
+                                </div>
+                                <div class="menu-column">
+                                    <h3>Featured</h3>
+                                    <ul>
+                                        <li><a href="shop.html?featured=new">New Arrivals</a></li>
+                                        <li><a href="shop.html?featured=bestsellers">Bestsellers</a></li>
+                                        <li><a href="shop.html?featured=deals">Special Deals</a></li>
+                                        <li><a href="shop.html?featured=subscription">Subscription Boxes</a></li>
+                                        <li><a href="shop.html?featured=bundles">Curated Bundles</a></li>
+                                    </ul>
+                                </div>
+                                <div class="menu-promo">
+                                    <img src="images/menu-promo.jpg" alt="Special Offer">
+                                    <div class="promo-content">
+                                        <h3>Summer Sale!</h3>
+                                        <p>Up to 40% off on select items</p>
+                                        <a href="shop.html?sale=summer" class="btn btn-primary">Shop Now</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="testimonials.html">Testimonials</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="hero-slider">
+            <div class="hero-slide" style="background-image: url('images/hero-1.jpg');">
+                <div class="container">
+                    <div class="hero-content">
+                        <h1>Welcome to Pawfect World</h1>
+                        <p>Premium supplies for your furry, feathery, and scaly friends</p>
+                        <div class="hero-buttons">
+                            <a href="shop.html" class="btn btn-primary">Shop Now</a>
+                            <a href="about.html" class="btn btn-secondary">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-slide" style="background-image: url('images/hero-2.jpg');">
+                <div class="container">
+                    <div class="hero-content">
+                        <h1>Premium Pet Food & Treats</h1>
+                        <p>Nutritious options for healthy, happy pets</p>
+                        <div class="hero-buttons">
+                            <a href="shop.html?category=food" class="btn btn-primary">Shop Food</a>
+                            <a href="blog.html?category=nutrition" class="btn btn-secondary">Nutrition Tips</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-slide" style="background-image: url('images/hero-3.jpg');">
+                <div class="container">
+                    <div class="hero-content">
+                        <h1>Toys & Accessories</h1>
+                        <p>Keep your pets entertained and stylish</p>
+                        <div class="hero-buttons">
+                            <a href="shop.html?category=toys" class="btn btn-primary">Shop Toys</a>
+                            <a href="shop.html?category=accessories" class="btn btn-secondary">Shop Accessories</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="pet-categories">
+            <div class="container">
+                <div class="category-grid">
+                    <a href="shop.html?category=dog" class="category-card">
+                        <div class="category-icon">
+                            <img src="images/dog-icon.svg" alt="Dog Products">
+                        </div>
+                        <h3>Dogs</h3>
+                    </a>
+                    <a href="shop.html?category=cat" class="category-card">
+                        <div class="category-icon">
+                            <img src="images/cat-icon.svg" alt="Cat Products">
+                        </div>
+                        <h3>Cats</h3>
+                    </a>
+                    <a href="shop.html?category=small-pets" class="category-card">
+                        <div class="category-icon">
+                            <img src="images/small-pet-icon.svg" alt="Small Pet Products">
+                        </div>
+                        <h3>Small Pets</h3>
+                    </a>
+                    <a href="shop.html?category=birds" class="category-card">
+                        <div class="category-icon">
+                            <img src="images/bird-icon.svg" alt="Bird Products">
+                        </div>
+                        <h3>Birds</h3>
+                    </a>
+                    <a href="shop.html?category=fish" class="category-card">
+                        <div class="category-icon">
+                            <img src="images/fish-icon.svg" alt="Fish Products">
+                        </div>
+                        <h3>Fish</h3>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Products Section -->
+    <section class="featured-products section-padding">
+        <div class="container">
+            <div class="section-header">
+                <h2>Featured Products</h2>
+                <p>Handpicked favorites for your beloved pets</p>
+            </div>
+            
+            <div class="product-grid">
+                <!-- Product Card 1 -->
+                <div class="product-card">
+                    <div class="product-badge">New</div>
+                    <div class="product-image">
+                        <img src="images/product-1.jpg" alt="Premium Dog Food">
+                        <div class="product-actions">
+                            <a href="#" class="quick-view"><i class="fas fa-eye"></i></a>
+                            <a href="#" class="add-to-wishlist"><i class="far fa-heart"></i></a>
+                            <a href="#" class="add-to-compare"><i class="fas fa-sync-alt"></i></a>
+                        </div>
+                    </div>
+                    <div class="product-content">
+                        <div class="product-category">Dog Food</div>
+                        <h3 class="product-title"><a href="product.html">Premium Grain-Free Dog Food</a></h3>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                            <span>(24)</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="current-price">$49.99</span>
+                            <span class="old-price">$59.99</span>
+                        </div>
+                        <div class="subscription-option">
+                            <label>
+                                <input type="checkbox" name="subscription">
+                                <span>Subscribe & Save 10%</span>
+                            </label>
+                        </div>
+                        <a href="#" class="btn btn-primary add-to-cart">Add to Cart</a>
+                    </div>
+                </div>
+                
+                <!-- Product Card 2 -->
+                <div class="product-card">
+                    <div class="product-badge bestseller">Bestseller</div>
+                    <div class="product-image">
+                        <img src="images/product-2.jpg" alt="Interactive Cat Toy">
+                        <div class="product-actions">
+                            <a href="#" class="quick-view"><i class="fas fa-eye"></i></a>
+                            <a href="#" class="add-to-wishlist"><i class="far fa-heart"></i></a>
+                            <a href="#" class="add-to-compare"><i class="fas fa-sync-alt"></i></a>
+                        </div>
+                    </div>
+                    <div class="product-content">
+                        <div class="product-category">Cat Toys</div>
+                        <h3 class="product-title"><a href="product.html">Interactive Laser Cat Toy</a></h3>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <span>(42)</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="current-price">$24.99</span>
+                        </div>
+                        <a href="#" class="btn btn-primary add-to-cart">Add to Cart</a>
+                    </div>
+                </div>
+                
+                <!-- Product Card 3 -->
+                <div class="product-card">
+                    <div class="product-badge sale">Sale</div>
+                    <div class="product-image">
+                        <img src="images/product-3.jpg" alt="Dog Grooming Kit">
+                        <div class="product-actions">
+                            <a href="#" class="quick-view"><i class="fas fa-eye"></i></a>
+                            <a href="#" class="add-to-wishlist"><i class="far fa-heart"></i></a>
+                            <a href="#" class="add-to-compare"><i class="fas fa-sync-alt"></i></a>
+                        </div>
+                    </div>
+                    <div class="product-content">
+                        <div class="product-category">Grooming</div>
+                        <h3 class="product-title"><a href="product.html">Professional Dog Grooming Kit</a></h3>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <span>(18)</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="current-price">$34.99</span>
+                            <span class="old-price">$44.99</span>
+                        </div>
+                        <a href="#" class="btn btn-primary add-to-cart">Add to Cart</a>
+                    </div>
+                </div>
+                
+                <!-- Product Card 4 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="images/product-4.jpg" alt="Cat Scratching Post">
+                        <div class="product-actions">
+                            <a href="#" class="quick-view"><i class="fas fa-eye"></i></a>
+                            <a href="#" class="add-to-wishlist"><i class="far fa-heart"></i></a>
+                            <a href="#" class="add-to-compare"><i class="fas fa-sync-alt"></i></a>
+                        </div>
+                    </div>
+                    <div class="product-content">
+                        <div class="product-category">Cat Furniture</div>
+                        <h3 class="product-title"><a href="product.html">Deluxe Cat Tree with Scratching Posts</a></h3>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                            <span>(35)</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="current-price">$79.99</span>
+                        </div>
+                        <a href="#" class="btn btn-primary add-to-cart">Add to Cart</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="view-all-container">
+                <a href="shop.html" class="btn btn-secondary">View All Products</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Promotional Carousel Section -->
+    <section class="promo-carousel section-padding">
+        <div class="container">
+            <div class="section-header">
+                <h2>Special Offers</h2>
+                <p>Exclusive deals and promotions for your pets</p>
+            </div>
+            
+            <div class="promo-slider">
+                <div class="promo-slide">
+                    <div class="promo-card">
+                        <img src="images/promo-1.png" alt="Summer Sale">
+                        <div class="promo-content">
+                            <h3>Summer Sale!</h3>
+                            <p>Up to 40% off on selected pet accessories</p>
+                            <a href="shop.html?sale=summer" class="btn btn-primary">Shop Now</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="promo-slide">
+                    <div class="promo-card">
+                        <img src="images/promo-2.png" alt="New Arrivals">
+                        <div class="promo-content">
+                            <h3>New Arrivals</h3>
+                            <p>Check out our latest pet toys collection</p>
+                            <a href="shop.html?featured=new" class="btn btn-primary">Discover</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="promo-slide">
+                    <div class="promo-card">
+                        <img src="images/promo-3.png" alt="Free Shipping">
+                        <div class="promo-content">
+                            <h3>Free Shipping</h3>
+                            <p>On all orders over $50</p>
+                            <a href="shop.html" class="btn btn-primary">Shop Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Pet Profile Banner -->
+    <section class="pet-profile-banner">
+        <div class="container">
+            <div class="banner-content">
+                <div class="banner-image">
+                    <img src="images/pet-profile.svg" alt="Create Pet Profile">
+                </div>
+                <div class="banner-text">
+                    <h2>Create Your Pet's Profile</h2>
+                    <p>Get personalized product recommendations, reminders for vaccinations, and special offers tailored to your pet's needs.</p>
+                    <a href="account.html#pet-profiles" class="btn btn-primary">Create Profile</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Popular Categories -->
+    <section class="popular-categories section-padding">
+        <div class="container">
+            <div class="section-header">
+                <h2>Shop By Category</h2>
+                <p>Find the perfect products for your pets</p>
+            </div>
+            
+            <div class="category-slider">
+                <div class="category-item">
+                    <a href="shop.html?category=food">
+                        <div class="category-image">
+                            <img src="images/category-food.jpg" alt="Pet Food">
+                        </div>
+                        <h3>Food</h3>
+                    </a>
+                </div>
+                
+                <div class="category-item">
+                    <a href="shop.html?category=toys">
+                        <div class="category-image">
+                            <img src="images/category-toys.jpg" alt="Pet Toys">
+                        </div>
+                        <h3>Toys</h3>
+                    </a>
+                </div>
+                
+                <div class="category-item">
+                    <a href="shop.html?category=grooming">
+                        <div class="category-image">
+                            <img src="images/category-grooming.jpg" alt="Pet Grooming">
+                        </div>
+                        <h3>Grooming Supplies</h3>
+                    </a>
+                </div>
+                
+                <div class="category-item">
+                    <a href="shop.html?category=health">
+                        <div class="category-image">
+                            <img src="images/category-health.jpg" alt="Pet Health">
+                        </div>
+                        <h3>Health & Wellness</h3>
+                    </a>
+                </div>
+                
+                <div class="category-item">
+                    <a href="shop.html?category=accessories">
+                        <div class="category-image">
+                            <img src="images/category-accessories.jpg" alt="Pet Accessories">
+                        </div>
+                        <h3>Accessories</h3>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Curated Bundles Section -->
+    <section class="curated-bundles section-padding">
+        <div class="container">
+            <div class="section-header">
+                <h2>Curated Pet Bundles</h2>
+                <p>Everything your new pet needs in one convenient package</p>
+            </div>
+            
+            <div class="bundles-grid">
+                <div class="bundle-card">
+                    <div class="bundle-image">
+                        <img src="images/dog-bundle.png" alt="Dog Starter Kit">
+                    </div>
+                    <div class="bundle-content">
+                        <h3>Dog Starter Kit</h3>
+                        <p>Essential items for new dog owners including food, toys, grooming supplies, and more</p>
+                        <ul class="bundle-includes">
+                            <li><i class="fas fa-check"></i> Premium Dog Food (4lb)</li>
+                            <li><i class="fas fa-check"></i> Adjustable Collar & Leash</li>
+                            <li><i class="fas fa-check"></i> Food & Water Bowls</li>
+                            <li><i class="fas fa-check"></i> Starter Toy Set (3 toys)</li>
+                            <li><i class="fas fa-check"></i> Basic Grooming Kit</li>
+                        </ul>
+                        <div class="bundle-price">
+                            <span class="current-price">$79.99</span>
+                            <span class="old-price">$99.99</span>
+                            <span class="savings">Save 20%</span>
+                        </div>
+                        <a href="shop.html?bundle=dog-starter" class="btn btn-primary">Add to Cart</a>
+                    </div>
+                </div>
+                
+                <div class="bundle-card">
+                    <div class="bundle-image">
+                        <img src="images/cat-bundle.png" alt="Cat Starter Kit">
+                    </div>
+                    <div class="bundle-content">
+                        <h3>Cat Starter Kit</h3>
+                        <p>Everything new cat parents need including food, litter essentials, toys, and more</p>
+                        <ul class="bundle-includes">
+                            <li><i class="fas fa-check"></i> Premium Cat Food (4lb)</li>
+                            <li><i class="fas fa-check"></i> Litter Box & Scoop</li>
+                            <li><i class="fas fa-check"></i> Food & Water Bowls</li>
+                            <li><i class="fas fa-check"></i> Interactive Toy Set (4 toys)</li>
+                            <li><i class="fas fa-check"></i> Adjustable Collar with Bell</li>
+                        </ul>
+                        <div class="bundle-price">
+                            <span class="current-price">$69.99</span>
+                            <span class="old-price">$89.99</span>
+                            <span class="savings">Save 22%</span>
+                        </div>
+                        <a href="shop.html?bundle=cat-starter" class="btn btn-primary">Add to Cart</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="view-all-container">
+                <a href="shop.html?featured=bundles" class="btn btn-secondary">View All Bundles</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Subscription Boxes -->
+    <section class="subscription-boxes section-padding bg-light">
+        <div class="container">
+            <div class="section-header">
+                <h2>Monthly Subscription Boxes</h2>
+                <p>Surprise your pet with curated products delivered to your door</p>
+            </div>
+            
+            <div class="subscription-grid">
+                <div class="subscription-card">
+                    <div class="subscription-image">
+                        <img src="images/dog-box.jpg" alt="Dog Subscription Box">
+                    </div>
+                    <div class="subscription-content">
+                        <h3>Woof Box</h3>
+                        <p>Monthly box of premium treats, toys, and accessories for your dog</p>
+                        <div class="subscription-price">
+                            <span>From $34.99/month</span>
+                        </div>
+                        <a href="shop.html?subscription=dog" class="btn btn-primary">Subscribe Now</a>
+                    </div>
+                </div>
+                
+                <div class="subscription-card">
+                    <div class="subscription-image">
+                        <img src="images/cat-box.jpg" alt="Cat Subscription Box">
+                    </div>
+                    <div class="subscription-content">
+                        <h3>Purr Box</h3>
+                        <p>Monthly box of premium treats, toys, and accessories for your cat</p>
+                        <div class="subscription-price">
+                            <span>From $29.99/month</span>
+                        </div>
+                        <a href="shop.html?subscription=cat" class="btn btn-primary">Subscribe Now</a>
+                    </div>
+                </div>
+                
+                <div class="subscription-card">
+                    <div class="subscription-image">
+                        <img src="images/mixed-box.jpg" alt="Multi-Pet Subscription Box">
+                    </div>
+                    <div class="subscription-content">
+                        <h3>Multi-Pet Box</h3>
+                        <p>Customized monthly box for households with multiple pets</p>
+                        <div class="subscription-price">
+                            <span>From $49.99/month</span>
+                        </div>
+                        <a href="shop.html?subscription=multi" class="btn btn-primary">Subscribe Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials section-padding">
+        <div class="container">
+            <div class="section-header">
+                <h2>What Our Customers Say</h2>
+                <p>Hear from pet parents who love our products</p>
+            </div>
+            
+            <div class="testimonial-slider">
+                <div class="testimonial-item">
+                    <div class="testimonial-content">
+                        <div class="testimonial-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p>"The quality of products from Pawfect World is outstanding! My dog loves his monthly subscription box, and the customer service is exceptional."</p>
+                        <div class="testimonial-author">
+                            <img src="images/testimonial-1.jpg" alt="Sarah Johnson">
+                            <div class="author-info">
+                                <h4>Sarah Johnson</h4>
+                                <span>Dog Mom to Max</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-item">
+                    <div class="testimonial-content">
+                        <div class="testimonial-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p>"I've tried many pet stores, but Pawfect World truly stands out. Their pet profiles feature helps me keep track of my cats' needs, and the products are always high quality."</p>
+                        <div class="testimonial-author">
+                            <img src="images/testimonial-2.jpg" alt="Michael Rodriguez">
+                            <div class="author-info">
+                                <h4>Michael Rodriguez</h4>
+                                <span>Cat Dad to Luna & Stella</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-item">
+                    <div class="testimonial-content">
+                        <div class="testimonial-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <p>"The subscription service is so convenient, and my pets are always excited when their Pawfect World box arrives. Great selection and value!"</p>
+                        <div class="testimonial-author">
+                            <img src="images/testimonial-3.jpg" alt="Emily Chen">
+                            <div class="author-info">
+                                <h4>Emily Chen</h4>
+                                <span>Pet Parent to Buddy & Mittens</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="view-all-container">
+                <a href="testimonials.html" class="btn btn-secondary">Read More Testimonials</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Section -->
+    <section class="blog-section section-padding bg-light">
+        <div class="container">
+            <div class="section-header">
+                <h2>Pet Care Tips & Advice</h2>
+                <p>Expert insights to help you care for your pets</p>
+            </div>
+            
+            <div class="blog-grid">
+                <div class="blog-card">
+                    <div class="blog-image">
+                        <a href="pages/blog/transitioning-pets-to-new-diet.html">
+                            <img src="images/blog-1.png" alt="Transitioning Pets to a New Diet">
+                        </a>
+                        <div class="blog-category">Nutrition</div>
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span><i class="far fa-calendar"></i> June 15, 2023</span>
+                            <span><i class="far fa-comment"></i> 8 Comments</span>
+                        </div>
+                        <h3><a href="pages/blog/transitioning-pets-to-new-diet.html">Transitioning Pets to a New Diet: A Step-by-Step Guide</a></h3>
+                        <p>Learn how to safely transition your dog or cat to a new diet without digestive upset. Expert tips for a smooth dietary change.</p>
+                        <a href="pages/blog/transitioning-pets-to-new-diet.html" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                        <div class="social-share">
+                            <span>Share:</span>
+                            <a href="#" onclick="window.open('https://www.facebook.com/sharer/sharer.php?u='+encodeURIComponent(window.location.href), 'facebook-share-dialog', 'width=626,height=436'); return false;"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" onclick="window.open('https://twitter.com/intent/tweet?text=Transitioning Pets to a New Diet&url='+encodeURIComponent(window.location.href), 'twitter-share-dialog', 'width=626,height=436'); return false;"><i class="fab fa-twitter"></i></a>
+                            <a href="#" onclick="window.open('https://pinterest.com/pin/create/button/?url='+encodeURIComponent(window.location.href)+'&media='+encodeURIComponent('images/blog-1.png')+'&description=Transitioning Pets to a New Diet', 'pinterest-share-dialog', 'width=626,height=436'); return false;"><i class="fab fa-pinterest-p"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="blog-card">
+                    <div class="blog-image">
+                        <a href="pages/blog/top-5-toys-for-active-dogs.html">
+                            <img src="images/blog-2.png" alt="Top 5 Toys for Active Dogs">
+                        </a>
+                        <div class="blog-category">Toys</div>
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span><i class="far fa-calendar"></i> June 10, 2023</span>
+                            <span><i class="far fa-comment"></i> 6 Comments</span>
+                        </div>
+                        <h3><a href="pages/blog/top-5-toys-for-active-dogs.html">Top 5 Toys for Active Dogs: Keep Them Engaged and Healthy</a></h3>
+                        <p>Discover the best toys to keep your energetic dog physically and mentally stimulated. Perfect for high-energy breeds!</p>
+                        <a href="pages/blog/top-5-toys-for-active-dogs.html" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                        <div class="social-share">
+                            <span>Share:</span>
+                            <a href="#" onclick="window.open('https://www.facebook.com/sharer/sharer.php?u='+encodeURIComponent(window.location.href), 'facebook-share-dialog', 'width=626,height=436'); return false;"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" onclick="window.open('https://twitter.com/intent/tweet?text=Top 5 Toys for Active Dogs&url='+encodeURIComponent(window.location.href), 'twitter-share-dialog', 'width=626,height=436'); return false;"><i class="fab fa-twitter"></i></a>
+                            <a href="#" onclick="window.open('https://pinterest.com/pin/create/button/?url='+encodeURIComponent(window.location.href)+'&media='+encodeURIComponent('images/blog-2.png')+'&description=Top 5 Toys for Active Dogs', 'pinterest-share-dialog', 'width=626,height=436'); return false;"><i class="fab fa-pinterest-p"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="blog-card">
+                    <div class="blog-image">
+                        <a href="pages/blog/grooming-long-haired-cats.html">
+                            <img src="images/blog-3.png" alt="Grooming Long-Haired Cats at Home">
+                        </a>
+                        <div class="blog-category">Grooming</div>
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span><i class="far fa-calendar"></i> June 5, 2023</span>
+                            <span><i class="far fa-comment"></i> 4 Comments</span>
+                        </div>
+                        <h3><a href="pages/blog/grooming-long-haired-cats.html">Grooming Long-Haired Cats at Home: A Complete Guide</a></h3>
+                        <p>Master the art of grooming your long-haired feline at home with these professional tips and techniques for a healthy, mat-free coat.</p>
+                        <a href="pages/blog/grooming-long-haired-cats.html" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                        <div class="social-share">
+                            <span>Share:</span>
+                            <a href="#" onclick="window.open('https://www.facebook.com/sharer/sharer.php?u='+encodeURIComponent(window.location.href), 'facebook-share-dialog', 'width=626,height=436'); return false;"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" onclick="window.open('https://twitter.com/intent/tweet?text=Grooming Long-Haired Cats at Home&url='+encodeURIComponent(window.location.href), 'twitter-share-dialog', 'width=626,height=436'); return false;"><i class="fab fa-twitter"></i></a>
+                            <a href="#" onclick="window.open('https://pinterest.com/pin/create/button/?url='+encodeURIComponent(window.location.href)+'&media='+encodeURIComponent('images/blog-3.png')+'&description=Grooming Long-Haired Cats at Home', 'pinterest-share-dialog', 'width=626,height=436'); return false;"><i class="fab fa-pinterest-p"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="view-all-container">
+                <a href="pages/blog/index.html" class="btn btn-secondary">View All Articles</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Virtual Vet Q&A Section -->
+    <section class="vet-qa-section section-padding bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="vet-qa-content">
+                        <div class="section-header text-left">
+                            <h2>Virtual Vet Q&A</h2>
+                            <p>Get expert advice for your pet's health concerns</p>
+                        </div>
+                        <div class="vet-features">
+                            <div class="vet-feature-item">
+                                <i class="fas fa-video"></i>
+                                <div>
+                                    <h4>Video Consultations</h4>
+                                    <p>Connect with licensed veterinarians from the comfort of your home</p>
+                                </div>
+                            </div>
+                            <div class="vet-feature-item">
+                                <i class="fas fa-comment-medical"></i>
+                                <div>
+                                    <h4>Quick Advice</h4>
+                                    <p>Get answers to your pet health questions without a full appointment</p>
+                                </div>
+                            </div>
+                            <div class="vet-feature-item">
+                                <i class="fas fa-file-prescription"></i>
+                                <div>
+                                    <h4>Prescription Refills</h4>
+                                    <p>Request medication refills for existing prescriptions</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="vet-booking-form">
+                        <h3>Book a Virtual Consultation</h3>
+                        <form id="vetBookingForm">
+                            <div class="form-group">
+                                <label for="petOwnerName">Your Name</label>
+                                <input type="text" class="form-control" id="petOwnerName" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="petOwnerEmail">Email Address</label>
+                                <input type="email" class="form-control" id="petOwnerEmail" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="petOwnerPhone">Phone Number</label>
+                                <input type="tel" class="form-control" id="petOwnerPhone" required>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group col-md-6">
+                                    <label for="petType">Pet Type</label>
+                                    <select class="form-control" id="petType" required>
+                                        <option value="">Select Pet Type</option>
+                                        <option value="dog">Dog</option>
+                                        <option value="cat">Cat</option>
+                                        <option value="bird">Bird</option>
+                                        <option value="small_animal">Small Animal</option>
+                                        <option value="reptile">Reptile</option>
+                                        <option value="other">Other</option>
+                                    </select>
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <label for="consultationType">Consultation Type</label>
+                                    <select class="form-control" id="consultationType" required>
+                                        <option value="">Select Type</option>
+                                        <option value="general_advice">General Advice</option>
+                                        <option value="health_concern">Health Concern</option>
+                                        <option value="prescription_refill">Prescription Refill</option>
+                                        <option value="follow_up">Follow-up Visit</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="preferredDate">Preferred Date</label>
+                                <input type="date" class="form-control" id="preferredDate" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="preferredTime">Preferred Time</label>
+                                <select class="form-control" id="preferredTime" required>
+                                    <option value="">Select Time</option>
+                                    <option value="morning">Morning (9AM - 12PM)</option>
+                                    <option value="afternoon">Afternoon (12PM - 4PM)</option>
+                                    <option value="evening">Evening (4PM - 8PM)</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="petConcern">Describe Your Concern</label>
+                                <textarea class="form-control" id="petConcern" rows="3" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-block">Book Consultation</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pet Adoption & Events Section -->
+    <section class="adoption-events-section section-padding">
+        <div class="container">
+            <div class="section-header">
+                <h2>Pet Adoption & Upcoming Events</h2>
+                <p>Find your new best friend and join our community events</p>
+            </div>
+            
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="adoption-partners">
+                        <h3>Our Adoption Partners</h3>
+                        <div class="partner-logos">
+                            <div class="partner-logo">
+                                <img src="images/partner-1.png" alt="Happy Tails Rescue">
+                                <h4>Happy Tails Rescue</h4>
+                                <p>Specializing in dog and puppy rescue and rehabilitation</p>
+                                <a href="#" class="btn btn-outline-primary btn-sm">View Available Pets</a>
+                            </div>
+                            <div class="partner-logo">
+                                <img src="images/partner-2.png" alt="Feline Friends Network">
+                                <h4>Feline Friends Network</h4>
+                                <p>Dedicated to rescuing and rehoming cats and kittens</p>
+                                <a href="#" class="btn btn-outline-primary btn-sm">View Available Pets</a>
+                            </div>
+                            <div class="partner-logo">
+                                <img src="images/partner-3.png" alt="Small Paws Sanctuary">
+                                <h4>Small Paws Sanctuary</h4>
+                                <p>Rescuing small animals including rabbits, guinea pigs, and hamsters</p>
+                                <a href="#" class="btn btn-outline-primary btn-sm">View Available Pets</a>
+                            </div>
+                        </div>
+                        <div class="adoption-cta">
+                            <p>Looking to adopt? We've partnered with local shelters to help pets find their forever homes.</p>
+                            <a href="pages/events/index.html" class="btn btn-secondary">Learn About Our Adoption Program</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="upcoming-events">
+                        <h3>Upcoming Events</h3>
+                        <div class="event-list">
+                            <div class="event-item">
+                                <div class="event-date">
+                                    <span class="day">15</span>
+                                    <span class="month">July</span>
+                                </div>
+                                <div class="event-details">
+                                    <h4>Adoption Day: Find Your Perfect Match</h4>
+                                    <p class="event-meta"><i class="fas fa-map-marker-alt"></i> Pawfect World Main Store, 10:00 AM - 4:00 PM</p>
+                                    <p>Meet adoptable pets from our partner shelters and find your new best friend.</p>
+                                    <a href="pages/events/index.html" class="btn btn-outline-primary btn-sm">Learn More</a>
+                                </div>
+                            </div>
+                            <div class="event-item">
+                                <div class="event-date">
+                                    <span class="day">22</span>
+                                    <span class="month">July</span>
+                                </div>
+                                <div class="event-details">
+                                    <h4>Pet First Aid Workshop</h4>
+                                    <p class="event-meta"><i class="fas fa-map-marker-alt"></i> Pawfect World Training Room, 1:00 PM - 3:00 PM</p>
+                                    <p>Learn essential first aid skills for pet emergencies from certified veterinarians.</p>
+                                    <a href="pages/events/index.html" class="btn btn-outline-primary btn-sm">Register Now</a>
+                                </div>
+                            </div>
+                            <div class="event-item">
+                                <div class="event-date">
+                                    <span class="day">29</span>
+                                    <span class="month">July</span>
+                                </div>
+                                <div class="event-details">
+                                    <h4>Puppy Socialization Playdate</h4>
+                                    <p class="event-meta"><i class="fas fa-map-marker-alt"></i> Pawfect World Play Area, 11:00 AM - 1:00 PM</p>
+                                    <p>Bring your puppy to socialize with other puppies in a safe, supervised environment.</p>
+                                    <a href="pages/events/index.html" class="btn btn-outline-primary btn-sm">Register Now</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="events-cta">
+                            <a href="pages/events/index.html" class="btn btn-secondary">View All Events</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pet Photo Gallery Section -->
+    <section class="pet-gallery-section section-padding bg-light">
+        <div class="container">
+            <div class="section-header">
+                <h2>Pet Photo Gallery</h2>
+                <p>Share photos of your pets enjoying our products</p>
+            </div>
+            
+            <div class="pet-gallery-grid">
+                <div class="pet-gallery-item">
+                    <img src="images/pet-gallery-1.png" alt="Dog with toy">
+                    <div class="gallery-overlay">
+                        <div class="gallery-info">
+                            <h4>Max</h4>
+                            <p>Loving his new interactive toy!</p>
+                            <span class="product-tag">Interactive Puzzle Toy</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="pet-gallery-item">
+                    <img src="images/pet-gallery-2.png" alt="Cat on tree">
+                    <div class="gallery-overlay">
+                        <div class="gallery-info">
+                            <h4>Luna</h4>
+                            <p>Queen of her new cat tree!</p>
+                            <span class="product-tag">Deluxe Cat Tree</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="pet-gallery-item">
+                    <img src="images/pet-gallery-3.png" alt="Dog after grooming">
+                    <div class="gallery-overlay">
+                        <div class="gallery-info">
+                            <h4>Charlie</h4>
+                            <p>Fresh and clean after using the grooming kit</p>
+                            <span class="product-tag">Professional Grooming Kit</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="pet-gallery-item">
+                    <img src="images/pet-gallery-4.png" alt="Cat with toy">
+                    <div class="gallery-overlay">
+                        <div class="gallery-info">
+                            <h4>Bella</h4>
+                            <p>Can't get enough of her laser toy!</p>
+                            <span class="product-tag">Interactive Laser Toy</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="pet-gallery-item">
+                    <img src="images/pet-gallery-5.png" alt="Dog with bone">
+                    <div class="gallery-overlay">
+                        <div class="gallery-info">
+                            <h4>Rocky</h4>
+                            <p>Best dental chew ever!</p>
+                            <span class="product-tag">Dental Health Chews</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="pet-gallery-item">
+                    <img src="images/pet-gallery-6.png" alt="Rabbit with toy">
+                    <div class="gallery-overlay">
+                        <div class="gallery-info">
+                            <h4>Thumper</h4>
+                            <p>Enjoying his new chew toy</p>
+                            <span class="product-tag">Small Animal Chew Toy</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="gallery-upload">
+                <h3>Share Your Pet Photos</h3>
+                <p>Upload photos of your pets enjoying our products and they might be featured in our gallery!</p>
+                
+                <form id="photoUploadForm" class="photo-upload-form">
+                    <div class="form-group">
+                        <label for="petName">Pet's Name</label>
+                        <input type="text" class="form-control" id="petName" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="petPhoto">Upload Photo</label>
+                        <div class="custom-file">
+                            <input type="file" class="custom-file-input" id="petPhoto" accept="image/*" required>
+                            <label class="custom-file-label" for="petPhoto">Choose file</label>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="productUsed">Product Used</label>
+                        <input type="text" class="form-control" id="productUsed" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="photoDescription">Description</label>
+                        <textarea class="form-control" id="photoDescription" rows="2" required></textarea>
+                    </div>
+                    <div class="form-check mb-3">
+                        <input class="form-check-input" type="checkbox" id="photoConsent" required>
+                        <label class="form-check-label" for="photoConsent">I agree to allow Pawfect World to use this photo on their website and social media.</label>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Upload Photo</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter-section section-padding">
+        <div class="container">
+            <div class="newsletter-content">
+                <div class="newsletter-text">
+                    <h2>Subscribe to Our Newsletter</h2>
+                    <p>Get the latest pet care tips, product updates, and exclusive offers delivered to your inbox.</p>
+                </div>
+                <div class="newsletter-form">
+                    <form action="#" method="post">
+                        <div class="form-group">
+                            <input type="email" placeholder="Your Email Address" required>
+                            <button type="submit" class="btn btn-primary">Subscribe</button>
+                        </div>
+                        <div class="form-check">
+                            <label>
+                                <input type="checkbox" required>
+                                <span>I agree to receive emails from Pawfect World</span>
+                            </label>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-top">
+            <div class="container">
+                <div class="footer-widgets">
+                    <div class="footer-widget">
+                        <div class="footer-logo">
+                            <img src="images/logo-white.svg" alt="Pawfect World Logo">
+                        </div>
+                        <p>Your one-stop shop for premium pet supplies, food, toys, and accessories for all your furry, feathery, and scaly friends.</p>
+                        <div class="social-links">
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-pinterest-p"></i></a>
+                            <a href="#"><i class="fab fa-youtube"></i></a>
+                        </div>
+                    </div>
+                    
+                    <div class="footer-widget">
+                        <h3>Shop</h3>
+                        <ul class="footer-links">
+                            <li><a href="shop.html?category=dog">Dog Products</a></li>
+                            <li><a href="shop.html?category=cat">Cat Products</a></li>
+                            <li><a href="shop.html?category=food">Food & Treats</a></li>
+                            <li><a href="shop.html?category=toys">Toys</a></li>
+                            <li><a href="shop.html?category=grooming">Grooming Supplies</a></li>
+                            <li><a href="shop.html?category=health">Health & Wellness</a></li>
+                            <li><a href="shop.html?category=accessories">Accessories</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-widget">
+                        <h3>Customer Service</h3>
+                        <ul class="footer-links">
+                            <li><a href="account.html">My Account</a></li>
+                            <li><a href="contact.html">Contact Us</a></li>
+                            <li><a href="faq.html">FAQ</a></li>
+                            <li><a href="shipping.html">Shipping & Returns</a></li>
+                            <li><a href="privacy.html">Privacy Policy</a></li>
+                            <li><a href="terms.html">Terms & Conditions</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-widget">
+                        <h3>About Us</h3>
+                        <ul class="footer-links">
+                            <li><a href="about.html">Our Story</a></li>
+                            <li><a href="blog.html">Blog</a></li>
+                            <li><a href="testimonials.html">Testimonials</a></li>
+                            <li><a href="events.html">Events & Adoption</a></li>
+                            <li><a href="careers.html">Careers</a></li>
+                            <li><a href="scheduler.html">Book Appointment</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-widget">
+                        <h3>Contact Info</h3>
+                        <ul class="contact-info">
+                            <li>
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>123 Pet Street, Pawville, CA 90210</span>
+                            </li>
+                            <li>
+                                <i class="fas fa-phone"></i>
+                                <span>(123) 456-7890</span>
+                            </li>
+                            <li>
+                                <i class="fas fa-envelope"></i>
+                                <span>info@pawfectworld.com</span>
+                            </li>
+                            <li>
+                                <i class="fas fa-clock"></i>
+                                <span>Mon-Sat: 9:00 AM - 8:00 PM<br>Sunday: 10:00 AM - 6:00 PM</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="footer-bottom-content">
+                    <div class="copyright">
+                        <p>&copy; 2023 Pawfect World. All Rights Reserved.</p>
+                    </div>
+                    <div class="payment-methods">
+                        <img src="images/payment-methods.png" alt="Payment Methods">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <a href="#" class="back-to-top"><i class="fas fa-arrow-up"></i></a>
+
+    <!-- Scripts -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

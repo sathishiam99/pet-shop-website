@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 200 200">
+  <!-- Background -->
+  <rect width="200" height="200" fill="#f8f8f8" rx="10" ry="10"/>
+  
+  <!-- Pet Water Fountain -->
+  <g transform="translate(100, 110)">
+    <!-- Base -->
+    <ellipse cx="0" cy="30" rx="50" ry="15" fill="#4682B4"/>
+    <ellipse cx="0" cy="28" rx="45" ry="12" fill="#5F9EA0"/>
+    
+    <!-- Water Reservoir -->
+    <path d="M-40,30 L-40,-10 C-40,-25 -25,-40 0,-40 C25,-40 40,-25 40,-10 L40,30 Z" fill="#87CEEB" opacity="0.7"/>
+    <path d="M-35,30 L-35,-10 C-35,-22 -22,-35 0,-35 C22,-35 35,-22 35,-10 L35,30 Z" fill="#ADD8E6" opacity="0.5"/>
+    
+    <!-- Water Spout -->
+    <rect x="-5" y="-50" width="10" height="15" rx="5" ry="5" fill="#4682B4"/>
+    
+    <!-- Water Stream -->
+    <path d="M0,-50 C5,-45 -5,-40 0,-35 C5,-30 -5,-25 0,-20" stroke="#ADD8E6" stroke-width="3" fill="none" opacity="0.8"/>
+    
+    <!-- Water Ripples -->
+    <ellipse cx="0" cy="-15" rx="15" ry="5" fill="none" stroke="#ADD8E6" stroke-width="1" opacity="0.6"/>
+    <ellipse cx="0" cy="-15" rx="10" ry="3" fill="none" stroke="#ADD8E6" stroke-width="1" opacity="0.6"/>
+    <ellipse cx="0" cy="-15" rx="5" ry="1" fill="none" stroke="#ADD8E6" stroke-width="1" opacity="0.6"/>
+    
+    <!-- Control Panel -->
+    <rect x="-15" y="10" width="30" height="10" rx="2" ry="2" fill="#A9A9A9"/>
+    <circle cx="-5" cy="15" r="3" fill="#32CD32"/>
+    <circle cx="5" cy="15" r="3" fill="#FF0000"/>
+  </g>
+  
+  <!-- Water Droplets -->
+  <g fill="#87CEFA" opacity="0.6">
+    <path d="M90,40 C90,35 95,35 95,40 C95,45 90,45 90,40 Z"/>
+    <path d="M110,45 C110,40 115,40 115,45 C115,50 110,50 110,45 Z"/>
+    <path d="M100,35 C100,30 105,30 105,35 C105,40 100,40 100,35 Z"/>
+  </g>
+  
+  <!-- Paw Prints -->
+  <g fill="#696969" opacity="0.3">
+    <!-- Paw 1 -->
+    <g transform="translate(40, 170) rotate(-30)">
+      <ellipse cx="0" cy="-5" rx="5" ry="7"/>
+      <ellipse cx="-8" cy="-2" rx="4" ry="6"/>
+      <ellipse cx="8" cy="-2" rx="4" ry="6"/>
+      <ellipse cx="0" cy="8" rx="7" ry="8"/>
+    </g>
+    
+    <!-- Paw 2 -->
+    <g transform="translate(160, 160) rotate(20)">
+      <ellipse cx="0" cy="-5" rx="5" ry="7"/>
+      <ellipse cx="-8" cy="-2" rx="4" ry="6"/>
+      <ellipse cx="8" cy="-2" rx="4" ry="6"/>
+      <ellipse cx="0" cy="8" rx="7" ry="8"/>
+    </g>
+  </g>
+  
+  <!-- "Filtered" Label -->
+  <g transform="translate(100, 30)">
+    <rect x="-40" y="-15" width="80" height="30" rx="15" ry="15" fill="#4682B4"/>
+    <text x="0" y="5" font-family="Arial" font-size="12" font-weight="bold" text-anchor="middle" fill="white">FILTERED</text>
+  </g>
+  
+  <!-- "Ultra Quiet" Banner -->
+  <g transform="translate(40, 50) rotate(-30)">
+    <rect x="-50" y="-10" width="100" height="20" fill="#32CD32"/>
+    <text x="0" y="5" font-family="Arial" font-size="12" font-weight="bold" text-anchor="middle" fill="white">ULTRA QUIET</text>
+  </g>
+</svg>

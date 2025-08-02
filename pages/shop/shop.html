@@ -1,0 +1,714 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop - Pawfect World</title>
+    <meta name="description" content="Browse our wide selection of premium pet supplies at Pawfect World. Find everything your furry friend needs!">
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="../../css/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="header">
+        <div class="header-top">
+            <div class="container">
+                <div class="header-top-content">
+                    <div class="header-top-left">
+                        <p><i class="fas fa-truck"></i> Free shipping on orders over $50</p>
+                    </div>
+                    <div class="header-top-right">
+                        <ul>
+                            <li><a href="../contact/index.html"><i class="fas fa-phone"></i> Contact</a></li>
+                            <li><a href="../account/index.html"><i class="fas fa-user"></i> My Account</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header-main">
+            <div class="container">
+                <div class="header-main-content">
+                    <div class="logo">
+                        <a href="../../index.html">
+                            <h1>Pawfect World</h1>
+                        </a>
+                    </div>
+                    <div class="search-bar">
+                        <form action="#" method="get">
+                            <input type="text" placeholder="Search for products..." name="search">
+                            <button type="submit"><i class="fas fa-search"></i></button>
+                        </form>
+                    </div>
+                    <div class="header-actions">
+                        <div class="wishlist">
+                            <a href="#"><i class="fas fa-heart"></i></a>
+                            <span class="count">0</span>
+                        </div>
+                        <div class="cart">
+                            <a href="../cart/index.html"><i class="fas fa-shopping-cart"></i></a>
+                            <span class="count">0</span>
+                        </div>
+                        <div class="mobile-menu-toggle">
+                            <i class="fas fa-bars"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header-nav">
+            <div class="container">
+                <nav class="main-nav">
+                    <ul>
+                        <li><a href="../../index.html">Home</a></li>
+                        <li><a href="../about/index.html">About Us</a></li>
+                        <li class="active has-dropdown">
+                            <a href="./shop.html">Shop</a>
+                            <ul class="dropdown">
+                                <li><a href="./dog-products/index.html">Dog Products</a></li>
+                                <li><a href="./cat-products/index.html">Cat Products</a></li>
+                                <li><a href="./food-treats/index.html">Food & Treats</a></li>
+                                <li><a href="./toys/index.html">Toys</a></li>
+                                <li><a href="./grooming-supplies/index.html">Grooming Supplies</a></li>
+                                <li><a href="./health-wellness/index.html">Health & Wellness</a></li>
+                                <li><a href="./accessories/index.html">Accessories</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="../blog/index.html">Blog</a></li>
+                        <li><a href="../events/index.html">Events & Adoption</a></li>
+                        <li><a href="../contact/index.html">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Breadcrumb -->
+    <div class="breadcrumb-wrapper">
+        <div class="container">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="../../index.html">Home</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Shop</li>
+                </ol>
+            </nav>
+        </div>
+    </div>
+
+    <!-- Shop Section -->
+    <section class="shop-section">
+        <div class="container">
+            <div class="shop-header">
+                <h1 class="section-title">All Pet Products</h1>
+                <p class="section-description">Browse our wide selection of premium pet supplies for your furry friends</p>
+            </div>
+
+            <div class="shop-content">
+                <div class="shop-sidebar">
+                    <div class="filter-widget">
+                        <h3 class="widget-title">Pet Type</h3>
+                        <div class="widget-content">
+                            <div class="checkbox-group">
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="pet-type" value="dog" data-filter="pet-type"> Dogs
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="pet-type" value="cat" data-filter="pet-type"> Cats
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="filter-widget">
+                        <h3 class="widget-title">Categories</h3>
+                        <div class="widget-content">
+                            <ul class="category-list">
+                                <li><a href="./food-treats/index.html" data-filter="category" data-value="food">Food <span>(12)</span></a></li>
+                                <li><a href="./food-treats/index.html" data-filter="category" data-value="treats">Treats <span>(8)</span></a></li>
+                                <li><a href="./toys/index.html" data-filter="category" data-value="toys">Toys <span>(10)</span></a></li>
+                                <li><a href="./accessories/index.html" data-filter="category" data-value="accessories">Accessories <span>(14)</span></a></li>
+                                <li><a href="./health-wellness/index.html" data-filter="category" data-value="health">Health & Wellness <span>(8)</span></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="filter-widget">
+                        <h3 class="widget-title">Breed Size</h3>
+                        <div class="widget-content">
+                            <div class="checkbox-group">
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="breed-size" value="small" data-filter="breed-size"> Small
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="breed-size" value="medium" data-filter="breed-size"> Medium
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="breed-size" value="large" data-filter="breed-size"> Large
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="filter-widget">
+                        <h3 class="widget-title">Age Group</h3>
+                        <div class="widget-content">
+                            <div class="checkbox-group">
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="age-group" value="puppy" data-filter="age-group"> Puppy/Kitten
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="age-group" value="adult" data-filter="age-group"> Adult
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="age-group" value="senior" data-filter="age-group"> Senior
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="filter-widget">
+                        <h3 class="widget-title">Price Range</h3>
+                        <div class="widget-content">
+                            <div class="price-slider">
+                                <div class="price-slider-range"></div>
+                                <div class="price-inputs">
+                                    <input type="text" class="price-from" value="$0">
+                                    <span>to</span>
+                                    <input type="text" class="price-to" value="$100">
+                                </div>
+                                <button class="btn-filter">Filter</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="filter-widget">
+                        <h3 class="widget-title">Dietary Needs</h3>
+                        <div class="widget-content">
+                            <div class="checkbox-group">
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="dietary" value="grain-free" data-filter="dietary"> Grain-Free
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="dietary" value="limited-ingredient" data-filter="dietary"> Limited Ingredient
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="dietary" value="weight-management" data-filter="dietary"> Weight Management
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="dietary" value="sensitive-digestion" data-filter="dietary"> Sensitive Digestion
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="shop-products">
+                    <div class="shop-toolbar">
+                        <div class="product-count">
+                            <p>Showing 1-12 of 48 products</p>
+                        </div>
+                        <div class="product-sorting">
+                            <label for="sort-by">Sort by:</label>
+                            <select id="sort-by" name="sort-by">
+                                <option value="popularity">Popularity</option>
+                                <option value="price-low">Price: Low to High</option>
+                                <option value="price-high">Price: High to Low</option>
+                                <option value="newest">Newest First</option>
+                            </select>
+                        </div>
+                        <div class="view-mode">
+                            <button class="grid-view active"><i class="fas fa-th"></i></button>
+                            <button class="list-view"><i class="fas fa-list"></i></button>
+                        </div>
+                    </div>
+
+                    <div class="product-grid">
+                        <!-- Product 1 -->
+                        <div class="product-card">
+                            <div class="product-badge">Sale</div>
+                            <div class="product-thumb">
+                                <a href="../product-detail/premium-dog-food.html">
+                                    <img src="#" alt="Premium Dog Food" class="product-placeholder">
+                                </a>
+                                <div class="product-action">
+                                    <a href="#" class="quick-view" title="Quick View"><i class="fas fa-eye"></i></a>
+                                    <a href="#" class="add-to-wishlist" title="Add to Wishlist"><i class="fas fa-heart"></i></a>
+                                    <a href="#" class="add-to-cart" title="Add to Cart"><i class="fas fa-shopping-cart"></i></a>
+                                </div>
+                            </div>
+                            <div class="product-info">
+                                <div class="product-category">Dog Food</div>
+                                <h3 class="product-title"><a href="../product-detail/premium-dog-food.html">Premium Grain-Free Dog Food</a></h3>
+                                <div class="product-rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                    <span class="rating-count">(42)</span>
+                                </div>
+                                <div class="product-price">
+                                    <span class="old-price">$59.99</span>
+                                    <span class="current-price">$49.99</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Product 2 -->
+                        <div class="product-card">
+                            <div class="product-badge new">New</div>
+                            <div class="product-thumb">
+                                <a href="../product-detail/cat-scratching-post.html">
+                                    <img src="#" alt="Cat Scratching Post" class="product-placeholder">
+                                </a>
+                                <div class="product-action">
+                                    <a href="#" class="quick-view" title="Quick View"><i class="fas fa-eye"></i></a>
+                                    <a href="#" class="add-to-wishlist" title="Add to Wishlist"><i class="fas fa-heart"></i></a>
+                                    <a href="#" class="add-to-cart" title="Add to Cart"><i class="fas fa-shopping-cart"></i></a>
+                                </div>
+                            </div>
+                            <div class="product-info">
+                                <div class="product-category">Cat Furniture</div>
+                                <h3 class="product-title"><a href="../product-detail/cat-scratching-post.html">Deluxe Cat Tree with Scratching Posts</a></h3>
+                                <div class="product-rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <span class="rating-count">(28)</span>
+                                </div>
+                                <div class="product-price">
+                                    <span class="current-price">$89.99</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Product 3 -->
+                        <div class="product-card">
+                            <div class="product-thumb">
+                                <a href="../product-detail/interactive-dog-toy.html">
+                                    <img src="#" alt="Interactive Dog Toy" class="product-placeholder">
+                                </a>
+                                <div class="product-action">
+                                    <a href="#" class="quick-view" title="Quick View"><i class="fas fa-eye"></i></a>
+                                    <a href="#" class="add-to-wishlist" title="Add to Wishlist"><i class="fas fa-heart"></i></a>
+                                    <a href="#" class="add-to-cart" title="Add to Cart"><i class="fas fa-shopping-cart"></i></a>
+                                </div>
+                            </div>
+                            <div class="product-info">
+                                <div class="product-category">Dog Toys</div>
+                                <h3 class="product-title"><a href="../product-detail/interactive-dog-toy.html">Interactive Treat Dispensing Toy</a></h3>
+                                <div class="product-rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                    <span class="rating-count">(19)</span>
+                                </div>
+                                <div class="product-price">
+                                    <span class="current-price">$24.99</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Product 4 -->
+                        <div class="product-card">
+                            <div class="product-badge">Bestseller</div>
+                            <div class="product-thumb">
+                                <a href="../product-detail/cat-food.html">
+                                    <img src="#" alt="Premium Cat Food" class="product-placeholder">
+                                </a>
+                                <div class="product-action">
+                                    <a href="#" class="quick-view" title="Quick View"><i class="fas fa-eye"></i></a>
+                                    <a href="#" class="add-to-wishlist" title="Add to Wishlist"><i class="fas fa-heart"></i></a>
+                                    <a href="#" class="add-to-cart" title="Add to Cart"><i class="fas fa-shopping-cart"></i></a>
+                                </div>
+                            </div>
+                            <div class="product-info">
+                                <div class="product-category">Cat Food</div>
+                                <h3 class="product-title"><a href="../product-detail/cat-food.html">Premium Indoor Cat Formula</a></h3>
+                                <div class="product-rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                    <span class="rating-count">(36)</span>
+                                </div>
+                                <div class="product-price">
+                                    <span class="current-price">$39.99</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Product 5 -->
+                        <div class="product-card">
+                            <div class="product-thumb">
+                                <a href="../product-detail/dog-collar.html">
+                                    <img src="#" alt="Adjustable Dog Collar" class="product-placeholder">
+                                </a>
+                                <div class="product-action">
+                                    <a href="#" class="quick-view" title="Quick View"><i class="fas fa-eye"></i></a>
+                                    <a href="#" class="add-to-wishlist" title="Add to Wishlist"><i class="fas fa-heart"></i></a>
+                                    <a href="#" class="add-to-cart" title="Add to Cart"><i class="fas fa-shopping-cart"></i></a>
+                                </div>
+                            </div>
+                            <div class="product-info">
+                                <div class="product-category">Dog Accessories</div>
+                                <h3 class="product-title"><a href="../product-detail/dog-collar.html">Reflective Adjustable Dog Collar</a></h3>
+                                <div class="product-rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                    <span class="rating-count">(24)</span>
+                                </div>
+                                <div class="product-price">
+                                    <span class="current-price">$18.99</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Product 6 -->
+                        <div class="product-card">
+                            <div class="product-thumb">
+                                <a href="../product-detail/grooming-kit.html">
+                                    <img src="#" alt="Pet Grooming Kit" class="product-placeholder">
+                                </a>
+                                <div class="product-action">
+                                    <a href="#" class="quick-view" title="Quick View"><i class="fas fa-eye"></i></a>
+                                    <a href="#" class="add-to-wishlist" title="Add to Wishlist"><i class="fas fa-heart"></i></a>
+                                    <a href="#" class="add-to-cart" title="Add to Cart"><i class="fas fa-shopping-cart"></i></a>
+                                </div>
+                            </div>
+                            <div class="product-info">
+                                <div class="product-category">Grooming</div>
+                                <h3 class="product-title"><a href="../product-detail/grooming-kit.html">Professional Pet Grooming Kit</a></h3>
+                                <div class="product-rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <span class="rating-count">(31)</span>
+                                </div>
+                                <div class="product-price">
+                                    <span class="old-price">$79.99</span>
+                                    <span class="current-price">$69.99</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Product 7 -->
+                        <div class="product-card">
+                            <div class="product-thumb">
+                                <a href="../product-detail/cat-litter.html">
+                                    <img src="#" alt="Premium Cat Litter" class="product-placeholder">
+                                </a>
+                                <div class="product-action">
+                                    <a href="#" class="quick-view" title="Quick View"><i class="fas fa-eye"></i></a>
+                                    <a href="#" class="add-to-wishlist" title="Add to Wishlist"><i class="fas fa-heart"></i></a>
+                                    <a href="#" class="add-to-cart" title="Add to Cart"><i class="fas fa-shopping-cart"></i></a>
+                                </div>
+                            </div>
+                            <div class="product-info">
+                                <div class="product-category">Cat Supplies</div>
+                                <h3 class="product-title"><a href="../product-detail/cat-litter.html">Odor Control Clumping Cat Litter</a></h3>
+                                <div class="product-rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                    <span class="rating-count">(47)</span>
+                                </div>
+                                <div class="product-price">
+                                    <span class="current-price">$29.99</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Product 8 -->
+                        <div class="product-card">
+                            <div class="product-badge new">New</div>
+                            <div class="product-thumb">
+                                <a href="../product-detail/dog-bed.html">
+                                    <img src="#" alt="Orthopedic Dog Bed" class="product-placeholder">
+                                </a>
+                                <div class="product-action">
+                                    <a href="#" class="quick-view" title="Quick View"><i class="fas fa-eye"></i></a>
+                                    <a href="#" class="add-to-wishlist" title="Add to Wishlist"><i class="fas fa-heart"></i></a>
+                                    <a href="#" class="add-to-cart" title="Add to Cart"><i class="fas fa-shopping-cart"></i></a>
+                                </div>
+                            </div>
+                            <div class="product-info">
+                                <div class="product-category">Dog Bedding</div>
+                                <h3 class="product-title"><a href="../product-detail/dog-bed.html">Orthopedic Memory Foam Dog Bed</a></h3>
+                                <div class="product-rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <span class="rating-count">(22)</span>
+                                </div>
+                                <div class="product-price">
+                                    <span class="current-price">$79.99</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Product 9 -->
+                        <div class="product-card">
+                            <div class="product-thumb">
+                                <a href="../product-detail/fish-tank.html">
+                                    <img src="#" alt="Aquarium Kit" class="product-placeholder">
+                                </a>
+                                <div class="product-action">
+                                    <a href="#" class="quick-view" title="Quick View"><i class="fas fa-eye"></i></a>
+                                    <a href="#" class="add-to-wishlist" title="Add to Wishlist"><i class="fas fa-heart"></i></a>
+                                    <a href="#" class="add-to-cart" title="Add to Cart"><i class="fas fa-shopping-cart"></i></a>
+                                </div>
+                            </div>
+                            <div class="product-info">
+                                <div class="product-category">Fish Supplies</div>
+                                <h3 class="product-title"><a href="../product-detail/fish-tank.html">Complete Aquarium Starter Kit</a></h3>
+                                <div class="product-rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                    <span class="rating-count">(18)</span>
+                                </div>
+                                <div class="product-price">
+                                    <span class="current-price">$129.99</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Product 10 -->
+                        <div class="product-card">
+                            <div class="product-badge">Sale</div>
+                            <div class="product-thumb">
+                                <a href="../product-detail/cat-toy.html">
+                                    <img src="#" alt="Interactive Cat Toy" class="product-placeholder">
+                                </a>
+                                <div class="product-action">
+                                    <a href="#" class="quick-view" title="Quick View"><i class="fas fa-eye"></i></a>
+                                    <a href="#" class="add-to-wishlist" title="Add to Wishlist"><i class="fas fa-heart"></i></a>
+                                    <a href="#" class="add-to-cart" title="Add to Cart"><i class="fas fa-shopping-cart"></i></a>
+                                </div>
+                            </div>
+                            <div class="product-info">
+                                <div class="product-category">Cat Toys</div>
+                                <h3 class="product-title"><a href="../product-detail/cat-toy.html">Electronic Motion Cat Toy</a></h3>
+                                <div class="product-rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                    <span class="rating-count">(33)</span>
+                                </div>
+                                <div class="product-price">
+                                    <span class="old-price">$34.99</span>
+                                    <span class="current-price">$27.99</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Product 11 -->
+                        <div class="product-card">
+                            <div class="product-thumb">
+                                <a href="../product-detail/dog-shampoo.html">
+                                    <img src="#" alt="Dog Shampoo" class="product-placeholder">
+                                </a>
+                                <div class="product-action">
+                                    <a href="#" class="quick-view" title="Quick View"><i class="fas fa-eye"></i></a>
+                                    <a href="#" class="add-to-wishlist" title="Add to Wishlist"><i class="fas fa-heart"></i></a>
+                                    <a href="#" class="add-to-cart" title="Add to Cart"><i class="fas fa-shopping-cart"></i></a>
+                                </div>
+                            </div>
+                            <div class="product-info">
+                                <div class="product-category">Dog Grooming</div>
+                                <h3 class="product-title"><a href="../product-detail/dog-shampoo.html">Oatmeal & Aloe Dog Shampoo</a></h3>
+                                <div class="product-rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                    <span class="rating-count">(26)</span>
+                                </div>
+                                <div class="product-price">
+                                    <span class="current-price">$16.99</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Product 12 -->
+                        <div class="product-card">
+                            <div class="product-thumb">
+                                <a href="../product-detail/pet-carrier.html">
+                                    <img src="#" alt="Pet Carrier" class="product-placeholder">
+                                </a>
+                                <div class="product-action">
+                                    <a href="#" class="quick-view" title="Quick View"><i class="fas fa-eye"></i></a>
+                                    <a href="#" class="add-to-wishlist" title="Add to Wishlist"><i class="fas fa-heart"></i></a>
+                                    <a href="#" class="add-to-cart" title="Add to Cart"><i class="fas fa-shopping-cart"></i></a>
+                                </div>
+                            </div>
+                            <div class="product-info">
+                                <div class="product-category">Travel Accessories</div>
+                                <h3 class="product-title"><a href="../product-detail/pet-carrier.html">Airline Approved Pet Carrier</a></h3>
+                                <div class="product-rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <span class="rating-count">(29)</span>
+                                </div>
+                                <div class="product-price">
+                                    <span class="current-price">$59.99</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="pagination">
+                        <ul>
+                            <li class="active"><a href="#">1</a></li>
+                            <li><a href="#">2</a></li>
+                            <li><a href="#">3</a></li>
+                            <li><a href="#">4</a></li>
+                            <li><a href="#"><i class="fas fa-angle-right"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pet Profile Banner -->
+    <section class="pet-profile-banner">
+        <div class="container">
+            <div class="pet-profile-content">
+                <div class="pet-profile-text">
+                    <h2>Create Your Pet's Profile</h2>
+                    <p>Get personalized product recommendations and special offers tailored to your furry friend's needs.</p>
+                    <a href="../account/pet-profile.html" class="btn btn-primary">Create Profile</a>
+                </div>
+                <div class="pet-profile-image">
+                    <img src="#" alt="Pet Profile" class="profile-placeholder">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter-section">
+        <div class="container">
+            <div class="newsletter-content">
+                <div class="newsletter-text">
+                    <h2>Subscribe to Our Newsletter</h2>
+                    <p>Get the latest updates, offers and more.</p>
+                </div>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Enter your email address" required>
+                    <button type="submit" class="btn btn-primary">Subscribe</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-top">
+            <div class="container">
+                <div class="footer-widgets">
+                    <div class="footer-widget">
+                        <div class="footer-logo">
+                            <h2>Pawfect World</h2>
+                        </div>
+                        <p class="footer-desc">Your one-stop shop for all pet needs. Quality products for your beloved furry friends.</p>
+                        <ul class="footer-social">
+                            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                            <li><a href="#"><i class="fab fa-pinterest"></i></a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-widget">
+                        <h3 class="footer-widget-title">Quick Links</h3>
+                        <ul class="footer-menu">
+                            <li><a href="../../index.html">Home</a></li>
+                            <li><a href="../about/index.html">About Us</a></li>
+                            <li><a href="./shop.html">Shop</a></li>
+                            <li><a href="../blog/index.html">Blog</a></li>
+                            <li><a href="../contact/index.html">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-widget">
+                        <h3 class="footer-widget-title">Categories</h3>
+                        <ul class="footer-menu">
+                            <li><a href="./dog-products/index.html">Dog Products</a></li>
+                            <li><a href="./cat-products/index.html">Cat Products</a></li>
+                            <li><a href="./food-treats/index.html">Food & Treats</a></li>
+                            <li><a href="./toys/index.html">Toys</a></li>
+                            <li><a href="./accessories/index.html">Accessories</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-widget">
+                        <h3 class="footer-widget-title">Contact Info</h3>
+                        <ul class="footer-contact">
+                            <li><i class="fas fa-map-marker-alt"></i> 123 Pet Street, Furry Lane, PW 12345</li>
+                            <li><i class="fas fa-phone"></i> +1 (555) 123-4567</li>
+                            <li><i class="fas fa-envelope"></i> info@pawfectworld.com</li>
+                            <li><i class="fas fa-clock"></i> Mon-Sat: 9:00 AM - 8:00 PM</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="footer-bottom-content">
+                    <div class="copyright">
+                        <p>&copy; 2023 Pawfect World. All Rights Reserved.</p>
+                    </div>
+                    <div class="footer-bottom-links">
+                        <a href="../privacy-policy/index.html">Privacy Policy</a>
+                        <a href="../terms-conditions/index.html">Terms & Conditions</a>
+                    </div>
+                    <div class="payment-methods">
+                        <span>Payment Methods:</span>
+                        <img src="#" alt="Payment Methods" class="payment-placeholder">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <a href="#" class="back-to-top"><i class="fas fa-arrow-up"></i></a>
+
+    <!-- Quick View Modal -->
+    <div class="modal quick-view-modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div class="quick-view-content">
+                <!-- Quick view content will be loaded here -->
+            </div>
+        </div>
+    </div>
+
+    <script src="../../js/jquery.min.js"></script>
+    <script src="../../js/main.js"></script>
+</body>
+</html>

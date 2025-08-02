@@ -1,0 +1,64 @@
+<svg width="300" height="300" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="300" height="300" fill="#f8f9fa" rx="10" ry="10"/>
+  
+  <!-- Dog Toy - Rope Ball -->
+  <g transform="translate(150, 150)">
+    <!-- Ball Base -->
+    <circle cx="0" cy="0" r="70" fill="#3a86ff" stroke="#1d3557" stroke-width="2"/>
+    
+    <!-- Rope Details -->
+    <path d="M-70,0 C-60,-20 -40,-40 0,-40 C40,-40 60,-20 70,0" stroke="#ef476f" stroke-width="10" fill="none" stroke-linecap="round"/>
+    <path d="M-70,0 C-60,20 -40,40 0,40 C40,40 60,20 70,0" stroke="#ffd166" stroke-width="10" fill="none" stroke-linecap="round"/>
+    
+    <!-- Rope Ends -->
+    <g transform="translate(-70, 0)">
+      <rect x="-15" y="-5" width="15" height="10" fill="#ef476f"/>
+      <rect x="-30" y="-5" width="15" height="10" fill="#ffd166"/>
+      <rect x="-45" y="-5" width="15" height="10" fill="#ef476f"/>
+    </g>
+    
+    <g transform="translate(70, 0)">
+      <rect x="0" y="-5" width="15" height="10" fill="#ef476f"/>
+      <rect x="15" y="-5" width="15" height="10" fill="#ffd166"/>
+      <rect x="30" y="-5" width="15" height="10" fill="#ef476f"/>
+    </g>
+    
+    <!-- Ball Pattern -->
+    <circle cx="-25" cy="-25" r="10" fill="#ffffff"/>
+    <circle cx="25" cy="-25" r="10" fill="#ffffff"/>
+    <circle cx="0" cy="15" r="10" fill="#ffffff"/>
+    <circle cx="-35" cy="25" r="8" fill="#ffffff"/>
+    <circle cx="35" cy="25" r="8" fill="#ffffff"/>
+  </g>
+  
+  <!-- Product Details -->
+  <g transform="translate(20, 260)">
+    <text x="0" y="0" font-family="Arial" font-size="14" fill="#1d3557" font-weight="bold">Durable Rope Ball Toy</text>
+    <text x="0" y="20" font-family="Arial" font-size="12" fill="#1d3557">For Medium to Large Dogs</text>
+  </g>
+  
+  <!-- Price Tag -->
+  <g transform="translate(220, 270)">
+    <rect x="0" y="0" width="60" height="25" rx="12.5" ry="12.5" fill="#ef476f"/>
+    <text x="30" y="17" font-family="Arial" font-size="14" text-anchor="middle" fill="#ffffff" font-weight="bold">$14.99</text>
+  </g>
+  
+  <!-- Product Highlights -->
+  <g transform="translate(20, 230)">
+    <circle cx="10" cy="0" r="8" fill="#06d6a0"/>
+    <text x="25" y="4" font-family="Arial" font-size="10" fill="#1d3557">Durable</text>
+    
+    <circle cx="100" cy="0" r="8" fill="#06d6a0"/>
+    <text x="115" y="4" font-family="Arial" font-size="10" fill="#1d3557">Interactive</text>
+    
+    <circle cx="180" cy="0" r="8" fill="#06d6a0"/>
+    <text x="195" y="4" font-family="Arial" font-size="10" fill="#1d3557">Dental Care</text>
+  </g>
+  
+  <!-- Brand Tag -->
+  <g transform="translate(20, 30)">
+    <rect x="0" y="0" width="80" height="25" rx="5" ry="5" fill="#3a86ff"/>
+    <text x="40" y="17" font-family="Arial" font-size="12" text-anchor="middle" fill="#ffffff" font-weight="bold">PAWFECT</text>
+  </g>
+</svg>

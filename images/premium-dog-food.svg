@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 200 200">
+  <!-- Background -->
+  <rect width="200" height="200" fill="#f8f8f8" rx="10" ry="10"/>
+  
+  <!-- Dog Food Bag -->
+  <g transform="translate(40, 30)">
+    <!-- Bag Shape -->
+    <path d="M20,0 L100,0 L120,140 L0,140 Z" fill="#8B4513"/>
+    
+    <!-- Bag Highlights -->
+    <path d="M20,0 L100,0 L120,140 L0,140 Z" fill="#A0522D" opacity="0.7"/>
+    
+    <!-- Bag Top Fold -->
+    <path d="M20,0 L100,0 L90,15 L30,15 Z" fill="#6B3E26"/>
+    
+    <!-- Label -->
+    <rect x="25" y="30" width="70" height="80" rx="5" ry="5" fill="#F5F5DC"/>
+    
+    <!-- Label Content -->
+    <text x="60" y="55" font-family="Arial" font-size="10" font-weight="bold" text-anchor="middle" fill="#8B4513">PREMIUM</text>
+    <text x="60" y="70" font-family="Arial" font-size="12" font-weight="bold" text-anchor="middle" fill="#8B4513">GRAIN-FREE</text>
+    <text x="60" y="85" font-family="Arial" font-size="10" font-weight="bold" text-anchor="middle" fill="#8B4513">DOG FOOD</text>
+    
+    <!-- Dog Silhouette on Label -->
+    <path d="M45,95 C45,95 50,90 55,95 C60,100 65,95 65,95 C65,95 70,90 75,95 L75,105 L45,105 Z" fill="#8B4513"/>
+    <circle cx="50" cy="92" r="2" fill="#8B4513"/> <!-- Eye -->
+    <circle cx="70" cy="92" r="2" fill="#8B4513"/> <!-- Eye -->
+    
+    <!-- Weight -->
+    <text x="60" y="120" font-family="Arial" font-size="8" font-weight="bold" text-anchor="middle" fill="#F5F5DC">5 LBS</text>
+  </g>
+  
+  <!-- Dog Kibble Pieces scattered around -->
+  <circle cx="30" cy="180" r="5" fill="#A0522D"/>
+  <circle cx="45" cy="170" r="4" fill="#8B4513"/>
+  <circle cx="155" cy="175" r="6" fill="#A0522D"/>
+  <circle cx="170" cy="160" r="4" fill="#8B4513"/>
+  <circle cx="25" cy="155" r="3" fill="#A0522D"/>
+  
+  <!-- "Premium" Banner -->
+  <g transform="translate(0, 15) rotate(-30) translate(-40, 0)">
+    <rect x="0" y="0" width="80" height="20" fill="#FFD700"/>
+    <text x="40" y="14" font-family="Arial" font-size="10" font-weight="bold" text-anchor="middle" fill="#8B4513">PREMIUM</text>
+  </g>
+</svg>

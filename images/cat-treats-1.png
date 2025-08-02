@@ -1,0 +1,63 @@
+<svg width="300" height="300" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="300" height="300" fill="#f8f9fa" rx="10" ry="10"/>
+  
+  <!-- Treat Container -->
+  <g transform="translate(75, 50)">
+    <!-- Container Body -->
+    <rect x="0" y="0" width="150" height="180" rx="10" ry="10" fill="#06d6a0" stroke="#1d3557" stroke-width="2"/>
+    
+    <!-- Container Lid -->
+    <rect x="10" y="10" width="130" height="30" rx="5" ry="5" fill="#ffffff" stroke="#1d3557" stroke-width="1"/>
+    
+    <!-- Brand Logo -->
+    <circle cx="75" cy="25" r="15" fill="#3a86ff" stroke="#1d3557" stroke-width="1"/>
+    <text x="75" y="30" font-family="Arial" font-size="10" text-anchor="middle" fill="#ffffff" font-weight="bold">PAWFECT</text>
+    
+    <!-- Product Name -->
+    <rect x="25" y="60" width="100" height="40" rx="5" ry="5" fill="#ffffff"/>
+    <text x="75" y="80" font-family="Arial" font-size="10" text-anchor="middle" fill="#1d3557" font-weight="bold">CRUNCHY</text>
+    <text x="75" y="92" font-family="Arial" font-size="10" text-anchor="middle" fill="#1d3557" font-weight="bold">CAT TREATS</text>
+    
+    <!-- Treats Illustration -->
+    <g transform="translate(30, 110)">
+      <!-- Fish Shape -->
+      <path d="M0,15 C10,5 30,-5 50,-5 C70,-5 80,5 90,15 C80,25 70,35 50,35 C30,35 10,25 0,15 Z" fill="#ffd166" stroke="#1d3557" stroke-width="1"/>
+      <circle cx="70" cy="10" r="3" fill="#1d3557"/>
+      <path d="M90,15 L100,5 L100,25 Z" fill="#ffd166" stroke="#1d3557" stroke-width="1"/>
+      
+      <!-- Star Shape -->
+      <path d="M20,60 L25,45 L10,35 L25,30 L30,15 L35,30 L50,35 L35,45 L40,60 L30,50 Z" fill="#ef476f" stroke="#1d3557" stroke-width="1"/>
+      
+      <!-- Circle Shape -->
+      <circle cx="70" cy="50" r="10" fill="#3a86ff" stroke="#1d3557" stroke-width="1"/>
+    </g>
+    
+    <!-- Weight -->
+    <text x="75" y="170" font-family="Arial" font-size="14" text-anchor="middle" fill="#1d3557" font-weight="bold">6 OZ</text>
+  </g>
+  
+  <!-- Product Details -->
+  <g transform="translate(20, 260)">
+    <text x="0" y="0" font-family="Arial" font-size="14" fill="#1d3557" font-weight="bold">Seafood Medley Treats</text>
+    <text x="0" y="20" font-family="Arial" font-size="12" fill="#1d3557">Crunchy Texture</text>
+  </g>
+  
+  <!-- Price Tag -->
+  <g transform="translate(220, 270)">
+    <rect x="0" y="0" width="60" height="25" rx="12.5" ry="12.5" fill="#ef476f"/>
+    <text x="30" y="17" font-family="Arial" font-size="14" text-anchor="middle" fill="#ffffff" font-weight="bold">$8.99</text>
+  </g>
+  
+  <!-- Product Highlights -->
+  <g transform="translate(20, 230)">
+    <circle cx="10" cy="0" r="8" fill="#06d6a0"/>
+    <text x="25" y="4" font-family="Arial" font-size="10" fill="#1d3557">Dental Care</text>
+    
+    <circle cx="100" cy="0" r="8" fill="#06d6a0"/>
+    <text x="115" y="4" font-family="Arial" font-size="10" fill="#1d3557">Real Seafood</text>
+    
+    <circle cx="180" cy="0" r="8" fill="#06d6a0"/>
+    <text x="195" y="4" font-family="Arial" font-size="10" fill="#1d3557">No Fillers</text>
+  </g>
+</svg>
